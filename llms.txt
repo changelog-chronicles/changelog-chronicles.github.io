@@ -34,6 +34,14 @@ notes at `link` are the source of truth.
 To see what changed since a locked version: take the releases whose `version` is
 newer than it, read `breaking` first.
 
+## Adding a package
+
+The tracked packages are listed in the public repo
+https://github.com/changelog-chronicles/project-list. To suggest one, open a pull
+request there that adds one file, `projects/<name>.md`; the README there has the
+format. Good fits: a Python library on PyPI that publishes GitHub releases with real
+release notes. A check validates every pull request.
+
 ## Packages
 
 - [altair](api/altair.json)
