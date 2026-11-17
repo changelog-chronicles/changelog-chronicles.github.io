@@ -1,0 +1,106 @@
+{
+  "package": "dagster",
+  "github": "https://github.com/dagster-io/dagster",
+  "releases": [
+    {
+      "version": "1.13.30",
+      "tag": "1.13.30",
+      "date": "2026-11-12T21:04:51+00:00",
+      "kind": "breaking",
+      "new": "Copy the latest asset materializations from one deployment to another, keeping original timestamps, with the new dagster-cloud deployment copy-materializations command.",
+      "breaking": "Python 3.10 is no longer supported, so Dagster now requires Python 3.11 or later; upgrade your Python version before upgrading Dagster.",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.13.30",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.13.29",
+      "tag": "1.13.29",
+      "date": "2026-11-05T18:38:24+00:00",
+      "kind": "feature",
+      "new": "View the code location overview, deployment code locations list, and sensor and schedule detail pages in new mobile layouts, with faster run log loading and search.",
+      "breaking": "",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.13.29",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.13.28",
+      "tag": "1.13.28",
+      "date": "2026-10-30T15:31:35+00:00",
+      "kind": "feature",
+      "new": "Trigger an existing Databricks job by ID through Dagster Pipes using the new preview run_job() method on PipesDatabricksClient and PipesDatabricksServerlessClient.",
+      "breaking": "dagster-snowflake now requires snowflake-snowpark-python 1.37.0 or newer and snowflake-connector-python 3.14.0 or newer, so upgrade those packages if you pin older versions.",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.13.28",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.13.27",
+      "tag": "1.13.27",
+      "date": "2026-10-26T15:36:41+00:00",
+      "kind": "feature",
+      "new": "Use a mobile layout on the run details page that shows the run's tags, logs, and steps.",
+      "breaking": "",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.13.27",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.13.26",
+      "tag": "1.13.26",
+      "date": "2026-10-09T23:08:50+00:00",
+      "kind": "breaking",
+      "new": "Target a specific deployment with the new deployment option on dg list envs, dg plus create env, and dg plus pull env commands.",
+      "breaking": "dagster-dbt no longer installs dbt-core automatically; install it with the dagster-dbt[dbt-core] extra, and never alongside dbt Fusion's dbt package.",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.13.26",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.8.11",
+      "tag": "1.8.11",
+      "date": "2024-10-10T19:04:16+00:00",
+      "kind": "breaking",
+      "new": "Create GitHub pull requests and branches from GithubClient, and give an asset multiple kinds with the experimental kinds parameter.",
+      "breaking": "Experimental AutomationCondition.eager() now only launches runs for partitions that become missing after the condition is added, so existing missing historical partitions are no longer backfilled automatically.",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.8.11",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.8.10",
+      "tag": "1.8.10",
+      "date": "2024-10-03T21:21:52+00:00",
+      "kind": "feature",
+      "new": "Set run_tags on jobs so they attach only to runs, separating run-level tags from definition-level tags on jobs.",
+      "breaking": "",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.8.10",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.8.9",
+      "tag": "1.8.9",
+      "date": "2024-09-26T18:38:12+00:00",
+      "kind": "feature",
+      "new": "Set a max_runtime_seconds option in run monitoring so any run exceeding that runtime is terminated, without tagging each job individually.",
+      "breaking": "",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.8.9",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.8.8",
+      "tag": "1.8.8",
+      "date": "2024-09-20T17:38:10+00:00",
+      "kind": "feature",
+      "new": "Run dagster asset materialize with a partition range option for single-run backfill assets, and use the new on_missing automation condition to materialize partitions once all parents are filled.",
+      "breaking": "",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.8.8",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.8.7",
+      "tag": "1.8.7",
+      "date": "2024-09-12T20:29:54+00:00",
+      "kind": "feature",
+      "new": "Attach relation identifier metadata automatically to assets stored with a DbIOManager, and get rows_loaded metadata on dlt assets.",
+      "breaking": "AssetSpec now raises an error at construction for invalid group names, and DbtCliResource project_dir now overrides DBT_PROJECT_DIR; fix group names and check your environment.",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.8.7",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

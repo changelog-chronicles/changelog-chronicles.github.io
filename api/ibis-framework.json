@@ -1,0 +1,56 @@
+{
+  "package": "ibis-framework",
+  "github": "https://github.com/ibis-project/ibis",
+  "releases": [
+    {
+      "version": "12.0.0",
+      "tag": "12.0.0",
+      "date": "2026-02-07T14:30:59+00:00",
+      "kind": "breaking",
+      "new": "Use upsert() to merge rows into tables via MERGE INTO, plus new SingleStoreDB and Materialize backends, PySpark 4.0 support, and pandas 3.0 compatibility.",
+      "breaking": "Python 3.9 and PySpark versions below 3.5 are no longer supported, and decimal precision and scale are now inferred, so upgrade Python and PySpark and check decimal types.",
+      "link": "https://github.com/ibis-project/ibis/releases/tag/12.0.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "11.0.0",
+      "tag": "11.0.0",
+      "date": "2025-10-15T13:11:55+00:00",
+      "kind": null,
+      "new": null,
+      "breaking": null,
+      "link": "https://github.com/ibis-project/ibis/releases/tag/11.0.0",
+      "brief_by": null
+    },
+    {
+      "version": "10.8.0",
+      "tag": "10.8.0",
+      "date": "2025-07-28T21:28:27+00:00",
+      "kind": "feature",
+      "new": "Build an Ibis schema directly from a SQLGlot definition using the new Schema.from_sqlglot method.",
+      "breaking": "",
+      "link": "https://github.com/ibis-project/ibis/releases/tag/10.8.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "10.7.0",
+      "tag": "10.7.0",
+      "date": "2025-07-27T11:46:25+00:00",
+      "kind": "feature",
+      "new": "Call to_sql directly on an expression to get its SQL, and compute kurtosis across supported backends.",
+      "breaking": "Unpacking structs with overlapping column names now always overwrites the existing field; check code that relied on the previous behavior.",
+      "link": "https://github.com/ibis-project/ibis/releases/tag/10.7.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "10.6.0",
+      "tag": "10.6.0",
+      "date": "2025-06-16T14:40:33+00:00",
+      "kind": "feature",
+      "new": "Set a BigQuery job ID prefix and per-query job config options on queries, and create specific UUID values in expressions.",
+      "breaking": "",
+      "link": "https://github.com/ibis-project/ibis/releases/tag/10.6.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

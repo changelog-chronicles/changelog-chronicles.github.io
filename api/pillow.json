@@ -1,0 +1,56 @@
+{
+  "package": "pillow",
+  "github": "https://github.com/python-pillow/Pillow",
+  "releases": [
+    {
+      "version": "13.0.0",
+      "tag": "13.0.0",
+      "date": "2026-10-16T22:37:44+00:00",
+      "kind": "breaking",
+      "new": "Resize images with the new Magic Kernel Sharp resampling modes, and pass a strip_namespaces argument to getxmp() to control XMP namespace handling.",
+      "breaking": "Python 3.10 is no longer supported, ExifTags.IFD.Makernote and GifImagePlugin._save_netpbm are removed, and XMP info is no longer a tuple; upgrade Python and adjust code using these.",
+      "link": "https://github.com/python-pillow/Pillow/releases/tag/13.0.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "12.3.0",
+      "tag": "12.3.0",
+      "date": "2026-07-01T12:00:06+00:00",
+      "kind": "breaking",
+      "new": "Open and save L mode AVIF images with libavif 1.3.0 or newer, and use Pillow on Python 3.15 with new beta wheels.",
+      "breaking": "Non-image ImageCms modes were removed, ImageCms now errors on mode mismatches, and macOS retina screenshots are no longer resized by default; adjust code relying on these.",
+      "link": "https://github.com/python-pillow/Pillow/releases/tag/12.3.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "12.2.0",
+      "tag": "12.2.0",
+      "date": "2026-04-01T14:52:51+00:00",
+      "kind": "breaking",
+      "new": "Wrap text with the new ImageText.Text.wrap() method, and convert font files to usable fonts with FontFile.to_imagefont().",
+      "breaking": "Encoding an empty image now raises ValueError instead of the previous error; update any code that catches the old exception type when saving empty images.",
+      "link": "https://github.com/python-pillow/Pillow/releases/tag/12.2.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "12.1.1",
+      "tag": "12.1.1",
+      "date": "2026-02-11T04:36:46+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/python-pillow/Pillow/releases/tag/12.1.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "12.1.0",
+      "tag": "12.1.0",
+      "date": "2026-01-02T09:15:25+00:00",
+      "kind": "feature",
+      "new": "Use the new get_flattened_data() method in place of getdata(), save APNG animations with float durations, and pass a window ID to ImageGrab.grab() on macOS.",
+      "breaking": "",
+      "link": "https://github.com/python-pillow/Pillow/releases/tag/12.1.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

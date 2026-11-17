@@ -1,0 +1,56 @@
+{
+  "package": "pytest",
+  "github": "https://github.com/pytest-dev/pytest",
+  "releases": [
+    {
+      "version": "9.2.0",
+      "tag": "9.2.0",
+      "date": "2026-10-27T21:30:44+00:00",
+      "kind": "breaking",
+      "new": "Control how long string parameter values appear in auto-generated test IDs using the new parametrize_long_str_id_strategy option, with short, sha256, legacy and disallow strategies.",
+      "breaking": "parametrize's indirect, ids and scope must now be passed as keywords; plugin import failures now exit with codes 4 or 3 instead of raising; pluggy 1.6 or newer is required.",
+      "link": "https://github.com/pytest-dev/pytest/releases/tag/9.2.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "9.1.1",
+      "tag": "9.1.1",
+      "date": "2026-06-19T10:58:55+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pytest-dev/pytest/releases/tag/9.1.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "9.1.0",
+      "tag": "9.1.0",
+      "date": "2026-06-13T18:53:04+00:00",
+      "kind": "breaking",
+      "new": "Register fixtures programmatically with the new register_fixture function, or fail a run when warnings exceed a threshold using the new max-warnings option.",
+      "breaking": "With doctest-modules, inline module, package or session-scoped autouse fixtures in test modules may now run twice; move them to conftest.py to avoid this.",
+      "link": "https://github.com/pytest-dev/pytest/releases/tag/9.1.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "9.0.3",
+      "tag": "9.0.3",
+      "date": "2026-04-07T17:16:45+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pytest-dev/pytest/releases/tag/9.0.3",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "9.0.2",
+      "tag": "9.0.2",
+      "date": "2025-12-06T21:31:16+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pytest-dev/pytest/releases/tag/9.0.2",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

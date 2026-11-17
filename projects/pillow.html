@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pillow · Changelog Chronicles</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a class="site" href="../index.html">Changelog Chronicles</a>
+        <span class="tagline">what's new in Python packages, one sentence per release</span>
+    </header>
+    <main>
+<h1>pillow</h1>
+<p class="meta">
+  <a href="https://github.com/python-pillow/Pillow">python-pillow/Pillow</a>
+  · PyPI <code>pillow</code>
+  · <a href="../api/pillow.json">JSON</a>
+</p>
+
+<ol class="releases">
+
+  <li>
+    <div class="head">
+      <time datetime="2026-10-16T22:37:44+00:00">2026-10-16</time>
+      
+      <a class="version" href="../releases/2026-10-16/pillow_22_37.html">13.0.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, ExifTags.IFD.Makernote and GifImagePlugin._save_netpbm are removed, and XMP info is no longer a tuple; upgrade Python and adjust code using these.</p>
+  <p class="new">Resize images with the new Magic Kernel Sharp resampling modes, and pass a strip_namespaces argument to getxmp() to control XMP namespace handling.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-07-01T12:00:06+00:00">2026-07-01</time>
+      
+      <a class="version" href="../releases/2026-07-01/pillow_12_00.html">12.3.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Non-image ImageCms modes were removed, ImageCms now errors on mode mismatches, and macOS retina screenshots are no longer resized by default; adjust code relying on these.</p>
+  <p class="new">Open and save L mode AVIF images with libavif 1.3.0 or newer, and use Pillow on Python 3.15 with new beta wheels.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-04-01T14:52:51+00:00">2026-04-01</time>
+      
+      <a class="version" href="../releases/2026-04-01/pillow_14_52.html">12.2.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Encoding an empty image now raises ValueError instead of the previous error; update any code that catches the old exception type when saving empty images.</p>
+  <p class="new">Wrap text with the new ImageText.Text.wrap() method, and convert font files to usable fonts with FontFile.to_imagefont().</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-02-11T04:36:46+00:00">2026-02-11</time>
+      
+      <a class="version" href="../releases/2026-02-11/pillow_04_36.html">12.1.1</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-01-02T09:15:25+00:00">2026-01-02</time>
+      
+      <a class="version" href="../releases/2026-01-02/pillow_09_15.html">12.1.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Use the new get_flattened_data() method in place of getdata(), save APNG animations with float durations, and pass a window ID to ImageGrab.grab() on macOS.</p>
+  
+
+  </li>
+
+</ol>
+
+</main>
+    <footer>
+        Briefs and poems are written by Claude from the release notes; the release
+        notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
+    </footer>
+</body>
+</html>

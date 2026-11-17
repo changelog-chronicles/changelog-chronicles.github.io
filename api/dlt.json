@@ -1,0 +1,106 @@
+{
+  "package": "dlt",
+  "github": "https://github.com/dlt-hub/dlt",
+  "releases": [
+    {
+      "version": "1.32.0",
+      "tag": "1.32.0",
+      "date": "2026-10-29T23:35:12+00:00",
+      "kind": "breaking",
+      "new": "Use placeholders like load_id and boundary_timestamp in merge source_filter and destination_scope, so nested tables can prune destination partitions such as BigQuery ones when merging.",
+      "breaking": "Naive scd2 timestamps are no longer read as UTC, and drop_resources and pipeline.drop now drop all resource tables; check scd2 timestamps, and old jira and salesforce sources were rewritten.",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/1.32.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.31.0",
+      "tag": "1.31.0",
+      "date": "2026-10-07T13:21:11+00:00",
+      "kind": "breaking",
+      "new": "Load full snapshots with the new cdc merge strategy, which upserts rows and deletes destination rows missing from the snapshot, across many destinations.",
+      "breaking": "Pendulum 3 or newer is now required and unofficial pendulum helpers in dlt.common.time are removed; also changed: filesystem timestamps, cursor types, JSON datetimes, Snowflake timestamps. Update code.",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/1.31.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.30.0",
+      "tag": "1.30.0",
+      "date": "2026-08-11T13:23:00+00:00",
+      "kind": "breaking",
+      "new": "Join datasets that live on different destinations, such as DuckDB and S3 filesystem, in a single query through the dataset table join API.",
+      "breaking": "Failed load packages no longer auto-abort and now retry, raising LoadClientJobTerminalRetry; filesystem layouts without ext now append extensions and table prefixes keep a trailing separator, changing file names.",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/1.30.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.29.1",
+      "tag": "1.29.1",
+      "date": "2026-07-24T11:32:31+00:00",
+      "kind": "feature",
+      "new": "Declare runner instance requirements for jobs via require.instance, an open dictionary such as size medium, replacing the now-deprecated machine key.",
+      "breaking": "",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/1.29.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.29.0",
+      "tag": "1.29.0",
+      "date": "2026-07-13T09:31:54+00:00",
+      "kind": "feature",
+      "new": "Use the staging-optimized replace strategy on ClickHouse for atomic table swaps, so a full replace never leaves the destination half-loaded.",
+      "breaking": "",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/1.29.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.2.0",
+      "tag": "1.2.0",
+      "date": "2024-10-07T21:10:01+00:00",
+      "kind": "feature",
+      "new": "Use merge write disposition with the SQLAlchemy destination, and use incremental scd2 with a merge key.",
+      "breaking": "",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/1.2.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.1.0",
+      "tag": "1.1.0",
+      "date": "2024-09-26T13:33:47+00:00",
+      "kind": "feature",
+      "new": "Use SQLAlchemy destinations with staging datasets, pass a custom session to the REST API source, and add DltResource objects to the REST API config.",
+      "breaking": "",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/1.1.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.0.0",
+      "tag": "1.0.0",
+      "date": "2024-09-16T15:07:50+00:00",
+      "kind": "breaking",
+      "new": "Use the rest_api, sql_database and filesystem sources directly from dlt core, plus a new SQLAlchemy destination and SFTP support for the filesystem source.",
+      "breaking": "Major release: foreign_key hint is dropped in favor of nested references, the complex data type is deprecated for json, and terminal job errors now abort the load package; review the linked breaking changes list.",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/1.0.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.5.4",
+      "tag": "0.5.4",
+      "date": "2024-08-28T20:02:38+00:00",
+      "kind": "feature",
+      "new": "Use partitioning and schema evolution with merge on delta tables, and set custom valid-from and valid-to values for scd2 records.",
+      "breaking": "",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/0.5.4",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.5.3",
+      "tag": "0.5.3",
+      "date": "2024-08-13T00:20:02+00:00",
+      "kind": "feature",
+      "new": "Load jobs now start continuously as loader slots free up, and a new get_delta_tables helper lets you optimize and vacuum Delta tables.",
+      "breaking": "",
+      "link": "https://github.com/dlt-hub/dlt/releases/tag/0.5.3",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

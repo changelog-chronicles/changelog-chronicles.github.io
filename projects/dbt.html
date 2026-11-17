@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dbt · Changelog Chronicles</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a class="site" href="../index.html">Changelog Chronicles</a>
+        <span class="tagline">what's new in Python packages, one sentence per release</span>
+    </header>
+    <main>
+<h1>dbt</h1>
+<p class="meta">
+  <a href="https://github.com/dbt-labs/dbt">dbt-labs/dbt</a>
+  · PyPI <code>dbt-core</code>
+  · <a href="../api/dbt-core.json">JSON</a>
+</p>
+
+<ol class="releases">
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-12T09:53:01+00:00">2026-11-12</time>
+      
+      <a class="version" href="../releases/2026-11-12/dbt_09_53.html">v1.12.7</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Read the new state_decision_id attribute on RunResult, and opt into preferring adapter macro overrides for builtin macros with the builtin_macros_prefer_overrides behavior flag.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-11T11:30:32+00:00">2026-11-11</time>
+      
+      <a class="version" href="../releases/2026-11-11/dbt_11_30.html">v2.0.0-dev.44-test-pypi</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Existing local Unity attach options under config.lakecompute must move to config.duckdb; Lake Compute access is read-only, so Unity model writes are unsupported.</p>
+  <p class="new">Read AWS Databricks Unity Catalog tables from Lake Compute using Databricks profile PAT or OAuth M2M credentials, in read-only mode.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-06T07:07:47+00:00">2026-11-06</time>
+      
+      <a class="version" href="../releases/2026-11-06/dbt_07_07.html">v1.11.17</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-03T09:23:42+00:00">2026-11-03</time>
+      
+      <a class="version" href="../releases/2026-11-03/dbt_09_23.html">v2.0.11</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Environment variables were renamed: DBT_AI_PROVIDER is now DBT_ENGINE_AI_PROVIDER, and the info-schema variables now use the DBT_ENGINE_ prefix; update any scripts or CI that set them.</p>
+  <p class="new">Configure BigQuery query reservations at the model and connection levels, and use the new state-mode flag in place of run-cache-mode.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-10-14T07:49:06+00:00">2026-10-14</time>
+      
+      <a class="version" href="../releases/2026-10-14/dbt_07_49.html">v2.0.8</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Install the dbt and dbt-oss PyPI wheels on Python 3.10, since the minimum supported Python version was lowered to 3.10.</p>
+  
+
+  </li>
+
+</ol>
+
+</main>
+    <footer>
+        Briefs and poems are written by Claude from the release notes; the release
+        notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
+    </footer>
+</body>
+</html>

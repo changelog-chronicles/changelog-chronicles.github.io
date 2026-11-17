@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>streamlit · Changelog Chronicles</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a class="site" href="../index.html">Changelog Chronicles</a>
+        <span class="tagline">what's new in Python packages, one sentence per release</span>
+    </header>
+    <main>
+<h1>streamlit</h1>
+<p class="meta">
+  <a href="https://github.com/streamlit/streamlit">streamlit/streamlit</a>
+  · PyPI <code>streamlit</code>
+  · <a href="../api/streamlit.json">JSON</a>
+</p>
+
+<ol class="releases">
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-05T19:54:01+00:00">2026-11-05</time>
+      
+      <a class="version" href="../releases/2026-11-05/streamlit_19_54.html">1.67.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Default theme colors, surfaces, borders and map markers changed, so apps relying on the default look may appear different; check custom styling after upgrading.</p>
+  <p class="new">Add st.grid for responsive grid layouts, plus a required parameter on date, time, datetime, text area and selectbox inputs.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-10-21T17:03:06+00:00">2026-10-21</time>
+      
+      <a class="version" href="../releases/2026-10-21/streamlit_17_03.html">1.66.1</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-10-14T16:08:00+00:00">2026-10-14</time>
+      
+      <a class="version" href="../releases/2026-10-14/streamlit_16_08.html">1.66.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 support is dropped, so upgrade to Python 3.11 or newer. Apps now render in opaque sandboxed iframes, and httptools is now optional.</p>
+  <p class="new">Add on_change=&#34;ignore&#34; to many widgets such as color_picker, data_editor, pills and segmented_control, and test forms and more widgets with AppTest.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-10-02T21:40:41+00:00">2026-10-02</time>
+      
+      <a class="version" href="../releases/2026-10-02/streamlit_21_40.html">1.65.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Add alt text to many elements such as images, charts, tables and dataframes, and show st.dialog as a side drawer using the position parameter.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-09-15T19:13:58+00:00">2026-09-15</time>
+      
+      <a class="version" href="../releases/2026-09-15/streamlit_19_13.html">1.64.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Inverted st.number_input min/max bounds are now rejected, unsupported on_change modes raise errors, and the mapbox.token config option is removed; fix bounds, modes and config.</p>
+  <p class="new">Add native Apache ECharts charts with st.echarts_chart, plus async-aware caching and an on_change ignore mode for number_input, selectbox and select_slider.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2024-10-13T06:39:00+00:00">2024-10-13</time>
+      
+      <a class="version" href="../releases/2024-10-13/streamlit_06_39.html">1.39.1.dev20241012</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      <a class="poem-link" href="../releases/2024-10-13/streamlit_06_39.html#poems">poem</a>
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2024-10-01T17:36:45+00:00">2024-10-01</time>
+      
+      <a class="version" href="../releases/2024-10-01/streamlit_17_36.html">1.39.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Add icons to st.button, st.download_button, st.form_submit_button, st.link_button and st.popover, and let st.pydeck_chart support selection.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2024-08-27T18:46:56+00:00">2024-08-27</time>
+      
+      <a class="version" href="../releases/2024-08-27/streamlit_18_46.html">1.38.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Experimental cached widget replay logic was removed, so code relying on replaying widgets inside cached functions will stop working; move widget calls outside cached functions.</p>
+  <p class="new">Pass many more data types, such as Polars, Dask, xarray, Ray, and Pydantic objects, directly to Streamlit&#39;s dataframe and data-handling functions.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2024-08-05T18:59:25+00:00">2024-08-05</time>
+      
+      <a class="version" href="../releases/2024-08-05/streamlit_18_59.html">1.37.1</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2024-07-25T18:21:46+00:00">2024-07-25</time>
+      
+      <a class="version" href="../releases/2024-07-25/streamlit_18_21.html">1.37.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Several deprecated experimental features and old config options were removed, including the showPyplotGlobalUse option; replace removed experimental calls with stable versions and delete removed config settings.</p>
+  <p class="new">Add a feedback widget, stacking options for bar and area charts, and stable st.fragment and st.dialog without the experimental prefix.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2024-06-20T18:02:27+00:00">2024-06-20</time>
+      
+      <a class="version" href="../releases/2024-06-20/streamlit_18_02.html">1.36.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Legacy caching logic was removed and the experimental_allow_widgets caching parameter is deprecated; update any code that relied on the old caching behavior.</p>
+  <p class="new">Build multipage apps with the new navigation and page objects, which let you define pages and their navigation directly in code.</p>
+  
+
+  </li>
+
+</ol>
+
+</main>
+    <footer>
+        Briefs and poems are written by Claude from the release notes; the release
+        notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
+    </footer>
+</body>
+</html>

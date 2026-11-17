@@ -1,0 +1,56 @@
+{
+  "package": "uv",
+  "github": "https://github.com/astral-sh/uv",
+  "releases": [
+    {
+      "version": "0.13.9",
+      "tag": "0.13.9",
+      "date": "2026-11-17T09:57:55+00:00",
+      "kind": "feature",
+      "new": "Use PEP 832 .venv redirect files for project environments, and opt into a preview feature that closes unresponsive HTTP/2 connections.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/uv/releases/tag/0.13.9",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.13.8",
+      "tag": "0.13.8",
+      "date": "2026-11-12T17:03:07+00:00",
+      "kind": "feature",
+      "new": "Install CPython 3.16.0a2 as a managed Python version, with updated pip, zlib and Expat bundled in the managed 3.11 through 3.15 builds.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/uv/releases/tag/0.13.8",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.13.7",
+      "tag": "0.13.7",
+      "date": "2026-11-03T02:45:04+00:00",
+      "kind": "feature",
+      "new": "Request a specific schema version from the workspace metadata command in preview, and get aliased vulnerability records reported as one entry in audit output.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/uv/releases/tag/0.13.7",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.13.6",
+      "tag": "0.13.6",
+      "date": "2026-10-27T00:47:49+00:00",
+      "kind": "feature",
+      "new": "Install newer CPython builds (3.11.18, 3.12.16, 3.13.18, 3.14.10, 3.15.2) and detect NVIDIA GPU capabilities when selecting wheel variants in preview.",
+      "breaking": "The preview uv workspace metadata command now nests each module's owners inside an object, so scripts parsing its output need updating.",
+      "link": "https://github.com/astral-sh/uv/releases/tag/0.13.6",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.13.5",
+      "tag": "0.13.5",
+      "date": "2026-10-22T01:35:54+00:00",
+      "kind": "breaking",
+      "new": "Install the latest managed CPython 3.15.1, 3.14.9 and 3.13.17 security releases, which ship with pip 26.2.2 and an updated certificate bundle.",
+      "breaking": "Invalid custom build cache keys are now rejected instead of silently falling back to defaults, so fix any malformed cache key settings; uv no longer publishes Docker images for Python 3.9 and 3.10.",
+      "link": "https://github.com/astral-sh/uv/releases/tag/0.13.5",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>poethepoet · Changelog Chronicles</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a class="site" href="../index.html">Changelog Chronicles</a>
+        <span class="tagline">what's new in Python packages, one sentence per release</span>
+    </header>
+    <main>
+<h1>poethepoet</h1>
+<p class="meta">
+  <a href="https://github.com/nat-n/poethepoet">nat-n/poethepoet</a>
+  · PyPI <code>poethepoet</code>
+  · <a href="../api/poethepoet.json">JSON</a>
+</p>
+
+<ol class="releases">
+
+  <li>
+    <div class="head">
+      <time datetime="2026-10-14T21:28:37+00:00">2026-10-14</time>
+      
+      <a class="version" href="../releases/2026-10-14/poethepoet_21_28.html">v0.49.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python script and expr tasks now get a different sys.argv (parsed declared args with defaults, then args after --); update code that reads sys.argv.</p>
+  <p class="new">Customize the string values boolean args are exposed as using the true_string and false_string options.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-07-05T21:39:33+00:00">2026-07-05</time>
+      
+      <a class="version" href="../releases/2026-07-05/poethepoet_21_39.html">v0.48.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Load environment variables from another task&#39;s output, treated like an env file, by using the new uses_env task option.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-07-01T07:26:50+00:00">2026-07-01</time>
+      
+      <a class="version" href="../releases/2026-07-01/poethepoet_07_26.html">v0.47.1</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-06-27T13:41:13+00:00">2026-06-27</time>
+      
+      <a class="version" href="../releases/2026-06-27/poethepoet_13_41.html">v0.47.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Executor config now rejects unknown keys, so configs with typos or unsupported executor options will fail validation; remove or correct those keys.</p>
+  <p class="new">Buffer the output of parallel tasks with the new buffer output_mode, so each task&#39;s output appears together instead of interleaved.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-05-15T15:42:34+00:00">2026-05-15</time>
+      
+      <a class="version" href="../releases/2026-05-15/poethepoet_15_42.html">v0.46.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Install an experimental agent skill that teaches AI coding agents poe&#39;s task API, and use environment variable parameter expansion inside env files.</p>
+  
+
+  </li>
+
+</ol>
+
+</main>
+    <footer>
+        Briefs and poems are written by Claude from the release notes; the release
+        notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
+    </footer>
+</body>
+</html>

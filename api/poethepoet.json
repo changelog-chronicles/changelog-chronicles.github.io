@@ -1,0 +1,56 @@
+{
+  "package": "poethepoet",
+  "github": "https://github.com/nat-n/poethepoet",
+  "releases": [
+    {
+      "version": "0.49.0",
+      "tag": "v0.49.0",
+      "date": "2026-10-14T21:28:37+00:00",
+      "kind": "breaking",
+      "new": "Customize the string values boolean args are exposed as using the true_string and false_string options.",
+      "breaking": "Python script and expr tasks now get a different sys.argv (parsed declared args with defaults, then args after --); update code that reads sys.argv.",
+      "link": "https://github.com/nat-n/poethepoet/releases/tag/v0.49.0",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.48.0",
+      "tag": "v0.48.0",
+      "date": "2026-07-05T21:39:33+00:00",
+      "kind": "feature",
+      "new": "Load environment variables from another task's output, treated like an env file, by using the new uses_env task option.",
+      "breaking": "",
+      "link": "https://github.com/nat-n/poethepoet/releases/tag/v0.48.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.47.1",
+      "tag": "v0.47.1",
+      "date": "2026-07-01T07:26:50+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/nat-n/poethepoet/releases/tag/v0.47.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.47.0",
+      "tag": "v0.47.0",
+      "date": "2026-06-27T13:41:13+00:00",
+      "kind": "breaking",
+      "new": "Buffer the output of parallel tasks with the new buffer output_mode, so each task's output appears together instead of interleaved.",
+      "breaking": "Executor config now rejects unknown keys, so configs with typos or unsupported executor options will fail validation; remove or correct those keys.",
+      "link": "https://github.com/nat-n/poethepoet/releases/tag/v0.47.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.46.0",
+      "tag": "v0.46.0",
+      "date": "2026-05-15T15:42:34+00:00",
+      "kind": "feature",
+      "new": "Install an experimental agent skill that teaches AI coding agents poe's task API, and use environment variable parameter expansion inside env files.",
+      "breaking": "",
+      "link": "https://github.com/nat-n/poethepoet/releases/tag/v0.46.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

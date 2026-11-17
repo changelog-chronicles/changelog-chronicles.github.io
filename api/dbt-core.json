@@ -1,0 +1,26 @@
+{
+  "package": "dbt-core",
+  "github": "https://github.com/dbt-labs/dbt",
+  "releases": [
+    {
+      "version": "1.12.7",
+      "tag": "v1.12.7",
+      "date": "2026-11-12T09:53:01+00:00",
+      "kind": "feature",
+      "new": "Read the new state_decision_id attribute on RunResult, and opt into preferring adapter macro overrides for builtin macros with the builtin_macros_prefer_overrides behavior flag.",
+      "breaking": "",
+      "link": "https://github.com/dbt-labs/dbt/releases/tag/v1.12.7",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.11.17",
+      "tag": "v1.11.17",
+      "date": "2026-11-06T07:07:47+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/dbt-labs/dbt/releases/tag/v1.11.17",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

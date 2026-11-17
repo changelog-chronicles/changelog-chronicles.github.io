@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ibis · Changelog Chronicles</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a class="site" href="../index.html">Changelog Chronicles</a>
+        <span class="tagline">what's new in Python packages, one sentence per release</span>
+    </header>
+    <main>
+<h1>ibis</h1>
+<p class="meta">
+  <a href="https://github.com/ibis-project/ibis">ibis-project/ibis</a>
+  · PyPI <code>ibis-framework</code>
+  · <a href="../api/ibis-framework.json">JSON</a>
+</p>
+
+<ol class="releases">
+
+  <li>
+    <div class="head">
+      <time datetime="2026-02-07T14:30:59+00:00">2026-02-07</time>
+      
+      <a class="version" href="../releases/2026-02-07/ibis_14_30.html">12.0.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python 3.9 and PySpark versions below 3.5 are no longer supported, and decimal precision and scale are now inferred, so upgrade Python and PySpark and check decimal types.</p>
+  <p class="new">Use upsert() to merge rows into tables via MERGE INTO, plus new SingleStoreDB and Materialize backends, PySpark 4.0 support, and pandas 3.0 compatibility.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2025-10-15T13:11:55+00:00">2025-10-15</time>
+      
+      <a class="version" href="../releases/2025-10-15/ibis_13_11.html">11.0.0</a>
+      
+      
+    </div>
+    
+  <p class="quiet">No brief yet.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2025-07-28T21:28:27+00:00">2025-07-28</time>
+      
+      <a class="version" href="../releases/2025-07-28/ibis_21_28.html">10.8.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Build an Ibis schema directly from a SQLGlot definition using the new Schema.from_sqlglot method.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2025-07-27T11:46:25+00:00">2025-07-27</time>
+      
+      <a class="version" href="../releases/2025-07-27/ibis_11_46.html">10.7.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Unpacking structs with overlapping column names now always overwrites the existing field; check code that relied on the previous behavior.</p>
+  <p class="new">Call to_sql directly on an expression to get its SQL, and compute kurtosis across supported backends.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2025-06-16T14:40:33+00:00">2025-06-16</time>
+      
+      <a class="version" href="../releases/2025-06-16/ibis_14_40.html">10.6.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Set a BigQuery job ID prefix and per-query job config options on queries, and create specific UUID values in expressions.</p>
+  
+
+  </li>
+
+</ol>
+
+</main>
+    <footer>
+        Briefs and poems are written by Claude from the release notes; the release
+        notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+:root {
+  --fg: #1d1d1f; --muted: #6e6e73; --bg: #fdfcf9; --line: #e5e2da; --accent: #2b5fab;
+  --breaking: #b3261e; --feature: #1f7a3a; --fix: #8a5a00; --maintenance: #6e6e73;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e8e6e1; --muted: #9a978f; --bg: #17171a; --line: #2c2c31; --accent: #8ab4f8;
+    --breaking: #f28b82; --feature: #81c995; --fix: #fdd663; --maintenance: #9a978f;
+  }
+}
+body {
+  font: 16px/1.55 system-ui, sans-serif; color: var(--fg); background: var(--bg);
+  max-width: 52rem; margin: 0 auto; padding: 1.5rem 1rem 3rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+header { display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline;
+  border-bottom: 1px solid var(--line); padding-bottom: .8rem; }
+header .site { font-weight: 700; font-size: 1.15rem; color: var(--fg); }
+.tagline, .meta, .by, footer, figcaption, time, .quiet { color: var(--muted); }
+.by, figcaption, footer { font-size: .85rem; }
+footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: .8rem; }
+h1 { font-size: 1.5rem; margin: 1.5rem 0 .5rem; }
+nav.projects { display: flex; flex-wrap: wrap; gap: .3rem .9rem; margin-top: 1rem; font-size: .9rem; }
+ol.releases { list-style: none; padding: 0; }
+ol.releases li { padding: .7rem 0; border-bottom: 1px solid var(--line); }
+ol.releases p { margin: .25rem 0 0; }
+.head { display: flex; flex-wrap: wrap; gap: .3rem .7rem; align-items: baseline; }
+.head time { font-variant-numeric: tabular-nums; font-size: .9rem; }
+.project { font-weight: 600; }
+.version { font-family: ui-monospace, monospace; font-size: .9rem; }
+.poem-link { font-size: .85rem; }
+.kind { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em;
+  border: 1px solid currentColor; border-radius: 3px; padding: 0 .3rem; }
+.kind-breaking { color: var(--breaking); }
+.kind-feature { color: var(--feature); }
+.kind-fix { color: var(--fix); }
+.kind-maintenance { color: var(--maintenance); }
+.breaking strong { color: var(--breaking); }
+.poems { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+.poem { margin: 0; padding: 1rem; border: 1px solid var(--line); border-radius: 6px; }
+.poem pre { font: inherit; font-family: Georgia, serif; white-space: pre-wrap; margin: 0 0 .6rem; }

@@ -1,0 +1,56 @@
+{
+  "package": "ruff",
+  "github": "https://github.com/astral-sh/ruff",
+  "releases": [
+    {
+      "version": "0.17.5",
+      "tag": "0.17.5",
+      "date": "2026-11-12T17:55:55+00:00",
+      "kind": "feature",
+      "new": "Try new preview rules such as pylint no-method-argument (PLE0211) and flake8-async pytest-raises-exception-group (ASYNC401), plus a renamed-rule check (RUF202).",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ruff/releases/tag/0.17.5",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.17.4",
+      "tag": "0.17.4",
+      "date": "2026-11-05T18:53:24+00:00",
+      "kind": "feature",
+      "new": "Try a new preview security rule that flags tarfile extraction with the ignore-zeros option set to true, and respect CLICOLOR=0 in diagnostics.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ruff/releases/tag/0.17.4",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.17.3",
+      "tag": "0.17.3",
+      "date": "2026-10-27T00:35:07+00:00",
+      "kind": "feature",
+      "new": "Try the new preview rule shared-clock-mock in the suspicious category, and get faster formatting and lexing plus a fix for incorrect f-string conversions.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ruff/releases/tag/0.17.3",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.17.2",
+      "tag": "0.17.2",
+      "date": "2026-10-22T18:39:46+00:00",
+      "kind": "feature",
+      "new": "Configure an allowlist of accepted values for the magic-value-comparison rule (PLR2004) in pylint settings, so those values are no longer flagged.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ruff/releases/tag/0.17.2",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.17.1",
+      "tag": "0.17.1",
+      "date": "2026-10-15T15:24:28+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ruff/releases/tag/0.17.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

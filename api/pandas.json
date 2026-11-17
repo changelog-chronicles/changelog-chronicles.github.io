@@ -1,0 +1,106 @@
+{
+  "package": "pandas",
+  "github": "https://github.com/pandas-dev/pandas",
+  "releases": [
+    {
+      "version": "3.1.1",
+      "tag": "v3.1.1",
+      "date": "2026-11-04T15:46:25+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "3.1.0",
+      "tag": "v3.1.0",
+      "date": "2026-10-22T13:20:42+00:00",
+      "kind": "feature",
+      "new": "Select columns with the new DataFrame.select() method, and read large CSV files faster with parallel reads in read_csv().",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "3.1.0rc0",
+      "tag": "v3.1.0rc0",
+      "date": "2026-09-30T14:13:00+00:00",
+      "kind": "maintenance",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.0rc0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "3.0.6",
+      "tag": "v3.0.6",
+      "date": "2026-09-17T21:32:36+00:00",
+      "kind": "fix",
+      "new": "Run pandas on Python 3.15, which this release is the first in the series to support.",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.6",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "3.0.5",
+      "tag": "v3.0.5",
+      "date": "2026-07-22T21:47:08+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.5",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "2.2.3",
+      "tag": "v2.2.3",
+      "date": "2024-09-20T13:10:41+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.3",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "2.2.2",
+      "tag": "v2.2.2",
+      "date": "2024-04-10T19:47:02+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.2",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "2.2.1",
+      "tag": "v2.2.1",
+      "date": "2024-02-23T15:29:27+00:00",
+      "kind": "maintenance",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "2.2.0",
+      "tag": "v2.2.0",
+      "date": "2024-01-20T03:33:20+00:00",
+      "kind": "feature",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "2.2.0rc0",
+      "tag": "v2.2.0rc0",
+      "date": "2023-12-22T19:57:46+00:00",
+      "kind": "maintenance",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.0rc0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

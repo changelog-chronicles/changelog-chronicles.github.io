@@ -1,0 +1,56 @@
+{
+  "package": "httpx",
+  "github": "https://github.com/encode/httpx",
+  "releases": [
+    {
+      "version": "0.28.1",
+      "tag": "0.28.1",
+      "date": "2024-12-06T15:36:24+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/encode/httpx/releases/tag/0.28.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.28.0",
+      "tag": "0.28.0",
+      "date": "2024-11-28T14:53:50+00:00",
+      "kind": "breaking",
+      "new": "Use socks5h as a valid proxy scheme, and send JSON request bodies in a more compact form.",
+      "breaking": "The proxies and app arguments are removed, so switch to the proxy argument and a transport instead; string verify and cert arguments now emit deprecation warnings.",
+      "link": "https://github.com/encode/httpx/releases/tag/0.28.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.27.2",
+      "tag": "0.27.2",
+      "date": "2024-08-27T12:52:29+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/encode/httpx/releases/tag/0.27.2",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.27.1",
+      "tag": "0.27.1",
+      "date": "2024-08-27T11:27:46+00:00",
+      "kind": "feature",
+      "new": "Decode zstd-compressed responses by installing the optional zstd extra, which uses the zstandard package.",
+      "breaking": "",
+      "link": "https://github.com/encode/httpx/releases/tag/0.27.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.27.0",
+      "tag": "0.27.0",
+      "date": "2024-02-21T13:06:50+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/encode/httpx/releases/tag/0.27.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}

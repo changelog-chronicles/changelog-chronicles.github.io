@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>duckdb · Changelog Chronicles</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a class="site" href="../index.html">Changelog Chronicles</a>
+        <span class="tagline">what's new in Python packages, one sentence per release</span>
+    </header>
+    <main>
+<h1>duckdb</h1>
+<p class="meta">
+  <a href="https://github.com/duckdb/duckdb">duckdb/duckdb</a>
+  · PyPI <code>duckdb</code>
+  · <a href="../api/duckdb.json">JSON</a>
+</p>
+
+<ol class="releases">
+
+  <li>
+    <div class="head">
+      <time datetime="2026-10-21T12:49:12+00:00">2026-10-21</time>
+      
+      <a class="version" href="../releases/2026-10-21/duckdb_12_49.html">v2.0.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Integer division by zero now raises an error instead of returning NULL; the ICU extension was removed, DECIMAL now promotes past BIGINT, and the C++ API changed, so test queries and extensions.</p>
+  <p class="new">Query data with NEAREST BY joins, plus new variant functions, JSON set/insert/replace/remove, nested schemas, AFTER triggers, async Parquet and CSV I/O, and external resources.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-09-28T13:35:11+00:00">2026-09-28</time>
+      
+      <a class="version" href="../releases/2026-09-28/duckdb_13_35.html">v1.5.6</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  <p class="new">Set the new enable_optimistic_write setting to control optimistic writes, backported from a later DuckDB version.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-07-22T10:51:50+00:00">2026-07-22</time>
+      
+      <a class="version" href="../releases/2026-07-22/duckdb_10_51.html">v1.5.5</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  <p class="new">Use the duckdb:// URI scheme in the ADBC URI option, and query ADBC statistics through the new ADBC Statistics API support.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-06-17T10:45:53+00:00">2026-06-17</time>
+      
+      <a class="version" href="../releases/2026-06-17/duckdb_10_45.html">v1.5.4</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  <p class="new">Set the experimental vacuum_rebuild_indexes option when attaching a database, and use new CLI dark-mode and light-mode options to control terminal background handling.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-06-17T10:42:38+00:00">2026-06-17</time>
+      
+      <a class="version" href="../releases/2026-06-17/duckdb_10_42.html">v1.4.5</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+</ol>
+
+</main>
+    <footer>
+        Briefs and poems are written by Claude from the release notes; the release
+        notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
+    </footer>
+</body>
+</html>

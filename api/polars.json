@@ -1,0 +1,96 @@
+{
+  "package": "polars",
+  "github": "https://github.com/pola-rs/polars",
+  "releases": [
+    {
+      "version": "2.1.0",
+      "tag": "py-2.1.0",
+      "date": "2026-10-25T18:24:39+00:00",
+      "kind": "breaking",
+      "new": "Write encrypted Parquet files and read encrypted ones, and use recursive SQL CTEs, SQL ASOF joins and masked numpy array conversion.",
+      "breaking": "Eager arithmetic mixing string and numeric values is now disallowed and raises an error; convert types explicitly. Python 3.10 support is also dropped, so use 3.11 or newer.",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-2.1.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "2.0.0",
+      "tag": "py-2.0.0",
+      "date": "2026-10-06T11:52:15+00:00",
+      "kind": "breaking",
+      "new": "Run SQL GROUPING SETS, ROLLUP and CUBE queries, use the new pipe_with_dtype expression, and scan Lance datasets with the unstable scan_lance.",
+      "breaking": "SQL window functions over grouped rows and QUALIFY now behave differently, SQL numeric literals are Decimal, Parquet ENUM reads as String, and cut/qcut are deprecated; review these usages.",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-2.0.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "2.0.0rc2",
+      "tag": "py-2.0.0-rc.2",
+      "date": "2026-09-20T17:36:49+00:00",
+      "kind": "breaking",
+      "new": "Group SQL queries with GROUPING SETS, ROLLUP and CUBE, and use the new Map dtype and binning functions.",
+      "breaking": "Parquet ENUM columns now read as pl.String, cut/qcut are deprecated, POLARS_STREAMING_CHUNK_SIZE is removed, and 0-width frame behavior changed; update code relying on these.",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-2.0.0-rc.2",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.44.2",
+      "tag": "py-1.44.2",
+      "date": "2026-09-09T07:42:33+00:00",
+      "kind": "maintenance",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-1.44.2",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "2.0.0rc1",
+      "tag": "py-2.0.0-rc.1",
+      "date": "2026-09-02T11:49:46+00:00",
+      "kind": "breaking",
+      "new": "Write partitioned Iceberg sinks and set Iceberg writer options, and use join reordering plus strip_prefix and strip_suffix on expression names.",
+      "breaking": "SQL queries now run on the streaming engine by default, which may change behavior or results; check your SQL code and the 2.0 migration guide.",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-2.0.0-rc.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.9.0",
+      "tag": "py-1.9.0",
+      "date": "2024-10-01T19:54:36+00:00",
+      "kind": "breaking",
+      "new": "Read parquet files with allow_missing_columns, a schema argument, and include_file_paths, and use bitwise operations and aggregations on columns.",
+      "breaking": "Python 3.8 is no longer supported, so upgrade to Python 3.9 or newer; struct ne_missing and eq_missing now return true/false values instead of null.",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-1.9.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.8.2",
+      "tag": "py-1.8.2",
+      "date": "2024-09-24T20:10:38+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-1.8.2",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.8.1",
+      "tag": "py-1.8.1",
+      "date": "2024-09-23T19:35:00+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-1.8.1",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    },
+    {
+      "version": "1.8.0",
+      "tag": "py-1.8.0",
+      "date": "2024-09-23T12:11:24+00:00",
+      "kind": "breaking",
+      "new": "Do arithmetic between list-dtype Series, and run single inequality joins with join_where.",
+      "breaking": "Comparing Series of unequal length now raises an error, and reading parquet files with extra columns raises unless you select columns; fix such code or add select.",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-1.8.0",
+      "brief_by": "brief-v1.sonnet-5-5.medium"
+    }
+  ]
+}
