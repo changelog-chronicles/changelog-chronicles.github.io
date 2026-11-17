@@ -6,11 +6,11 @@
       "version": "1.67.0",
       "tag": "1.67.0",
       "date": "2026-11-05T19:54:01+00:00",
-      "kind": "feature",
-      "new": "Add st.grid for responsive grid layouts, plus a required parameter on date, time, datetime, text area and selectbox inputs.",
-      "breaking": "Default theme colors, surfaces, borders and map markers changed, so apps relying on the default look may appear different; check custom styling after upgrading.",
+      "kind": "breaking",
+      "new": "Add st.grid for building responsive grid layouts in your app.",
+      "breaking": "Default theme colors, surfaces, borders and map markers changed, so apps relying on the old look may render differently; set theme values explicitly.",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.67.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.66.1",
@@ -20,37 +20,37 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.66.1",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.66.0",
       "tag": "1.66.0",
       "date": "2026-10-14T16:08:00+00:00",
       "kind": "breaking",
-      "new": "Add on_change=\"ignore\" to many widgets such as color_picker, data_editor, pills and segmented_control, and test forms and more widgets with AppTest.",
-      "breaking": "Python 3.10 support is dropped, so upgrade to Python 3.11 or newer. Apps now render in opaque sandboxed iframes, and httptools is now optional.",
+      "new": "Skip reruns on widget changes by passing on_change=\"ignore\" to widgets such as st.color_picker, st.pills, and st.data_editor.",
+      "breaking": "Python 3.10 support is dropped; upgrade to Python 3.11 or newer before installing this release.",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.66.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.65.0",
       "tag": "1.65.0",
       "date": "2026-10-02T21:40:41+00:00",
       "kind": "feature",
-      "new": "Add alt text to many elements such as images, charts, tables and dataframes, and show st.dialog as a side drawer using the position parameter.",
+      "new": "Render st.dialog as a side drawer by choosing its position.",
       "breaking": "",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.65.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.64.0",
       "tag": "1.64.0",
       "date": "2026-09-15T19:13:58+00:00",
       "kind": "breaking",
-      "new": "Add native Apache ECharts charts with st.echarts_chart, plus async-aware caching and an on_change ignore mode for number_input, selectbox and select_slider.",
-      "breaking": "Inverted st.number_input min/max bounds are now rejected, unsupported on_change modes raise errors, and the mapbox.token config option is removed; fix bounds, modes and config.",
+      "new": "Render native Apache ECharts charts in your app with the new st.echarts_chart element.",
+      "breaking": "The mapbox.token config option was removed, so delete it from your config files; st.number_input now rejects inverted min/max bounds.",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.64.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.39.1.dev20241012",
@@ -60,27 +60,27 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.39.1.dev20241012",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.39.0",
       "tag": "1.39.0",
       "date": "2024-10-01T17:36:45+00:00",
       "kind": "feature",
-      "new": "Add icons to st.button, st.download_button, st.form_submit_button, st.link_button and st.popover, and let st.pydeck_chart support selection.",
+      "new": "Record voice input in your app with the new experimental audio input widget.",
       "breaking": "",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.39.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.38.0",
       "tag": "1.38.0",
       "date": "2024-08-27T18:46:56+00:00",
       "kind": "breaking",
-      "new": "Pass many more data types, such as Polars, Dask, xarray, Ray, and Pydantic objects, directly to Streamlit's dataframe and data-handling functions.",
-      "breaking": "Experimental cached widget replay logic was removed, so code relying on replaying widgets inside cached functions will stop working; move widget calls outside cached functions.",
+      "new": "Pass Polars, Dask, Ray, xarray, Pydantic and other dataframe-like data directly to Streamlit's data display commands.",
+      "breaking": "Experimental cached widget replay was removed, so remove any use of it from cached functions and move widgets outside them.",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.38.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.37.1",
@@ -90,27 +90,27 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.37.1",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.37.0",
       "tag": "1.37.0",
       "date": "2024-07-25T18:21:46+00:00",
       "kind": "breaking",
-      "new": "Add a feedback widget, stacking options for bar and area charts, and stable st.fragment and st.dialog without the experimental prefix.",
-      "breaking": "Several deprecated experimental features and old config options were removed, including the showPyplotGlobalUse option; replace removed experimental calls with stable versions and delete removed config settings.",
+      "new": "Add a feedback widget to collect thumbs or star ratings from users in your app.",
+      "breaking": "Deprecated experimental features and old config options were removed, including deprecation.showPyplotGlobalUse; delete those config entries and switch to the stable APIs.",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.37.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.36.0",
       "tag": "1.36.0",
       "date": "2024-06-20T18:02:27+00:00",
       "kind": "breaking",
-      "new": "Build multipage apps with the new navigation and page objects, which let you define pages and their navigation directly in code.",
-      "breaking": "Legacy caching logic was removed and the experimental_allow_widgets caching parameter is deprecated; update any code that relied on the old caching behavior.",
+      "new": "Build multipage apps with the new st.navigation and st.Page, which let you define pages and navigation in code.",
+      "breaking": "Legacy caching logic was removed and experimental_allow_widgets is deprecated; update cached functions that relied on the old behavior.",
       "link": "https://github.com/streamlit/streamlit/releases/tag/1.36.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

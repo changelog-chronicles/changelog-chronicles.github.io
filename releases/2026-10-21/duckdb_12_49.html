@@ -22,11 +22,11 @@
   · <a href="https://github.com/duckdb/duckdb/releases/tag/v2.0.0">release notes</a>
 </p>
 
-  <p class="breaking"><strong>Breaking:</strong> Integer division by zero now raises an error instead of returning NULL; the ICU extension was removed, DECIMAL now promotes past BIGINT, and the C++ API changed, so test queries and extensions.</p>
-  <p class="new">Query data with NEAREST BY joins, plus new variant functions, JSON set/insert/replace/remove, nested schemas, AFTER triggers, async Parquet and CSV I/O, and external resources.</p>
+  <p class="breaking"><strong>Breaking:</strong> Integer division by zero now raises an error instead of returning NULL; guard divisors or handle the error in queries that relied on NULL.</p>
+  <p class="new">Run SQL against nested schemas, including creating, dropping, inserting into and querying tables within them.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

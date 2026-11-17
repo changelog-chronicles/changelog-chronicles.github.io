@@ -6,21 +6,21 @@
       "version": "2.29.0",
       "tag": "v2.29.0",
       "date": "2026-11-17T15:31:02+00:00",
-      "kind": "feature",
-      "new": "Support the new Map datatype, including a get operation, and use explode options to treat empty lists as null or keep nulls.",
-      "breaking": "",
+      "kind": "breaking",
+      "new": "Use the new Map datatype, which supports a get operation for looking up values by key.",
+      "breaking": "Built-in Dask support moved to the narwhals-dask plugin and is deprecated; install the plugin to keep using Dask.",
       "link": "https://github.com/narwhals-dev/narwhals/releases/tag/v2.29.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "2.28.0",
       "tag": "v2.28.0",
       "date": "2026-10-27T12:20:08+00:00",
-      "kind": "feature",
-      "new": "Use plugins for IO and from_* functions, and call list namespace methods such as len, get, min, max, mean, median, sum and sort on Dask.",
-      "breaking": "",
+      "kind": "breaking",
+      "new": "Use plugins for more IO and from_* functions, so third-party backends can read and build data frames.",
+      "breaking": "Results changed: rename now consistently raises DuplicateError, and var/std, mode, arg_min and arg_max return different values in some cases; update any code catching old errors.",
       "link": "https://github.com/narwhals-dev/narwhals/releases/tag/v2.28.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "2.27.1",
@@ -30,17 +30,17 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/narwhals-dev/narwhals/releases/tag/v2.27.1",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "2.27.0",
       "tag": "v2.27.0",
       "date": "2026-10-05T11:15:25+00:00",
-      "kind": "feature",
-      "new": "Cast whole DataFrames and LazyFrames with the new cast method, and pass file-like objects to the read and scan functions.",
-      "breaking": "",
+      "kind": "breaking",
+      "new": "Cast whole DataFrames or LazyFrames to new dtypes using the new cast method.",
+      "breaking": "Floor division by zero on pandas-like backends now returns null, and str.slice with negative length or str.zfill with negative width now raises; check code relying on old results.",
       "link": "https://github.com/narwhals-dev/narwhals/releases/tag/v2.27.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "2.26.0",
@@ -50,7 +50,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/narwhals-dev/narwhals/releases/tag/v2.26.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

@@ -22,11 +22,11 @@
   · <a href="https://github.com/pytest-dev/pytest/releases/tag/9.2.0">release notes</a>
 </p>
 
-  <p class="breaking"><strong>Breaking:</strong> parametrize&#39;s indirect, ids and scope must now be passed as keywords; plugin import failures now exit with codes 4 or 3 instead of raising; pluggy 1.6 or newer is required.</p>
-  <p class="new">Control how long string parameter values appear in auto-generated test IDs using the new parametrize_long_str_id_strategy option, with short, sha256, legacy and disallow strategies.</p>
+  <p class="breaking"><strong>Breaking:</strong> Positional indirect, ids or scope in parametrize now raises TypeError, and pluggy 1.6 or newer is now required; pass them as keywords.</p>
+  <p class="new">Set the parametrize_long_str_id_strategy option to control how long string parameter values appear in auto-generated test IDs.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> parametrize&#39;s indirect, ids and scope must now be passed as keywords; plugin import failures now exit with codes 4 or 3 instead of raising; pluggy 1.6 or newer is required.</p>
-  <p class="new">Control how long string parameter values appear in auto-generated test IDs using the new parametrize_long_str_id_strategy option, with short, sha256, legacy and disallow strategies.</p>
+  <p class="breaking"><strong>Breaking:</strong> Positional indirect, ids or scope in parametrize now raises TypeError, and pluggy 1.6 or newer is now required; pass them as keywords.</p>
+  <p class="new">Set the parametrize_long_str_id_strategy option to control how long string parameter values appear in auto-generated test IDs.</p>
   
 
   </li>
@@ -60,8 +60,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> With doctest-modules, inline module, package or session-scoped autouse fixtures in test modules may now run twice; move them to conftest.py to avoid this.</p>
-  <p class="new">Register fixtures programmatically with the new register_fixture function, or fail a run when warnings exceed a threshold using the new max-warnings option.</p>
+  <p class="breaking"><strong>Breaking:</strong> With doctest-modules, inline module, package or session autouse fixtures in test modules may now run twice; move them to conftest.py.</p>
+  <p class="new">Add a max-warnings option that fails the test run when the number of warnings exceeds a chosen threshold.</p>
   
 
   </li>
@@ -71,13 +71,13 @@
       <time datetime="2026-04-07T17:16:45+00:00">2026-04-07</time>
       
       <a class="version" href="../releases/2026-04-07/pytest_17_16.html">9.0.3</a>
-      <span class="kind kind-fix">fix</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
+  <p class="breaking"><strong>Breaking:</strong> Blocking a conftest.py file with the -p no: option now raises a UsageError, so remove any such option from your configuration.</p>
   
   
-  <p class="quiet">Nothing new for users.</p>
 
   </li>
 
@@ -86,13 +86,13 @@
       <time datetime="2025-12-06T21:31:16+00:00">2025-12-06</time>
       
       <a class="version" href="../releases/2025-12-06/pytest_21_31.html">9.0.2</a>
-      <span class="kind kind-fix">fix</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
+  <p class="breaking"><strong>Breaking:</strong> Terminal progress reporting from 9.0.0 is now off by default except on Windows; enable it again by passing the terminalprogress plugin option.</p>
   
   
-  <p class="quiet">Nothing new for users.</p>
 
   </li>
 

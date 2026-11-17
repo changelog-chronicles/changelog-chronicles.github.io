@@ -31,7 +31,7 @@
     </div>
     
   
-  <p class="new">Read the new state_decision_id attribute on RunResult, and opt into preferring adapter macro overrides for builtin macros with the builtin_macros_prefer_overrides behavior flag.</p>
+  <p class="new">Add a builtin_macros_prefer_overrides behavior flag so adapter overrides are preferred over base implementations for builtin macros.</p>
   
 
   </li>
@@ -45,8 +45,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Existing local Unity attach options under config.lakecompute must move to config.duckdb; Lake Compute access is read-only, so Unity model writes are unsupported.</p>
-  <p class="new">Read AWS Databricks Unity Catalog tables from Lake Compute using Databricks profile PAT or OAuth M2M credentials, in read-only mode.</p>
+  <p class="breaking"><strong>Breaking:</strong> Local Unity attach options under config.lakecompute no longer work; move them to config.duckdb.</p>
+  <p class="new">Read AWS Databricks Unity Catalog tables from Lake Compute using Databricks profile PAT or OAuth M2M credentials.</p>
   
 
   </li>
@@ -75,8 +75,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Environment variables were renamed: DBT_AI_PROVIDER is now DBT_ENGINE_AI_PROVIDER, and the info-schema variables now use the DBT_ENGINE_ prefix; update any scripts or CI that set them.</p>
-  <p class="new">Configure BigQuery query reservations at the model and connection levels, and use the new state-mode flag in place of run-cache-mode.</p>
+  <p class="breaking"><strong>Breaking:</strong> Environment variables DBT_GENERATE_INFO_SCHEMA and DBT_INFO_SCHEMA_DIR are renamed with a DBT_ENGINE_ prefix, and DBT_AI_PROVIDER is now DBT_ENGINE_AI_PROVIDER; update your environment.</p>
+  <p class="new">Configure BigQuery query reservations at the model and connection levels.</p>
   
 
   </li>
@@ -91,7 +91,7 @@
     </div>
     
   
-  <p class="new">Install the dbt and dbt-oss PyPI wheels on Python 3.10, since the minimum supported Python version was lowered to 3.10.</p>
+  <p class="new">Install the dbt and dbt-oss PyPI wheels on Python 3.10, since the minimum supported version was lowered.</p>
   
 
   </li>

@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Eager arithmetic mixing string and numeric values is now disallowed and raises an error; convert types explicitly. Python 3.10 support is also dropped, so use 3.11 or newer.</p>
-  <p class="new">Write encrypted Parquet files and read encrypted ones, and use recursive SQL CTEs, SQL ASOF joins and masked numpy array conversion.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, and eager arithmetic mixing strings and numbers now raises an error; upgrade Python and cast columns explicitly.</p>
+  <p class="new">Read and write encrypted Parquet files.</p>
   
 
   </li>
@@ -45,8 +45,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> SQL window functions over grouped rows and QUALIFY now behave differently, SQL numeric literals are Decimal, Parquet ENUM reads as String, and cut/qcut are deprecated; review these usages.</p>
-  <p class="new">Run SQL GROUPING SETS, ROLLUP and CUBE queries, use the new pipe_with_dtype expression, and scan Lance datasets with the unstable scan_lance.</p>
+  <p class="breaking"><strong>Breaking:</strong> SQL window/QUALIFY semantics, SQL numeric literals now Decimal, Parquet ENUM now reads as String, and cut/qcut deprecated; review affected queries.</p>
+  <p class="new">Run larger-than-memory queries out of core by default, with a new streaming sort and an 80% RAM threshold.</p>
   
 
   </li>
@@ -60,8 +60,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Parquet ENUM columns now read as pl.String, cut/qcut are deprecated, POLARS_STREAMING_CHUNK_SIZE is removed, and 0-width frame behavior changed; update code relying on these.</p>
-  <p class="new">Group SQL queries with GROUPING SETS, ROLLUP and CUBE, and use the new Map dtype and binning functions.</p>
+  <p class="breaking"><strong>Breaking:</strong> Parquet ENUM columns now read as String, cut/qcut are deprecated, and the POLARS_STREAMING_CHUNK_SIZE setting is removed; update affected code.</p>
+  <p class="new">Group SQL queries with GROUPING SETS, ROLLUP, CUBE and GROUPING() in the SQL frontend.</p>
   
 
   </li>
@@ -90,8 +90,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> SQL queries now run on the streaming engine by default, which may change behavior or results; check your SQL code and the 2.0 migration guide.</p>
-  <p class="new">Write partitioned Iceberg sinks and set Iceberg writer options, and use join reordering plus strip_prefix and strip_suffix on expression names.</p>
+  <p class="breaking"><strong>Breaking:</strong> SQL queries now run on the streaming engine by default; if results or behavior differ, explicitly choose the previous engine.</p>
+  <p class="new">Write partitioned Iceberg sinks directly from Polars with configurable writer options.</p>
   
 
   </li>
@@ -105,8 +105,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.8 is no longer supported, so upgrade to Python 3.9 or newer; struct ne_missing and eq_missing now return true/false values instead of null.</p>
-  <p class="new">Read parquet files with allow_missing_columns, a schema argument, and include_file_paths, and use bitwise operations and aggregations on columns.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.8 support is dropped, so upgrade to Python 3.9 or newer before installing this release.</p>
+  <p class="new">Add bitwise operations and aggregations on expressions and columns.</p>
   
 
   </li>
@@ -150,8 +150,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Comparing Series of unequal length now raises an error, and reading parquet files with extra columns raises unless you select columns; fix such code or add select.</p>
-  <p class="new">Do arithmetic between list-dtype Series, and run single inequality joins with join_where.</p>
+  <p class="breaking"><strong>Breaking:</strong> Comparing Series of unequal length and reading parquet files with extra columns without select() now raise errors; fix input lengths or add select().</p>
+  <p class="new">Join dataframes on a single inequality condition using join_where.</p>
   
 
   </li>

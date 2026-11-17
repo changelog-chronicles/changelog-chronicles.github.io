@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Integer division by zero now raises an error instead of returning NULL; the ICU extension was removed, DECIMAL now promotes past BIGINT, and the C++ API changed, so test queries and extensions.</p>
-  <p class="new">Query data with NEAREST BY joins, plus new variant functions, JSON set/insert/replace/remove, nested schemas, AFTER triggers, async Parquet and CSV I/O, and external resources.</p>
+  <p class="breaking"><strong>Breaking:</strong> Integer division by zero now raises an error instead of returning NULL; guard divisors or handle the error in queries that relied on NULL.</p>
+  <p class="new">Run SQL against nested schemas, including creating, dropping, inserting into and querying tables within them.</p>
   
 
   </li>
@@ -41,12 +41,12 @@
       <time datetime="2026-09-28T13:35:11+00:00">2026-09-28</time>
       
       <a class="version" href="../releases/2026-09-28/duckdb_13_35.html">v1.5.6</a>
-      <span class="kind kind-fix">fix</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  
-  <p class="new">Set the new enable_optimistic_write setting to control optimistic writes, backported from a later DuckDB version.</p>
+  <p class="breaking"><strong>Breaking:</strong> Identifiers in error messages are now always quoted, so code or scripts matching error message text may need updating.</p>
+  <p class="new">Add an enable_optimistic_write setting to control optimistic writes.</p>
   
 
   </li>
@@ -56,12 +56,12 @@
       <time datetime="2026-07-22T10:51:50+00:00">2026-07-22</time>
       
       <a class="version" href="../releases/2026-07-22/duckdb_10_51.html">v1.5.5</a>
-      <span class="kind kind-fix">fix</span>
+      <span class="kind kind-feature">feature</span>
       
     </div>
     
   
-  <p class="new">Use the duckdb:// URI scheme in the ADBC URI option, and query ADBC statistics through the new ADBC Statistics API support.</p>
+  <p class="new">Support the duckdb:// URI scheme in the ADBC driver&#39;s URI option.</p>
   
 
   </li>
@@ -71,12 +71,12 @@
       <time datetime="2026-06-17T10:45:53+00:00">2026-06-17</time>
       
       <a class="version" href="../releases/2026-06-17/duckdb_10_45.html">v1.5.4</a>
-      <span class="kind kind-fix">fix</span>
+      <span class="kind kind-feature">feature</span>
       
     </div>
     
   
-  <p class="new">Set the experimental vacuum_rebuild_indexes option when attaching a database, and use new CLI dark-mode and light-mode options to control terminal background handling.</p>
+  <p class="new">Use the new experimental vacuum_rebuild_indexes option when attaching a database.</p>
   
 
   </li>

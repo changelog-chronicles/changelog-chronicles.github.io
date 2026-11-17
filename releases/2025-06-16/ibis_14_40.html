@@ -14,7 +14,7 @@
     <main>
 <h1>
   <a href="../../projects/ibis.html">ibis</a>
-  10.6.0 <span class="kind kind-feature">feature</span>
+  10.6.0 <span class="kind kind-breaking">breaking</span>
 </h1>
 <p class="meta">
   <time datetime="2025-06-16T14:40:33+00:00">2025-06-16</time>
@@ -22,11 +22,11 @@
   · <a href="https://github.com/ibis-project/ibis/releases/tag/10.6.0">release notes</a>
 </p>
 
-  
-  <p class="new">Set a BigQuery job ID prefix and per-query job config options on queries, and create specific UUID values in expressions.</p>
+  <p class="breaking"><strong>Breaking:</strong> Polars sum now returns NULL where it previously did not, matching other backends; check code that relied on the old sum result.</p>
+  <p class="new">Create specific UUID values in expressions instead of only random ones.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

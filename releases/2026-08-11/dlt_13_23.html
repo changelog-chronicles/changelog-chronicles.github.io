@@ -22,11 +22,11 @@
   · <a href="https://github.com/dlt-hub/dlt/releases/tag/1.30.0">release notes</a>
 </p>
 
-  <p class="breaking"><strong>Breaking:</strong> Failed load packages no longer auto-abort and now retry, raising LoadClientJobTerminalRetry; filesystem layouts without ext now append extensions and table prefixes keep a trailing separator, changing file names.</p>
-  <p class="new">Join datasets that live on different destinations, such as DuckDB and S3 filesystem, in a single query through the dataset table join API.</p>
+  <p class="breaking"><strong>Breaking:</strong> Failed load packages no longer auto-abort and raise LoadClientJobTerminalRetry instead of LoadClientJobFailed; set auto_abort_on_terminal_error to True to restore old behavior.</p>
+  <p class="new">Join datasets that live on different destinations in a single query using the dataset table join method.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

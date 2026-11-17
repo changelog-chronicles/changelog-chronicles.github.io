@@ -8,9 +8,9 @@
       "date": "2026-04-12T08:27:58+00:00",
       "kind": "breaking",
       "new": "",
-      "breaking": "Python 3.8 is no longer supported, so projects still running on Python 3.8 must upgrade Python or stay on an earlier rich version.",
+      "breaking": "Python 3.8 is no longer supported, so upgrade to Python 3.9 or newer before installing this version.",
       "link": "https://github.com/Textualize/rich/releases/tag/v15.0.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "14.3.4",
@@ -20,7 +20,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/Textualize/rich/releases/tag/v14.3.4",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "14.3.3",
@@ -30,7 +30,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/Textualize/rich/releases/tag/v14.3.3",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "14.3.2",
@@ -40,7 +40,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/Textualize/rich/releases/tag/v14.3.2",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "14.3.1",
@@ -50,7 +50,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/Textualize/rich/releases/tag/v14.3.1",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

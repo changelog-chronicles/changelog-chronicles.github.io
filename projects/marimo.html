@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Plots no longer auto-switch to a dark theme in dark notebooks for matplotlib, Plotly, Bokeh, and HoloViews; set the dark theme explicitly in your notebook if you want it.</p>
-  <p class="new">Download geographic dataframes and tables (GeoPandas, Arrow, DuckDB geometry) as GeoJSON or GeoParquet, and run notebooks on Python 3.15.</p>
+  <p class="breaking"><strong>Breaking:</strong> Plots no longer auto-switch to a dark theme in dark notebooks; set the dark theme explicitly in matplotlib, Plotly, Bokeh, or HoloViews.</p>
+  <p class="new">Download geographic tables and dataframes as GeoJSON or GeoParquet, alongside the existing CSV, JSON, and Parquet options.</p>
   
 
   </li>
@@ -46,7 +46,7 @@
     </div>
     
   
-  <p class="new">Pass expand_outputs to ctx.edit_cell and ctx.create_cell, and use new marimo cache size and cache dir commands to inspect notebook caches.</p>
+  <p class="new">Pass expand_outputs to ctx.edit_cell and ctx.create_cell to control whether the created cell&#39;s outputs are expanded.</p>
   
 
   </li>
@@ -61,7 +61,7 @@
     </div>
     
   
-  <p class="new">Run notebook sandboxes with Pixi to use Conda packages and native libraries, and save expanded cell outputs in the notebook file.</p>
+  <p class="new">Run notebook sandboxes with Pixi to combine Conda and PyPI packages in a notebook&#39;s inline configuration.</p>
   
 
   </li>
@@ -76,7 +76,7 @@
     </div>
     
   
-  <p class="new">See storage metadata for files at all times, rather than only in some cases.</p>
+  <p class="new">See storage metadata for files every time, instead of only in some cases.</p>
   
 
   </li>
@@ -90,8 +90,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> GitHub Models was replaced by GitHub Copilot, and cache config moved from experimental.cache to cache.store; switch to Copilot and update your cache settings.</p>
-  <p class="new">Export slide-layout notebooks as reveal.js decks to static HTML or interactive WebAssembly, and browse local folders and GitHub repositories in the Files panel.</p>
+  <p class="breaking"><strong>Breaking:</strong> Cache configuration moved from experimental.cache to cache.store, so update your marimo config; GitHub Models is replaced by GitHub Copilot.</p>
+  <p class="new">Export slide-layout notebooks as reveal.js decks in static HTML or interactive WebAssembly form.</p>
   
 
   </li>

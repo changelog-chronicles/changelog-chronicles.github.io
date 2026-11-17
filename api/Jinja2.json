@@ -10,7 +10,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/pallets/jinja/releases/tag/3.1.6",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "3.1.5",
@@ -20,7 +20,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/pallets/jinja/releases/tag/3.1.5",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "3.1.4",
@@ -30,7 +30,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/pallets/jinja/releases/tag/3.1.4",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "3.1.3",
@@ -40,7 +40,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/pallets/jinja/releases/tag/3.1.3",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "3.1.2",
@@ -50,7 +50,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/pallets/jinja/releases/tag/3.1.2",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

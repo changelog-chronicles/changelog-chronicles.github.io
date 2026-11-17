@@ -26,12 +26,12 @@
       <time datetime="2026-11-05T19:54:01+00:00">2026-11-05</time>
       
       <a class="version" href="../releases/2026-11-05/streamlit_19_54.html">1.67.0</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Default theme colors, surfaces, borders and map markers changed, so apps relying on the default look may appear different; check custom styling after upgrading.</p>
-  <p class="new">Add st.grid for responsive grid layouts, plus a required parameter on date, time, datetime, text area and selectbox inputs.</p>
+  <p class="breaking"><strong>Breaking:</strong> Default theme colors, surfaces, borders and map markers changed, so apps relying on the old look may render differently; set theme values explicitly.</p>
+  <p class="new">Add st.grid for building responsive grid layouts in your app.</p>
   
 
   </li>
@@ -60,8 +60,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 support is dropped, so upgrade to Python 3.11 or newer. Apps now render in opaque sandboxed iframes, and httptools is now optional.</p>
-  <p class="new">Add on_change=&#34;ignore&#34; to many widgets such as color_picker, data_editor, pills and segmented_control, and test forms and more widgets with AppTest.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 support is dropped; upgrade to Python 3.11 or newer before installing this release.</p>
+  <p class="new">Skip reruns on widget changes by passing on_change=&#34;ignore&#34; to widgets such as st.color_picker, st.pills, and st.data_editor.</p>
   
 
   </li>
@@ -76,7 +76,7 @@
     </div>
     
   
-  <p class="new">Add alt text to many elements such as images, charts, tables and dataframes, and show st.dialog as a side drawer using the position parameter.</p>
+  <p class="new">Render st.dialog as a side drawer by choosing its position.</p>
   
 
   </li>
@@ -90,8 +90,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Inverted st.number_input min/max bounds are now rejected, unsupported on_change modes raise errors, and the mapbox.token config option is removed; fix bounds, modes and config.</p>
-  <p class="new">Add native Apache ECharts charts with st.echarts_chart, plus async-aware caching and an on_change ignore mode for number_input, selectbox and select_slider.</p>
+  <p class="breaking"><strong>Breaking:</strong> The mapbox.token config option was removed, so delete it from your config files; st.number_input now rejects inverted min/max bounds.</p>
+  <p class="new">Render native Apache ECharts charts in your app with the new st.echarts_chart element.</p>
   
 
   </li>
@@ -121,7 +121,7 @@
     </div>
     
   
-  <p class="new">Add icons to st.button, st.download_button, st.form_submit_button, st.link_button and st.popover, and let st.pydeck_chart support selection.</p>
+  <p class="new">Record voice input in your app with the new experimental audio input widget.</p>
   
 
   </li>
@@ -135,8 +135,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Experimental cached widget replay logic was removed, so code relying on replaying widgets inside cached functions will stop working; move widget calls outside cached functions.</p>
-  <p class="new">Pass many more data types, such as Polars, Dask, xarray, Ray, and Pydantic objects, directly to Streamlit&#39;s dataframe and data-handling functions.</p>
+  <p class="breaking"><strong>Breaking:</strong> Experimental cached widget replay was removed, so remove any use of it from cached functions and move widgets outside them.</p>
+  <p class="new">Pass Polars, Dask, Ray, xarray, Pydantic and other dataframe-like data directly to Streamlit&#39;s data display commands.</p>
   
 
   </li>
@@ -165,8 +165,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Several deprecated experimental features and old config options were removed, including the showPyplotGlobalUse option; replace removed experimental calls with stable versions and delete removed config settings.</p>
-  <p class="new">Add a feedback widget, stacking options for bar and area charts, and stable st.fragment and st.dialog without the experimental prefix.</p>
+  <p class="breaking"><strong>Breaking:</strong> Deprecated experimental features and old config options were removed, including deprecation.showPyplotGlobalUse; delete those config entries and switch to the stable APIs.</p>
+  <p class="new">Add a feedback widget to collect thumbs or star ratings from users in your app.</p>
   
 
   </li>
@@ -180,8 +180,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Legacy caching logic was removed and the experimental_allow_widgets caching parameter is deprecated; update any code that relied on the old caching behavior.</p>
-  <p class="new">Build multipage apps with the new navigation and page objects, which let you define pages and their navigation directly in code.</p>
+  <p class="breaking"><strong>Breaking:</strong> Legacy caching logic was removed and experimental_allow_widgets is deprecated; update cached functions that relied on the old behavior.</p>
+  <p class="new">Build multipage apps with the new st.navigation and st.Page, which let you define pages and navigation in code.</p>
   
 
   </li>

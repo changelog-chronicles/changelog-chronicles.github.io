@@ -6,51 +6,51 @@
       "version": "7.1.0",
       "tag": "v7.1.0",
       "date": "2026-09-15T19:15:12+00:00",
-      "kind": "feature",
-      "new": "Draw a marginal heatmap strip in density_heatmap by setting marginal_x or marginal_y to heatmap, sharing the main plot's color scale.",
-      "breaking": "hex_to_rgb now raises an error for hex codes of invalid length and warns on codes with alpha; map traces now need newer browsers (Safari 15, Chrome 56, Firefox 51).",
+      "kind": "breaking",
+      "new": "Draw a marginal heatmap strip in density_heatmap by setting marginal_x or marginal_y to heatmap.",
+      "breaking": "hex_to_rgb now raises an error for invalid-length hex codes, and map traces need newer browsers (Safari 15, Chrome 56, Firefox 51); fix inputs or upgrade.",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v7.1.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "7.0.0",
       "tag": "v7.0.0",
       "date": "2026-08-25T17:43:58+00:00",
       "kind": "breaking",
-      "new": "Add quiver traces to draw vector fields as arrows, and a Share Chart modebar button that creates a chart-sharing link through Plotly Cloud.",
-      "breaking": "Removed the deprecated figure factory create_ functions, Orca and Kaleido below 1.0, the engine argument, and the mapbox traces; switch to the map equivalents and update color strings.",
+      "new": "Draw vector fields as arrows using the new quiver trace type from the updated plotly.js 4.0.0.",
+      "breaking": "Removed deprecated figure factory create_* functions, Orca, old Kaleido, and mapbox traces; switch to px or graph_objects equivalents, map traces, and Kaleido 1.0 or later.",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v7.0.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "7.0.0rc0",
       "tag": "v7.0.0rc0",
       "date": "2026-07-29T16:47:39+00:00",
       "kind": "breaking",
-      "new": "Create quiver charts to visualize vector fields with arrows, and use a new Share Chart modebar button to generate a sharing link via Plotly Cloud.",
-      "breaking": "Removed deprecated Figure Factory create_* functions, old Kaleido and Orca image export, the engine argument, and all mapbox traces; switch to map traces, newer Kaleido, and check color formats.",
+      "new": "Add the quiver trace type to visualize vector fields using arrows.",
+      "breaking": "Removed Figure Factory create_* functions, the engine argument, Orca and old Kaleido, and mapbox traces; switch to Kaleido 1.0+ and map traces.",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v7.0.0rc0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "6.9.0",
       "tag": "v6.9.0",
       "date": "2026-07-09T14:53:20+00:00",
-      "kind": "fix",
+      "kind": "breaking",
       "new": "",
-      "breaking": "",
+      "breaking": "The modebar button sendDataToCloud was renamed to sendChartToCloud, so update any modebar configuration that references the old name.",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v6.9.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "6.8.0",
       "tag": "v6.8.0",
       "date": "2026-06-03T18:30:27+00:00",
       "kind": "feature",
-      "new": "Set a font directly when creating subplots with make_subplots, and sort unified hover label items by value using the new hoversort layout attribute.",
+      "new": "Set a font for the whole figure directly through a new optional font parameter in make_subplots.",
       "breaking": "",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v6.8.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "5.24.1",
@@ -60,47 +60,47 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v5.24.1",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "5.24.0",
       "tag": "v5.24.0",
       "date": "2024-08-29T17:58:45+00:00",
       "kind": "feature",
-      "new": "Draw maps with the new px functions scatter_map, line_map, choropleth_map and density_map, which render with maplibre instead of mapbox.",
+      "new": "Create maplibre-based maps with the new px functions scatter_map, line_map, choropleth_map, and density_map.",
       "breaking": "",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v5.24.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "5.23.0",
       "tag": "v5.23.0",
       "date": "2024-07-23T13:47:17+00:00",
       "kind": "feature",
-      "new": "Add subtitles to plot titles through the new subtitle attribute on layout title, along with new tick label positioning options and shape vertex shifts.",
+      "new": "Add subtitles to plots using the new subtitle attribute on the layout title.",
       "breaking": "",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v5.23.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "5.22.0",
       "tag": "v5.22.0",
       "date": "2024-05-01T14:04:11+00:00",
       "kind": "feature",
-      "new": "Set bold weight, italic style, and small-caps variant on fonts in figures, via the updated Plotly.js 2.32.0 bundled with this release.",
+      "new": "Use bold weight, italic style and small-caps variant options for fonts in figures.",
       "breaking": "",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v5.22.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "5.21.0",
       "tag": "v5.21.0",
       "date": "2024-04-17T15:27:19+00:00",
       "kind": "feature",
-      "new": "Control stacking order of cartesian traces with the new zorder attribute, and enable hover across multiple subplots sharing an axis, via the Plotly.js 2.31.1 update.",
+      "new": "Control the stacking order of SVG traces within a cartesian subplot using the new zorder attribute.",
       "breaking": "",
       "link": "https://github.com/plotly/plotly.py/releases/tag/v5.21.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

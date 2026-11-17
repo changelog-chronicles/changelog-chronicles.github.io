@@ -22,11 +22,11 @@
   · <a href="https://github.com/pola-rs/polars/releases/tag/py-2.0.0">release notes</a>
 </p>
 
-  <p class="breaking"><strong>Breaking:</strong> SQL window functions over grouped rows and QUALIFY now behave differently, SQL numeric literals are Decimal, Parquet ENUM reads as String, and cut/qcut are deprecated; review these usages.</p>
-  <p class="new">Run SQL GROUPING SETS, ROLLUP and CUBE queries, use the new pipe_with_dtype expression, and scan Lance datasets with the unstable scan_lance.</p>
+  <p class="breaking"><strong>Breaking:</strong> SQL window/QUALIFY semantics, SQL numeric literals now Decimal, Parquet ENUM now reads as String, and cut/qcut deprecated; review affected queries.</p>
+  <p class="new">Run larger-than-memory queries out of core by default, with a new streaming sort and an 80% RAM threshold.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> The row failure recovery APIs for functions were introduced as a breaking change; the notes give no details, so review function-related code before upgrading.</p>
-  <p class="new">Inspect Function worker stacks and use new row failure recovery APIs to handle rows that fail during function processing.</p>
+  <p class="breaking"><strong>Breaking:</strong> Row failure recovery APIs for functions were added as a breaking change; the notes give no details, so check your function code.</p>
+  <p class="new">Expose inspection of the Function worker stack so you can see what function workers are doing.</p>
   
 
   </li>
@@ -45,8 +45,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Two function-related changes are labeled breaking: the terminal result now exposes a descriptor refresh plan, and Python Function globals capture changed. The notes give no migration steps, so check your function code.</p>
-  <p class="new">Capture Arrow and structured Function globals in Python functions, and see the descriptor refresh plan in a function&#39;s terminal result.</p>
+  <p class="breaking"><strong>Breaking:</strong> Function terminal results now expose a descriptor refresh plan and Python Function globals are captured differently; check code relying on the old behavior.</p>
+  <p class="new">Capture Arrow and structured Function globals in Python functions so they can be used inside those functions.</p>
   
 
   </li>
@@ -91,7 +91,7 @@
     </div>
     
   
-  <p class="new">Filter server-side job listings, and use full-text search operators and match counts from the Python API.</p>
+  <p class="new">Filter server-side job listings using newly exposed filters.</p>
   
 
   </li>

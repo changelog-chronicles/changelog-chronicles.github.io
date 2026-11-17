@@ -14,7 +14,7 @@
     <main>
 <h1>
   <a href="../../projects/narwhals.html">narwhals</a>
-  v2.27.0 <span class="kind kind-feature">feature</span>
+  v2.27.0 <span class="kind kind-breaking">breaking</span>
 </h1>
 <p class="meta">
   <time datetime="2026-10-05T11:15:25+00:00">2026-10-05</time>
@@ -22,11 +22,11 @@
   · <a href="https://github.com/narwhals-dev/narwhals/releases/tag/v2.27.0">release notes</a>
 </p>
 
-  
-  <p class="new">Cast whole DataFrames and LazyFrames with the new cast method, and pass file-like objects to the read and scan functions.</p>
+  <p class="breaking"><strong>Breaking:</strong> Floor division by zero on pandas-like backends now returns null, and str.slice with negative length or str.zfill with negative width now raises; check code relying on old results.</p>
+  <p class="new">Cast whole DataFrames or LazyFrames to new dtypes using the new cast method.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

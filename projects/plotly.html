@@ -26,12 +26,12 @@
       <time datetime="2026-09-15T19:15:12+00:00">2026-09-15</time>
       
       <a class="version" href="../releases/2026-09-15/plotly_19_15.html">v7.1.0</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> hex_to_rgb now raises an error for hex codes of invalid length and warns on codes with alpha; map traces now need newer browsers (Safari 15, Chrome 56, Firefox 51).</p>
-  <p class="new">Draw a marginal heatmap strip in density_heatmap by setting marginal_x or marginal_y to heatmap, sharing the main plot&#39;s color scale.</p>
+  <p class="breaking"><strong>Breaking:</strong> hex_to_rgb now raises an error for invalid-length hex codes, and map traces need newer browsers (Safari 15, Chrome 56, Firefox 51); fix inputs or upgrade.</p>
+  <p class="new">Draw a marginal heatmap strip in density_heatmap by setting marginal_x or marginal_y to heatmap.</p>
   
 
   </li>
@@ -45,8 +45,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Removed the deprecated figure factory create_ functions, Orca and Kaleido below 1.0, the engine argument, and the mapbox traces; switch to the map equivalents and update color strings.</p>
-  <p class="new">Add quiver traces to draw vector fields as arrows, and a Share Chart modebar button that creates a chart-sharing link through Plotly Cloud.</p>
+  <p class="breaking"><strong>Breaking:</strong> Removed deprecated figure factory create_* functions, Orca, old Kaleido, and mapbox traces; switch to px or graph_objects equivalents, map traces, and Kaleido 1.0 or later.</p>
+  <p class="new">Draw vector fields as arrows using the new quiver trace type from the updated plotly.js 4.0.0.</p>
   
 
   </li>
@@ -60,8 +60,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Removed deprecated Figure Factory create_* functions, old Kaleido and Orca image export, the engine argument, and all mapbox traces; switch to map traces, newer Kaleido, and check color formats.</p>
-  <p class="new">Create quiver charts to visualize vector fields with arrows, and use a new Share Chart modebar button to generate a sharing link via Plotly Cloud.</p>
+  <p class="breaking"><strong>Breaking:</strong> Removed Figure Factory create_* functions, the engine argument, Orca and old Kaleido, and mapbox traces; switch to Kaleido 1.0+ and map traces.</p>
+  <p class="new">Add the quiver trace type to visualize vector fields using arrows.</p>
   
 
   </li>
@@ -71,13 +71,13 @@
       <time datetime="2026-07-09T14:53:20+00:00">2026-07-09</time>
       
       <a class="version" href="../releases/2026-07-09/plotly_14_53.html">v6.9.0</a>
-      <span class="kind kind-fix">fix</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
+  <p class="breaking"><strong>Breaking:</strong> The modebar button sendDataToCloud was renamed to sendChartToCloud, so update any modebar configuration that references the old name.</p>
   
   
-  <p class="quiet">Nothing new for users.</p>
 
   </li>
 
@@ -91,7 +91,7 @@
     </div>
     
   
-  <p class="new">Set a font directly when creating subplots with make_subplots, and sort unified hover label items by value using the new hoversort layout attribute.</p>
+  <p class="new">Set a font for the whole figure directly through a new optional font parameter in make_subplots.</p>
   
 
   </li>
@@ -121,7 +121,7 @@
     </div>
     
   
-  <p class="new">Draw maps with the new px functions scatter_map, line_map, choropleth_map and density_map, which render with maplibre instead of mapbox.</p>
+  <p class="new">Create maplibre-based maps with the new px functions scatter_map, line_map, choropleth_map, and density_map.</p>
   
 
   </li>
@@ -136,7 +136,7 @@
     </div>
     
   
-  <p class="new">Add subtitles to plot titles through the new subtitle attribute on layout title, along with new tick label positioning options and shape vertex shifts.</p>
+  <p class="new">Add subtitles to plots using the new subtitle attribute on the layout title.</p>
   
 
   </li>
@@ -151,7 +151,7 @@
     </div>
     
   
-  <p class="new">Set bold weight, italic style, and small-caps variant on fonts in figures, via the updated Plotly.js 2.32.0 bundled with this release.</p>
+  <p class="new">Use bold weight, italic style and small-caps variant options for fonts in figures.</p>
   
 
   </li>
@@ -166,7 +166,7 @@
     </div>
     
   
-  <p class="new">Control stacking order of cartesian traces with the new zorder attribute, and enable hover across multiple subplots sharing an axis, via the Plotly.js 2.31.1 update.</p>
+  <p class="new">Control the stacking order of SVG traces within a cartesian subplot using the new zorder attribute.</p>
   
 
   </li>

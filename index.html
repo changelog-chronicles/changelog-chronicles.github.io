@@ -43,8 +43,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> The row failure recovery APIs for functions were introduced as a breaking change; the notes give no details, so review function-related code before upgrading.</p>
-  <p class="new">Inspect Function worker stacks and use new row failure recovery APIs to handle rows that fail during function processing.</p>
+  <p class="breaking"><strong>Breaking:</strong> Row failure recovery APIs for functions were added as a breaking change; the notes give no details, so check your function code.</p>
+  <p class="new">Expose inspection of the Function worker stack so you can see what function workers are doing.</p>
   
 
   </li>
@@ -54,12 +54,12 @@
       <time datetime="2026-11-17T15:31:02+00:00">2026-11-17</time>
       <a class="project" href="projects/narwhals.html">narwhals</a>
       <a class="version" href="releases/2026-11-17/narwhals_15_31.html">v2.29.0</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       <a class="poem-link" href="releases/2026-11-17/narwhals_15_31.html#poems">poem</a>
     </div>
     
-  
-  <p class="new">Support the new Map datatype, including a get operation, and use explode options to treat empty lists as null or keep nulls.</p>
+  <p class="breaking"><strong>Breaking:</strong> Built-in Dask support moved to the narwhals-dask plugin and is deprecated; install the plugin to keep using Dask.</p>
+  <p class="new">Use the new Map datatype, which supports a get operation for looking up values by key.</p>
   
 
   </li>
@@ -74,7 +74,7 @@
     </div>
     
   
-  <p class="new">Use PEP 832 .venv redirect files for project environments, and opt into a preview feature that closes unresponsive HTTP/2 connections.</p>
+  <p class="new">Use PEP 832 .venv redirect files for project environments, available as a preview feature.</p>
   
 
   </li>
@@ -88,7 +88,7 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Some diagnostics moved to new separate rules, so existing ignore or severity settings for the old rules may no longer apply; update your rule configuration.</p>
+  <p class="breaking"><strong>Breaking:</strong> Some diagnostics moved to new rules, so update any ignore or severity settings for import-not-found, dataclass post-init, or TypeVar constraints.</p>
   <p class="new">Update imports automatically when renaming Python package folders in the language server.</p>
   
 
@@ -103,8 +103,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Two function-related changes are labeled breaking: the terminal result now exposes a descriptor refresh plan, and Python Function globals capture changed. The notes give no migration steps, so check your function code.</p>
-  <p class="new">Capture Arrow and structured Function globals in Python functions, and see the descriptor refresh plan in a function&#39;s terminal result.</p>
+  <p class="breaking"><strong>Breaking:</strong> Function terminal results now expose a descriptor refresh plan and Python Function globals are captured differently; check code relying on the old behavior.</p>
+  <p class="new">Capture Arrow and structured Function globals in Python functions so they can be used inside those functions.</p>
   
 
   </li>
@@ -149,7 +149,7 @@
     </div>
     
   
-  <p class="new">Filter server-side job listings, and use full-text search operators and match counts from the Python API.</p>
+  <p class="new">Filter server-side job listings using newly exposed filters.</p>
   
 
   </li>
@@ -179,7 +179,7 @@
     </div>
     
   
-  <p class="new">Limit how many requests run a dependency at the same time by passing a max concurrency option to Depends.</p>
+  <p class="new">Limit how many times a dependency runs concurrently by passing a max_concurrency option to Depends.</p>
   
 
   </li>
@@ -223,7 +223,7 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so projects running on it may fail to install or run; upgrade to a newer Python version first.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so upgrade your environment to a newer Python version before installing this release.</p>
   
   
 
@@ -239,7 +239,7 @@
     </div>
     
   
-  <p class="new">Resolve pytest fixtures registered through pytest_plugins in the language server, so editor features work for fixtures defined in plugins.</p>
+  <p class="new">Resolve pytest fixtures registered through pytest_plugins in the language server.</p>
   
 
   </li>
@@ -253,7 +253,7 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> The invalid-return-type rule is split into three narrower rules, and empty-body, unsound-return and several other rules are renamed; update any config or suppression comments using old names.</p>
+  <p class="breaking"><strong>Breaking:</strong> The invalid-return-type rule is split into three rules and several rules are renamed, so update any ty configuration or suppressions that name them.</p>
   
   
 
@@ -268,8 +268,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so Dagster now requires Python 3.11 or later; upgrade your Python version before upgrading Dagster.</p>
-  <p class="new">Copy the latest asset materializations from one deployment to another, keeping original timestamps, with the new dagster-cloud deployment copy-materializations command.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported; Dagster now requires Python 3.11 or later, so upgrade your Python environment first.</p>
+  <p class="new">Copy the latest asset materializations from one deployment to another while keeping their original timestamps.</p>
   
 
   </li>
@@ -284,7 +284,7 @@
     </div>
     
   
-  <p class="new">Try new preview rules such as pylint no-method-argument (PLE0211) and flake8-async pytest-raises-exception-group (ASYNC401), plus a renamed-rule check (RUF202).</p>
+  <p class="new">Enable preview rule ASYNC401 to flag pytest raises used with exception groups in async code.</p>
   
 
   </li>
@@ -299,7 +299,7 @@
     </div>
     
   
-  <p class="new">Install CPython 3.16.0a2 as a managed Python version, with updated pip, zlib and Expat bundled in the managed 3.11 through 3.15 builds.</p>
+  <p class="new">Install CPython 3.16.0a2 as a managed Python version.</p>
   
 
   </li>
@@ -314,7 +314,7 @@
     </div>
     
   
-  <p class="new">Read the new state_decision_id attribute on RunResult, and opt into preferring adapter macro overrides for builtin macros with the builtin_macros_prefer_overrides behavior flag.</p>
+  <p class="new">Add a builtin_macros_prefer_overrides behavior flag so adapter overrides are preferred over base implementations for builtin macros.</p>
   
 
   </li>
@@ -343,8 +343,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Existing local Unity attach options under config.lakecompute must move to config.duckdb; Lake Compute access is read-only, so Unity model writes are unsupported.</p>
-  <p class="new">Read AWS Databricks Unity Catalog tables from Lake Compute using Databricks profile PAT or OAuth M2M credentials, in read-only mode.</p>
+  <p class="breaking"><strong>Breaking:</strong> Local Unity attach options under config.lakecompute no longer work; move them to config.duckdb.</p>
+  <p class="new">Read AWS Databricks Unity Catalog tables from Lake Compute using Databricks profile PAT or OAuth M2M credentials.</p>
   
 
   </li>
@@ -354,7 +354,7 @@
       <time datetime="2026-11-11T09:18:21+00:00">2026-11-11</time>
       <a class="project" href="projects/typer.html">typer</a>
       <a class="version" href="releases/2026-11-11/typer_09_18.html">0.29.1</a>
-      <span class="kind kind-maintenance">maintenance</span>
+      <span class="kind kind-feature">feature</span>
       
     </div>
     
@@ -369,11 +369,13 @@
       <time datetime="2026-11-09T18:47:53+00:00">2026-11-09</time>
       <a class="project" href="projects/typer.html">typer</a>
       <a class="version" href="releases/2026-11-09/typer_18_47.html">0.29.0</a>
-      
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="quiet">No brief yet.</p>
+  <p class="breaking"><strong>Breaking:</strong> click_type was removed from Option and Argument, and tuple defaults like (None, None, None) now fail validation; use a None default instead.</p>
+  
+  
 
   </li>
 
@@ -412,12 +414,12 @@
       <time datetime="2026-11-05T19:54:01+00:00">2026-11-05</time>
       <a class="project" href="projects/streamlit.html">streamlit</a>
       <a class="version" href="releases/2026-11-05/streamlit_19_54.html">1.67.0</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Default theme colors, surfaces, borders and map markers changed, so apps relying on the default look may appear different; check custom styling after upgrading.</p>
-  <p class="new">Add st.grid for responsive grid layouts, plus a required parameter on date, time, datetime, text area and selectbox inputs.</p>
+  <p class="breaking"><strong>Breaking:</strong> Default theme colors, surfaces, borders and map markers changed, so apps relying on the old look may render differently; set theme values explicitly.</p>
+  <p class="new">Add st.grid for building responsive grid layouts in your app.</p>
   
 
   </li>
@@ -432,7 +434,7 @@
     </div>
     
   
-  <p class="new">Try a new preview security rule that flags tarfile extraction with the ignore-zeros option set to true, and respect CLICOLOR=0 in diagnostics.</p>
+  <p class="new">Detect unsafe tarfile extraction with ignore_zeros set to true, through a new preview security rule.</p>
   
 
   </li>
@@ -447,7 +449,7 @@
     </div>
     
   
-  <p class="new">View the code location overview, deployment code locations list, and sensor and schedule detail pages in new mobile layouts, with faster run log loading and search.</p>
+  <p class="new">Use mobile layouts on the code location overview, code locations list, and sensor and schedule detail pages.</p>
   
 
   </li>
@@ -476,8 +478,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Environment variables were renamed: DBT_AI_PROVIDER is now DBT_ENGINE_AI_PROVIDER, and the info-schema variables now use the DBT_ENGINE_ prefix; update any scripts or CI that set them.</p>
-  <p class="new">Configure BigQuery query reservations at the model and connection levels, and use the new state-mode flag in place of run-cache-mode.</p>
+  <p class="breaking"><strong>Breaking:</strong> Environment variables DBT_GENERATE_INFO_SCHEMA and DBT_INFO_SCHEMA_DIR are renamed with a DBT_ENGINE_ prefix, and DBT_AI_PROVIDER is now DBT_ENGINE_AI_PROVIDER; update your environment.</p>
+  <p class="new">Configure BigQuery query reservations at the model and connection levels.</p>
   
 
   </li>
@@ -507,7 +509,7 @@
     </div>
     
   
-  <p class="new">Request a specific schema version from the workspace metadata command in preview, and get aliased vulnerability records reported as one entry in audit output.</p>
+  <p class="new">Request a specific schema version from the workspace metadata command using the new output-version option (preview feature).</p>
   
 
   </li>
@@ -532,12 +534,12 @@
       <time datetime="2026-10-30T15:31:35+00:00">2026-10-30</time>
       <a class="project" href="projects/dagster.html">dagster</a>
       <a class="version" href="releases/2026-10-30/dagster_15_31.html">1.13.28</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> dagster-snowflake now requires snowflake-snowpark-python 1.37.0 or newer and snowflake-connector-python 3.14.0 or newer, so upgrade those packages if you pin older versions.</p>
-  <p class="new">Trigger an existing Databricks job by ID through Dagster Pipes using the new preview run_job() method on PipesDatabricksClient and PipesDatabricksServerlessClient.</p>
+  <p class="breaking"><strong>Breaking:</strong> dagster-snowflake now requires snowflake-snowpark-python 1.37.0 or newer and snowflake-connector-python 3.14.0 or newer; upgrade those packages.</p>
+  <p class="new">Run an existing Databricks job by ID through Dagster Pipes using the new preview run_job method on the Databricks clients.</p>
   
 
   </li>
@@ -551,8 +553,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Naive scd2 timestamps are no longer read as UTC, and drop_resources and pipeline.drop now drop all resource tables; check scd2 timestamps, and old jira and salesforce sources were rewritten.</p>
-  <p class="new">Use placeholders like load_id and boundary_timestamp in merge source_filter and destination_scope, so nested tables can prune destination partitions such as BigQuery ones when merging.</p>
+  <p class="breaking"><strong>Breaking:</strong> Naive scd2 timestamps are no longer treated as UTC, so a naive active_record_timestamp may stop matching active records; pass timezone-aware values.</p>
+  <p class="new">Load any Salesforce sObject, standard or custom, with the new salesforce_table source.</p>
   
 
   </li>
@@ -566,8 +568,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> parametrize&#39;s indirect, ids and scope must now be passed as keywords; plugin import failures now exit with codes 4 or 3 instead of raising; pluggy 1.6 or newer is required.</p>
-  <p class="new">Control how long string parameter values appear in auto-generated test IDs using the new parametrize_long_str_id_strategy option, with short, sha256, legacy and disallow strategies.</p>
+  <p class="breaking"><strong>Breaking:</strong> Positional indirect, ids or scope in parametrize now raises TypeError, and pluggy 1.6 or newer is now required; pass them as keywords.</p>
+  <p class="new">Set the parametrize_long_str_id_strategy option to control how long string parameter values appear in auto-generated test IDs.</p>
   
 
   </li>
@@ -577,12 +579,12 @@
       <time datetime="2026-10-27T12:20:08+00:00">2026-10-27</time>
       <a class="project" href="projects/narwhals.html">narwhals</a>
       <a class="version" href="releases/2026-10-27/narwhals_12_20.html">v2.28.0</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  
-  <p class="new">Use plugins for IO and from_* functions, and call list namespace methods such as len, get, min, max, mean, median, sum and sort on Dask.</p>
+  <p class="breaking"><strong>Breaking:</strong> Results changed: rename now consistently raises DuplicateError, and var/std, mode, arg_min and arg_max return different values in some cases; update any code catching old errors.</p>
+  <p class="new">Use plugins for more IO and from_* functions, so third-party backends can read and build data frames.</p>
   
 
   </li>
@@ -592,12 +594,12 @@
       <time datetime="2026-10-27T00:47:49+00:00">2026-10-27</time>
       <a class="project" href="projects/uv.html">uv</a>
       <a class="version" href="releases/2026-10-27/uv_00_47.html">0.13.6</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> The preview uv workspace metadata command now nests each module&#39;s owners inside an object, so scripts parsing its output need updating.</p>
-  <p class="new">Install newer CPython builds (3.11.18, 3.12.16, 3.13.18, 3.14.10, 3.15.2) and detect NVIDIA GPU capabilities when selecting wheel variants in preview.</p>
+  <p class="breaking"><strong>Breaking:</strong> In preview, uv workspace metadata output now nests each module&#39;s owners in an object; update scripts that parse that output.</p>
+  <p class="new">Reuse cached or active environments when running PEP 723 scripts that have no dependencies, making them start faster.</p>
   
 
   </li>
@@ -612,7 +614,7 @@
     </div>
     
   
-  <p class="new">Try the new preview rule shared-clock-mock in the suspicious category, and get faster formatting and lexing plus a fix for incorrect f-string conversions.</p>
+  <p class="new">Try the new preview rule shared-clock-mock in the suspicious category, available only with preview enabled.</p>
   
 
   </li>
@@ -622,12 +624,12 @@
       <time datetime="2026-10-26T15:36:41+00:00">2026-10-26</time>
       <a class="project" href="projects/dagster.html">dagster</a>
       <a class="version" href="releases/2026-10-26/dagster_15_36.html">1.13.27</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  
-  <p class="new">Use a mobile layout on the run details page that shows the run&#39;s tags, logs, and steps.</p>
+  <p class="breaking"><strong>Breaking:</strong> New Dagster+ organizations no longer get the Credit Limit Exceeded alert policy by default; create it manually if you rely on it.</p>
+  <p class="new">Use a mobile layout on the run details page showing the run&#39;s tags, logs, and steps.</p>
   
 
   </li>
@@ -641,8 +643,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Eager arithmetic mixing string and numeric values is now disallowed and raises an error; convert types explicitly. Python 3.10 support is also dropped, so use 3.11 or newer.</p>
-  <p class="new">Write encrypted Parquet files and read encrypted ones, and use recursive SQL CTEs, SQL ASOF joins and masked numpy array conversion.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, and eager arithmetic mixing strings and numbers now raises an error; upgrade Python and cast columns explicitly.</p>
+  <p class="new">Read and write encrypted Parquet files.</p>
   
 
   </li>
@@ -657,7 +659,7 @@
     </div>
     
   
-  <p class="new">Configure an allowlist of accepted values for the magic-value-comparison rule (PLR2004) in pylint settings, so those values are no longer flagged.</p>
+  <p class="new">Configure an allowlist of values that the magic-value-comparison rule (PLR2004) will not flag.</p>
   
 
   </li>
@@ -672,7 +674,7 @@
     </div>
     
   
-  <p class="new">Select columns with the new DataFrame.select() method, and read large CSV files faster with parallel reads in read_csv().</p>
+  <p class="new">Select columns with the new DataFrame select method, alongside an updated filter method.</p>
   
 
   </li>
@@ -686,8 +688,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Invalid custom build cache keys are now rejected instead of silently falling back to defaults, so fix any malformed cache key settings; uv no longer publishes Docker images for Python 3.9 and 3.10.</p>
-  <p class="new">Install the latest managed CPython 3.15.1, 3.14.9 and 3.13.17 security releases, which ship with pip 26.2.2 and an updated certificate bundle.</p>
+  <p class="breaking"><strong>Breaking:</strong> Docker images with uv are no longer published for Python 3.9 and 3.10; move to a newer Python version image.</p>
+  <p class="new">Install updated managed CPython 3.15.1, 3.14.9 and 3.13.17 builds with security patches and a pip that no longer trusts the affected root.</p>
   
 
   </li>
@@ -716,8 +718,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Integer division by zero now raises an error instead of returning NULL; the ICU extension was removed, DECIMAL now promotes past BIGINT, and the C++ API changed, so test queries and extensions.</p>
-  <p class="new">Query data with NEAREST BY joins, plus new variant functions, JSON set/insert/replace/remove, nested schemas, AFTER triggers, async Parquet and CSV I/O, and external resources.</p>
+  <p class="breaking"><strong>Breaking:</strong> Integer division by zero now raises an error instead of returning NULL; guard divisors or handle the error in queries that relied on NULL.</p>
+  <p class="new">Run SQL against nested schemas, including creating, dropping, inserting into and querying tables within them.</p>
   
 
   </li>
@@ -731,8 +733,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Plots no longer auto-switch to a dark theme in dark notebooks for matplotlib, Plotly, Bokeh, and HoloViews; set the dark theme explicitly in your notebook if you want it.</p>
-  <p class="new">Download geographic dataframes and tables (GeoPandas, Arrow, DuckDB geometry) as GeoJSON or GeoParquet, and run notebooks on Python 3.15.</p>
+  <p class="breaking"><strong>Breaking:</strong> Plots no longer auto-switch to a dark theme in dark notebooks; set the dark theme explicitly in matplotlib, Plotly, Bokeh, or HoloViews.</p>
+  <p class="new">Download geographic tables and dataframes as GeoJSON or GeoParquet, alongside the existing CSV, JSON, and Parquet options.</p>
   
 
   </li>
@@ -746,8 +748,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, ExifTags.IFD.Makernote and GifImagePlugin._save_netpbm are removed, and XMP info is no longer a tuple; upgrade Python and adjust code using these.</p>
-  <p class="new">Resize images with the new Magic Kernel Sharp resampling modes, and pass a strip_namespaces argument to getxmp() to control XMP namespace handling.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so upgrade to Python 3.11 or newer; code using removed ExifTags.IFD.Makernote or _save_netpbm will fail.</p>
+  <p class="new">Resize images with the new Magic Kernel Sharp resampling modes.</p>
   
 
   </li>
@@ -791,8 +793,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 support is dropped, so upgrade to Python 3.11 or newer. Apps now render in opaque sandboxed iframes, and httptools is now optional.</p>
-  <p class="new">Add on_change=&#34;ignore&#34; to many widgets such as color_picker, data_editor, pills and segmented_control, and test forms and more widgets with AppTest.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 support is dropped; upgrade to Python 3.11 or newer before installing this release.</p>
+  <p class="new">Skip reruns on widget changes by passing on_change=&#34;ignore&#34; to widgets such as st.color_picker, st.pills, and st.data_editor.</p>
   
 
   </li>
@@ -807,7 +809,7 @@
     </div>
     
   
-  <p class="new">Install the dbt and dbt-oss PyPI wheels on Python 3.10, since the minimum supported Python version was lowered to 3.10.</p>
+  <p class="new">Install the dbt and dbt-oss PyPI wheels on Python 3.10, since the minimum supported version was lowered.</p>
   
 
   </li>
@@ -836,8 +838,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> dagster-dbt no longer installs dbt-core automatically; install it with the dagster-dbt[dbt-core] extra, and never alongside dbt Fusion&#39;s dbt package.</p>
-  <p class="new">Target a specific deployment with the new deployment option on dg list envs, dg plus create env, and dg plus pull env commands.</p>
+  <p class="breaking"><strong>Breaking:</strong> dagster-dbt no longer installs dbt-core; install the dagster-dbt[dbt-core] extra instead, and never alongside dbt Fusion&#39;s dbt package.</p>
+  <p class="new">Target a different deployment with the new deployment option in dg list envs, dg plus create env, and dg plus pull env.</p>
   
 
   </li>
@@ -866,8 +868,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Pendulum 3 or newer is now required and unofficial pendulum helpers in dlt.common.time are removed; also changed: filesystem timestamps, cursor types, JSON datetimes, Snowflake timestamps. Update code.</p>
-  <p class="new">Load full snapshots with the new cdc merge strategy, which upserts rows and deletes destination rows missing from the snapshot, across many destinations.</p>
+  <p class="breaking"><strong>Breaking:</strong> Removed pendulum helpers like ensure_pendulum_datetime_utc from dlt.common.time and pendulum 3 is now required; switch to ensure_datetime_in_tz and upgrade pendulum.</p>
+  <p class="new">Load full snapshots with the new cdc merge strategy, which upserts rows and deletes destination rows missing from the snapshot.</p>
   
 
   </li>
@@ -896,8 +898,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> SQL window functions over grouped rows and QUALIFY now behave differently, SQL numeric literals are Decimal, Parquet ENUM reads as String, and cut/qcut are deprecated; review these usages.</p>
-  <p class="new">Run SQL GROUPING SETS, ROLLUP and CUBE queries, use the new pipe_with_dtype expression, and scan Lance datasets with the unstable scan_lance.</p>
+  <p class="breaking"><strong>Breaking:</strong> SQL window/QUALIFY semantics, SQL numeric literals now Decimal, Parquet ENUM now reads as String, and cut/qcut deprecated; review affected queries.</p>
+  <p class="new">Run larger-than-memory queries out of core by default, with a new streaming sort and an 80% RAM threshold.</p>
   
 
   </li>

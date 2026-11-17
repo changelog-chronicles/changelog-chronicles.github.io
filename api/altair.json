@@ -7,10 +7,10 @@
       "tag": "v6.3.0",
       "date": "2026-09-15T06:37:25+00:00",
       "kind": "breaking",
-      "new": "Pass signals or params directly into datum lookups, and use expression objects inside value(), instead of building expression strings by hand.",
-      "breaking": "Python 3.10 is no longer supported, so upgrade Python first. Invalid extra arguments to property setters now raise a TypeError instead of being silently ignored; remove them.",
+      "new": "Pass signals or params directly into alt.datum indexing instead of building the datum string by hand.",
+      "breaking": "Python 3.10 is no longer supported, so upgrade to Python 3.11 or newer; invalid property setter arguments now raise TypeError.",
       "link": "https://github.com/vega/altair/releases/tag/v6.3.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "6.2.2",
@@ -20,7 +20,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/vega/altair/releases/tag/v6.2.2",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "6.2.1",
@@ -30,27 +30,27 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/vega/altair/releases/tag/v6.2.1",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "6.2.0",
       "tag": "v6.2.0",
       "date": "2026-06-05T15:09:22+00:00",
       "kind": "feature",
-      "new": "Use the updated Olli v3 integration for accessible chart descriptions, and type-check Altair code with the ty checker.",
+      "new": "Use the updated olli v3 integration to generate accessible descriptions of your charts.",
       "breaking": "",
       "link": "https://github.com/vega/altair/releases/tag/v6.2.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "6.1.0",
       "tag": "v6.1.0",
       "date": "2026-04-21T14:51:23+00:00",
-      "kind": "feature",
-      "new": "Layer simple faceted charts that share the same facet variables, with facet encodings hoisted automatically, plus Vega-Lite 6.4.1 updates like newlines in tooltips.",
-      "breaking": "Python 3.9 support was dropped as part of the pandas 3 compatibility work, so upgrade to Python 3.10 or newer before installing.",
+      "kind": "breaking",
+      "new": "Layer simple faceted charts that share the same facet variables, instead of having to layer before faceting.",
+      "breaking": "Python 3.9 support was dropped and narwhals 2.4.0 or newer is required, so upgrade Python and dependencies first.",
       "link": "https://github.com/vega/altair/releases/tag/v6.1.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

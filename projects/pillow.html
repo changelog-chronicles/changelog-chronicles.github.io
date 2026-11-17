@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, ExifTags.IFD.Makernote and GifImagePlugin._save_netpbm are removed, and XMP info is no longer a tuple; upgrade Python and adjust code using these.</p>
-  <p class="new">Resize images with the new Magic Kernel Sharp resampling modes, and pass a strip_namespaces argument to getxmp() to control XMP namespace handling.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so upgrade to Python 3.11 or newer; code using removed ExifTags.IFD.Makernote or _save_netpbm will fail.</p>
+  <p class="new">Resize images with the new Magic Kernel Sharp resampling modes.</p>
   
 
   </li>
@@ -45,8 +45,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Non-image ImageCms modes were removed, ImageCms now errors on mode mismatches, and macOS retina screenshots are no longer resized by default; adjust code relying on these.</p>
-  <p class="new">Open and save L mode AVIF images with libavif 1.3.0 or newer, and use Pillow on Python 3.15 with new beta wheels.</p>
+  <p class="breaking"><strong>Breaking:</strong> Non-image ImageCms modes were removed, so stop using them; also macOS retina screenshots are no longer resized by default.</p>
+  <p class="new">Open and save L mode AVIF images when Pillow is built with libavif 1.3.0 or newer.</p>
   
 
   </li>
@@ -60,8 +60,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Encoding an empty image now raises ValueError instead of the previous error; update any code that catches the old exception type when saving empty images.</p>
-  <p class="new">Wrap text with the new ImageText.Text.wrap() method, and convert font files to usable fonts with FontFile.to_imagefont().</p>
+  <p class="breaking"><strong>Breaking:</strong> Encoding an empty image now raises ValueError instead of the previous error type, so update any code catching the old exception.</p>
+  <p class="new">Wrap text into lines that fit a given width using the new ImageText.Text.wrap() method.</p>
   
 
   </li>
@@ -91,7 +91,7 @@
     </div>
     
   
-  <p class="new">Use the new get_flattened_data() method in place of getdata(), save APNG animations with float durations, and pass a window ID to ImageGrab.grab() on macOS.</p>
+  <p class="new">Pass a window ID to ImageGrab.grab() on macOS to capture a specific window.</p>
   
 
   </li>

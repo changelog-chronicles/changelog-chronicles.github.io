@@ -22,11 +22,11 @@
   · <a href="https://github.com/dlt-hub/dlt/releases/tag/1.32.0">release notes</a>
 </p>
 
-  <p class="breaking"><strong>Breaking:</strong> Naive scd2 timestamps are no longer read as UTC, and drop_resources and pipeline.drop now drop all resource tables; check scd2 timestamps, and old jira and salesforce sources were rewritten.</p>
-  <p class="new">Use placeholders like load_id and boundary_timestamp in merge source_filter and destination_scope, so nested tables can prune destination partitions such as BigQuery ones when merging.</p>
+  <p class="breaking"><strong>Breaking:</strong> Naive scd2 timestamps are no longer treated as UTC, so a naive active_record_timestamp may stop matching active records; pass timezone-aware values.</p>
+  <p class="new">Load any Salesforce sObject, standard or custom, with the new salesforce_table source.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

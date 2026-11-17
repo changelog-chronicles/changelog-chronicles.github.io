@@ -7,40 +7,40 @@
       "tag": "v2.0.0",
       "date": "2026-10-21T12:49:12+00:00",
       "kind": "breaking",
-      "new": "Query data with NEAREST BY joins, plus new variant functions, JSON set/insert/replace/remove, nested schemas, AFTER triggers, async Parquet and CSV I/O, and external resources.",
-      "breaking": "Integer division by zero now raises an error instead of returning NULL; the ICU extension was removed, DECIMAL now promotes past BIGINT, and the C++ API changed, so test queries and extensions.",
+      "new": "Run SQL against nested schemas, including creating, dropping, inserting into and querying tables within them.",
+      "breaking": "Integer division by zero now raises an error instead of returning NULL; guard divisors or handle the error in queries that relied on NULL.",
       "link": "https://github.com/duckdb/duckdb/releases/tag/v2.0.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.5.6",
       "tag": "v1.5.6",
       "date": "2026-09-28T13:35:11+00:00",
-      "kind": "fix",
-      "new": "Set the new enable_optimistic_write setting to control optimistic writes, backported from a later DuckDB version.",
-      "breaking": "",
+      "kind": "breaking",
+      "new": "Add an enable_optimistic_write setting to control optimistic writes.",
+      "breaking": "Identifiers in error messages are now always quoted, so code or scripts matching error message text may need updating.",
       "link": "https://github.com/duckdb/duckdb/releases/tag/v1.5.6",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.5.5",
       "tag": "v1.5.5",
       "date": "2026-07-22T10:51:50+00:00",
-      "kind": "fix",
-      "new": "Use the duckdb:// URI scheme in the ADBC URI option, and query ADBC statistics through the new ADBC Statistics API support.",
+      "kind": "feature",
+      "new": "Support the duckdb:// URI scheme in the ADBC driver's URI option.",
       "breaking": "",
       "link": "https://github.com/duckdb/duckdb/releases/tag/v1.5.5",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.5.4",
       "tag": "v1.5.4",
       "date": "2026-06-17T10:45:53+00:00",
-      "kind": "fix",
-      "new": "Set the experimental vacuum_rebuild_indexes option when attaching a database, and use new CLI dark-mode and light-mode options to control terminal background handling.",
+      "kind": "feature",
+      "new": "Use the new experimental vacuum_rebuild_indexes option when attaching a database.",
       "breaking": "",
       "link": "https://github.com/duckdb/duckdb/releases/tag/v1.5.4",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "1.4.5",
@@ -50,7 +50,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/duckdb/duckdb/releases/tag/v1.4.5",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

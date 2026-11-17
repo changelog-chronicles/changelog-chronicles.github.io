@@ -46,7 +46,7 @@
     </div>
     
   
-  <p class="new">Load environment variables from another task&#39;s output, treated like an env file, by using the new uses_env task option.</p>
+  <p class="new">Load environment variables for a task from another task&#39;s output, treated like an env file, using the uses_env option.</p>
   
 
   </li>
@@ -75,8 +75,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Executor config now rejects unknown keys, so configs with typos or unsupported executor options will fail validation; remove or correct those keys.</p>
-  <p class="new">Buffer the output of parallel tasks with the new buffer output_mode, so each task&#39;s output appears together instead of interleaved.</p>
+  <p class="breaking"><strong>Breaking:</strong> Executor config now rejects unknown keys, so remove any unrecognized keys from executor settings in your pyproject.</p>
+  <p class="new">Buffer output from parallel tasks so each task&#39;s output appears together, using the new buffer output_mode.</p>
   
 
   </li>
@@ -91,7 +91,7 @@
     </div>
     
   
-  <p class="new">Install an experimental agent skill that teaches AI coding agents poe&#39;s task API, and use environment variable parameter expansion inside env files.</p>
+  <p class="new">Use :- and :+ parameter expansion operators everywhere in templating, including inside env files.</p>
   
 
   </li>

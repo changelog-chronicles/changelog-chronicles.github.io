@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so upgrade Python first. Invalid extra arguments to property setters now raise a TypeError instead of being silently ignored; remove them.</p>
-  <p class="new">Pass signals or params directly into datum lookups, and use expression objects inside value(), instead of building expression strings by hand.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so upgrade to Python 3.11 or newer; invalid property setter arguments now raise TypeError.</p>
+  <p class="new">Pass signals or params directly into alt.datum indexing instead of building the datum string by hand.</p>
   
 
   </li>
@@ -76,7 +76,7 @@
     </div>
     
   
-  <p class="new">Use the updated Olli v3 integration for accessible chart descriptions, and type-check Altair code with the ty checker.</p>
+  <p class="new">Use the updated olli v3 integration to generate accessible descriptions of your charts.</p>
   
 
   </li>
@@ -86,12 +86,12 @@
       <time datetime="2026-04-21T14:51:23+00:00">2026-04-21</time>
       
       <a class="version" href="../releases/2026-04-21/altair_14_51.html">v6.1.0</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.9 support was dropped as part of the pandas 3 compatibility work, so upgrade to Python 3.10 or newer before installing.</p>
-  <p class="new">Layer simple faceted charts that share the same facet variables, with facet encodings hoisted automatically, plus Vega-Lite 6.4.1 updates like newlines in tooltips.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.9 support was dropped and narwhals 2.4.0 or newer is required, so upgrade Python and dependencies first.</p>
+  <p class="new">Layer simple faceted charts that share the same facet variables, instead of having to layer before faceting.</p>
   
 
   </li>

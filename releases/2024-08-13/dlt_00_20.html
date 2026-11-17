@@ -14,7 +14,7 @@
     <main>
 <h1>
   <a href="../../projects/dlt.html">dlt</a>
-  0.5.3 <span class="kind kind-feature">feature</span>
+  0.5.3 <span class="kind kind-breaking">breaking</span>
 </h1>
 <p class="meta">
   <time datetime="2024-08-13T00:20:02+00:00">2024-08-13</time>
@@ -22,11 +22,11 @@
   · <a href="https://github.com/dlt-hub/dlt/releases/tag/0.5.3">release notes</a>
 </p>
 
-  
-  <p class="new">Load jobs now start continuously as loader slots free up, and a new get_delta_tables helper lets you optimize and vacuum Delta tables.</p>
+  <p class="breaking"><strong>Breaking:</strong> DuckDB and MotherDuck parquet loads now match columns by name, so files relying on column order may load differently.</p>
+  <p class="new">Start load jobs continuously as loader slots free up, speeding up loading of packages with many files.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

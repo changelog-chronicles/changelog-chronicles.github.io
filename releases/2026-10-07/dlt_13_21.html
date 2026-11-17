@@ -22,11 +22,11 @@
   · <a href="https://github.com/dlt-hub/dlt/releases/tag/1.31.0">release notes</a>
 </p>
 
-  <p class="breaking"><strong>Breaking:</strong> Pendulum 3 or newer is now required and unofficial pendulum helpers in dlt.common.time are removed; also changed: filesystem timestamps, cursor types, JSON datetimes, Snowflake timestamps. Update code.</p>
-  <p class="new">Load full snapshots with the new cdc merge strategy, which upserts rows and deletes destination rows missing from the snapshot, across many destinations.</p>
+  <p class="breaking"><strong>Breaking:</strong> Removed pendulum helpers like ensure_pendulum_datetime_utc from dlt.common.time and pendulum 3 is now required; switch to ensure_datetime_in_tz and upgrade pendulum.</p>
+  <p class="new">Load full snapshots with the new cdc merge strategy, which upserts rows and deletes destination rows missing from the snapshot.</p>
   
 
-<p class="by">Brief by brief-v1.sonnet-5-5.medium</p>
+<p class="by">Brief by brief-v2.sonnet-5-5.medium</p>
 
 
 </main>

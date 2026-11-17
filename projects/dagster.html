@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so Dagster now requires Python 3.11 or later; upgrade your Python version before upgrading Dagster.</p>
-  <p class="new">Copy the latest asset materializations from one deployment to another, keeping original timestamps, with the new dagster-cloud deployment copy-materializations command.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported; Dagster now requires Python 3.11 or later, so upgrade your Python environment first.</p>
+  <p class="new">Copy the latest asset materializations from one deployment to another while keeping their original timestamps.</p>
   
 
   </li>
@@ -46,7 +46,7 @@
     </div>
     
   
-  <p class="new">View the code location overview, deployment code locations list, and sensor and schedule detail pages in new mobile layouts, with faster run log loading and search.</p>
+  <p class="new">Use mobile layouts on the code location overview, code locations list, and sensor and schedule detail pages.</p>
   
 
   </li>
@@ -56,12 +56,12 @@
       <time datetime="2026-10-30T15:31:35+00:00">2026-10-30</time>
       
       <a class="version" href="../releases/2026-10-30/dagster_15_31.html">1.13.28</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> dagster-snowflake now requires snowflake-snowpark-python 1.37.0 or newer and snowflake-connector-python 3.14.0 or newer, so upgrade those packages if you pin older versions.</p>
-  <p class="new">Trigger an existing Databricks job by ID through Dagster Pipes using the new preview run_job() method on PipesDatabricksClient and PipesDatabricksServerlessClient.</p>
+  <p class="breaking"><strong>Breaking:</strong> dagster-snowflake now requires snowflake-snowpark-python 1.37.0 or newer and snowflake-connector-python 3.14.0 or newer; upgrade those packages.</p>
+  <p class="new">Run an existing Databricks job by ID through Dagster Pipes using the new preview run_job method on the Databricks clients.</p>
   
 
   </li>
@@ -71,12 +71,12 @@
       <time datetime="2026-10-26T15:36:41+00:00">2026-10-26</time>
       
       <a class="version" href="../releases/2026-10-26/dagster_15_36.html">1.13.27</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  
-  <p class="new">Use a mobile layout on the run details page that shows the run&#39;s tags, logs, and steps.</p>
+  <p class="breaking"><strong>Breaking:</strong> New Dagster+ organizations no longer get the Credit Limit Exceeded alert policy by default; create it manually if you rely on it.</p>
+  <p class="new">Use a mobile layout on the run details page showing the run&#39;s tags, logs, and steps.</p>
   
 
   </li>
@@ -90,8 +90,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> dagster-dbt no longer installs dbt-core automatically; install it with the dagster-dbt[dbt-core] extra, and never alongside dbt Fusion&#39;s dbt package.</p>
-  <p class="new">Target a specific deployment with the new deployment option on dg list envs, dg plus create env, and dg plus pull env commands.</p>
+  <p class="breaking"><strong>Breaking:</strong> dagster-dbt no longer installs dbt-core; install the dagster-dbt[dbt-core] extra instead, and never alongside dbt Fusion&#39;s dbt package.</p>
+  <p class="new">Target a different deployment with the new deployment option in dg list envs, dg plus create env, and dg plus pull env.</p>
   
 
   </li>
@@ -105,8 +105,8 @@
       <a class="poem-link" href="../releases/2024-10-10/dagster_19_04.html#poems">poem</a>
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Experimental AutomationCondition.eager() now only launches runs for partitions that become missing after the condition is added, so existing missing historical partitions are no longer backfilled automatically.</p>
-  <p class="new">Create GitHub pull requests and branches from GithubClient, and give an asset multiple kinds with the experimental kinds parameter.</p>
+  <p class="breaking"><strong>Breaking:</strong> AutomationCondition.eager() now only launches runs for partitions that become missing after the condition is added, so historical missing partitions are no longer backfilled automatically.</p>
+  <p class="new">Create GitHub pull requests and branches directly from the GithubClient with the new create_pull_request and create_ref methods.</p>
   
 
   </li>
@@ -116,12 +116,12 @@
       <time datetime="2024-10-03T21:21:52+00:00">2024-10-03</time>
       
       <a class="version" href="../releases/2024-10-03/dagster_21_21.html">1.8.10</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  
-  <p class="new">Set run_tags on jobs so they attach only to runs, separating run-level tags from definition-level tags on jobs.</p>
+  <p class="breaking"><strong>Breaking:</strong> The new navigation is now on for all users; if you rely on the legacy navigation, turn it back on via the feature flag.</p>
+  <p class="new">Attach run-level tags separately from job definition tags by passing the new run_tags parameter to jobs.</p>
   
 
   </li>
@@ -136,7 +136,7 @@
     </div>
     
   
-  <p class="new">Set a max_runtime_seconds option in run monitoring so any run exceeding that runtime is terminated, without tagging each job individually.</p>
+  <p class="new">Set a deployment-wide maximum runtime in run monitoring so any run exceeding max_runtime_seconds is terminated.</p>
   
 
   </li>
@@ -151,7 +151,7 @@
     </div>
     
   
-  <p class="new">Run dagster asset materialize with a partition range option for single-run backfill assets, and use the new on_missing automation condition to materialize partitions once all parents are filled.</p>
+  <p class="new">Materialize a range of partitions from the command line using the new partition-range option on the asset materialize command.</p>
   
 
   </li>
@@ -161,12 +161,12 @@
       <time datetime="2024-09-12T20:29:54+00:00">2024-09-12</time>
       
       <a class="version" href="../releases/2024-09-12/dagster_20_29.html">1.8.7</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> AssetSpec now raises an error at construction for invalid group names, and DbtCliResource project_dir now overrides DBT_PROJECT_DIR; fix group names and check your environment.</p>
-  <p class="new">Attach relation identifier metadata automatically to assets stored with a DbIOManager, and get rows_loaded metadata on dlt assets.</p>
+  <p class="breaking"><strong>Breaking:</strong> DbtCliResource&#39;s project_dir argument now overrides the DBT_PROJECT_DIR environment variable; remove or align the variable if you relied on it winning.</p>
+  <p class="new">Wipe specific asset partitions directly from the execution context in user code using DagsterInstance.wipe_asset_partitions.</p>
   
 
   </li>

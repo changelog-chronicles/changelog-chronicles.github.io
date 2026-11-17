@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Python 3.9 and PySpark versions below 3.5 are no longer supported, and decimal precision and scale are now inferred, so upgrade Python and PySpark and check decimal types.</p>
-  <p class="new">Use upsert() to merge rows into tables via MERGE INTO, plus new SingleStoreDB and Materialize backends, PySpark 4.0 support, and pandas 3.0 compatibility.</p>
+  <p class="breaking"><strong>Breaking:</strong> Python 3.9 and PySpark versions below 3.5 are no longer supported; upgrade them, and check decimal types, since precision and scale are now inferred.</p>
+  <p class="new">Upsert rows into a table using the new upsert() method, which is built on MERGE INTO.</p>
   
 
   </li>
@@ -41,11 +41,13 @@
       <time datetime="2025-10-15T13:11:55+00:00">2025-10-15</time>
       
       <a class="version" href="../releases/2025-10-15/ibis_13_11.html">11.0.0</a>
-      
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="quiet">No brief yet.</p>
+  <p class="breaking"><strong>Breaking:</strong> Removed deprecated APIs such as ibis.case, String.to_date and Struct.destructure; switch to ibis.cases, as_date and Table.unpack.</p>
+  <p class="new">Read Databricks streaming tables directly through the Databricks backend.</p>
+  
 
   </li>
 
@@ -69,12 +71,12 @@
       <time datetime="2025-07-27T11:46:25+00:00">2025-07-27</time>
       
       <a class="version" href="../releases/2025-07-27/ibis_11_46.html">10.7.0</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Unpacking structs with overlapping column names now always overwrites the existing field; check code that relied on the previous behavior.</p>
-  <p class="new">Call to_sql directly on an expression to get its SQL, and compute kurtosis across supported backends.</p>
+  <p class="breaking"><strong>Breaking:</strong> Unpacking with overlapping column names now always overwrites existing fields; check code relying on the old behavior.</p>
+  <p class="new">Call to_sql() directly on any expression to get the SQL it compiles to.</p>
   
 
   </li>
@@ -84,12 +86,12 @@
       <time datetime="2025-06-16T14:40:33+00:00">2025-06-16</time>
       
       <a class="version" href="../releases/2025-06-16/ibis_14_40.html">10.6.0</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  
-  <p class="new">Set a BigQuery job ID prefix and per-query job config options on queries, and create specific UUID values in expressions.</p>
+  <p class="breaking"><strong>Breaking:</strong> Polars sum now returns NULL where it previously did not, matching other backends; check code that relied on the old sum result.</p>
+  <p class="new">Create specific UUID values in expressions instead of only random ones.</p>
   
 
   </li>

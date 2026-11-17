@@ -7,20 +7,20 @@
       "tag": "12.0.0",
       "date": "2026-02-07T14:30:59+00:00",
       "kind": "breaking",
-      "new": "Use upsert() to merge rows into tables via MERGE INTO, plus new SingleStoreDB and Materialize backends, PySpark 4.0 support, and pandas 3.0 compatibility.",
-      "breaking": "Python 3.9 and PySpark versions below 3.5 are no longer supported, and decimal precision and scale are now inferred, so upgrade Python and PySpark and check decimal types.",
+      "new": "Upsert rows into a table using the new upsert() method, which is built on MERGE INTO.",
+      "breaking": "Python 3.9 and PySpark versions below 3.5 are no longer supported; upgrade them, and check decimal types, since precision and scale are now inferred.",
       "link": "https://github.com/ibis-project/ibis/releases/tag/12.0.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "11.0.0",
       "tag": "11.0.0",
       "date": "2025-10-15T13:11:55+00:00",
-      "kind": null,
-      "new": null,
-      "breaking": null,
+      "kind": "breaking",
+      "new": "Read Databricks streaming tables directly through the Databricks backend.",
+      "breaking": "Removed deprecated APIs such as ibis.case, String.to_date and Struct.destructure; switch to ibis.cases, as_date and Table.unpack.",
       "link": "https://github.com/ibis-project/ibis/releases/tag/11.0.0",
-      "brief_by": null
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "10.8.0",
@@ -30,27 +30,27 @@
       "new": "Build an Ibis schema directly from a SQLGlot definition using the new Schema.from_sqlglot method.",
       "breaking": "",
       "link": "https://github.com/ibis-project/ibis/releases/tag/10.8.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "10.7.0",
       "tag": "10.7.0",
       "date": "2025-07-27T11:46:25+00:00",
-      "kind": "feature",
-      "new": "Call to_sql directly on an expression to get its SQL, and compute kurtosis across supported backends.",
-      "breaking": "Unpacking structs with overlapping column names now always overwrites the existing field; check code that relied on the previous behavior.",
+      "kind": "breaking",
+      "new": "Call to_sql() directly on any expression to get the SQL it compiles to.",
+      "breaking": "Unpacking with overlapping column names now always overwrites existing fields; check code relying on the old behavior.",
       "link": "https://github.com/ibis-project/ibis/releases/tag/10.7.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "10.6.0",
       "tag": "10.6.0",
       "date": "2025-06-16T14:40:33+00:00",
-      "kind": "feature",
-      "new": "Set a BigQuery job ID prefix and per-query job config options on queries, and create specific UUID values in expressions.",
-      "breaking": "",
+      "kind": "breaking",
+      "new": "Create specific UUID values in expressions instead of only random ones.",
+      "breaking": "Polars sum now returns NULL where it previously did not, matching other backends; check code that relied on the old sum result.",
       "link": "https://github.com/ibis-project/ibis/releases/tag/10.6.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

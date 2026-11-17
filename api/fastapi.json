@@ -10,7 +10,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/fastapi/fastapi/releases/tag/0.163.2",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "0.163.1",
@@ -20,17 +20,17 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/fastapi/fastapi/releases/tag/0.163.1",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "0.163.0",
       "tag": "0.163.0",
       "date": "2026-11-14T16:53:02+00:00",
       "kind": "feature",
-      "new": "Limit how many requests run a dependency at the same time by passing a max concurrency option to Depends.",
+      "new": "Limit how many times a dependency runs concurrently by passing a max_concurrency option to Depends.",
       "breaking": "",
       "link": "https://github.com/fastapi/fastapi/releases/tag/0.163.0",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "0.162.7",
@@ -40,7 +40,7 @@
       "new": "",
       "breaking": "",
       "link": "https://github.com/fastapi/fastapi/releases/tag/0.162.7",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     },
     {
       "version": "0.162.6",
@@ -48,9 +48,9 @@
       "date": "2026-11-13T13:34:50+00:00",
       "kind": "breaking",
       "new": "",
-      "breaking": "Python 3.10 is no longer supported, so projects running on it may fail to install or run; upgrade to a newer Python version first.",
+      "breaking": "Python 3.10 is no longer supported, so upgrade your environment to a newer Python version before installing this release.",
       "link": "https://github.com/fastapi/fastapi/releases/tag/0.162.6",
-      "brief_by": "brief-v1.sonnet-5-5.medium"
+      "brief_by": "brief-v2.sonnet-5-5.medium"
     }
   ]
 }

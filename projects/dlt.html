@@ -30,8 +30,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Naive scd2 timestamps are no longer read as UTC, and drop_resources and pipeline.drop now drop all resource tables; check scd2 timestamps, and old jira and salesforce sources were rewritten.</p>
-  <p class="new">Use placeholders like load_id and boundary_timestamp in merge source_filter and destination_scope, so nested tables can prune destination partitions such as BigQuery ones when merging.</p>
+  <p class="breaking"><strong>Breaking:</strong> Naive scd2 timestamps are no longer treated as UTC, so a naive active_record_timestamp may stop matching active records; pass timezone-aware values.</p>
+  <p class="new">Load any Salesforce sObject, standard or custom, with the new salesforce_table source.</p>
   
 
   </li>
@@ -45,8 +45,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Pendulum 3 or newer is now required and unofficial pendulum helpers in dlt.common.time are removed; also changed: filesystem timestamps, cursor types, JSON datetimes, Snowflake timestamps. Update code.</p>
-  <p class="new">Load full snapshots with the new cdc merge strategy, which upserts rows and deletes destination rows missing from the snapshot, across many destinations.</p>
+  <p class="breaking"><strong>Breaking:</strong> Removed pendulum helpers like ensure_pendulum_datetime_utc from dlt.common.time and pendulum 3 is now required; switch to ensure_datetime_in_tz and upgrade pendulum.</p>
+  <p class="new">Load full snapshots with the new cdc merge strategy, which upserts rows and deletes destination rows missing from the snapshot.</p>
   
 
   </li>
@@ -60,8 +60,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Failed load packages no longer auto-abort and now retry, raising LoadClientJobTerminalRetry; filesystem layouts without ext now append extensions and table prefixes keep a trailing separator, changing file names.</p>
-  <p class="new">Join datasets that live on different destinations, such as DuckDB and S3 filesystem, in a single query through the dataset table join API.</p>
+  <p class="breaking"><strong>Breaking:</strong> Failed load packages no longer auto-abort and raise LoadClientJobTerminalRetry instead of LoadClientJobFailed; set auto_abort_on_terminal_error to True to restore old behavior.</p>
+  <p class="new">Join datasets that live on different destinations in a single query using the dataset table join method.</p>
   
 
   </li>
@@ -76,7 +76,7 @@
     </div>
     
   
-  <p class="new">Declare runner instance requirements for jobs via require.instance, an open dictionary such as size medium, replacing the now-deprecated machine key.</p>
+  <p class="new">Declare runner instance requirements for jobs through require.instance, such as a size of medium.</p>
   
 
   </li>
@@ -91,7 +91,7 @@
     </div>
     
   
-  <p class="new">Use the staging-optimized replace strategy on ClickHouse for atomic table swaps, so a full replace never leaves the destination half-loaded.</p>
+  <p class="new">Replace ClickHouse tables atomically with the staging-optimized strategy, so a full replace never leaves the destination half-loaded.</p>
   
 
   </li>
@@ -106,7 +106,7 @@
     </div>
     
   
-  <p class="new">Use merge write disposition with the SQLAlchemy destination, and use incremental scd2 with a merge key.</p>
+  <p class="new">Merge data into SQLAlchemy destinations using the new merge write disposition support.</p>
   
 
   </li>
@@ -121,7 +121,7 @@
     </div>
     
   
-  <p class="new">Use SQLAlchemy destinations with staging datasets, pass a custom session to the REST API source, and add DltResource objects to the REST API config.</p>
+  <p class="new">Use a custom requests session with the REST API source to control how HTTP calls are made.</p>
   
 
   </li>
@@ -135,8 +135,8 @@
       
     </div>
     
-  <p class="breaking"><strong>Breaking:</strong> Major release: foreign_key hint is dropped in favor of nested references, the complex data type is deprecated for json, and terminal job errors now abort the load package; review the linked breaking changes list.</p>
-  <p class="new">Use the rest_api, sql_database and filesystem sources directly from dlt core, plus a new SQLAlchemy destination and SFTP support for the filesystem source.</p>
+  <p class="breaking"><strong>Breaking:</strong> The complex data type is deprecated and renamed to json, and foreign_key is dropped; update schemas and hints accordingly.</p>
+  <p class="new">Load data into any SQL database supported by SQLAlchemy using the new SQLAlchemy destination.</p>
   
 
   </li>
@@ -151,7 +151,7 @@
     </div>
     
   
-  <p class="new">Use partitioning and schema evolution with merge on delta tables, and set custom valid-from and valid-to values for scd2 records.</p>
+  <p class="new">Partition delta tables when loading data, using the newly added delta table partitioning support.</p>
   
 
   </li>
@@ -161,12 +161,12 @@
       <time datetime="2024-08-13T00:20:02+00:00">2024-08-13</time>
       
       <a class="version" href="../releases/2024-08-13/dlt_00_20.html">0.5.3</a>
-      <span class="kind kind-feature">feature</span>
+      <span class="kind kind-breaking">breaking</span>
       
     </div>
     
-  
-  <p class="new">Load jobs now start continuously as loader slots free up, and a new get_delta_tables helper lets you optimize and vacuum Delta tables.</p>
+  <p class="breaking"><strong>Breaking:</strong> DuckDB and MotherDuck parquet loads now match columns by name, so files relying on column order may load differently.</p>
+  <p class="new">Start load jobs continuously as loader slots free up, speeding up loading of packages with many files.</p>
   
 
   </li>
