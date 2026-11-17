@@ -45,3 +45,18 @@ ol.releases p { margin: .25rem 0 0; }
 .weekly h2 { margin-top: 0; }
 .weekly pre { font: inherit; font-family: Georgia, serif; white-space: pre-wrap; margin: 0; }
 .weeks li { margin-bottom: .4rem; }
+.plate { margin: 1rem 0 1.5rem; max-width: 24rem; }
+.plate img, img.plate { display: block; width: 100%; height: auto; border-radius: 4px; }
+.plate figcaption { color: var(--muted); font-style: italic; font-size: .9rem; margin-top: .4rem; }
+.weekly img.plate { float: right; width: 13rem; margin: 0 0 1rem 1rem; }
+.weekly::after { content: ""; display: block; clear: both; }
+@media (max-width: 36rem) { .weekly img.plate { float: none; width: 100%; margin: 0 0 1rem; } }
+.weeks { list-style: none; padding: 0; }
+.weeks li { display: flex; align-items: center; gap: .3rem .8rem; flex-wrap: wrap; }
+.weeks img.thumb { border-radius: 3px; }
+.week-body.with-plate { display: grid; grid-template-columns: 1fr 18rem; gap: 1.5rem; align-items: start; }
+.week-body .plate { margin: 0; position: sticky; top: 1rem; }
+@media (max-width: 44rem) {
+  .week-body.with-plate { grid-template-columns: 1fr; }
+  .week-body .plate { order: -1; position: static; }
+}
