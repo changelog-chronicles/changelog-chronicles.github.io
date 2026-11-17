@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Renamed Rules and Retired Pythons · Changelog Chronicles</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a class="site" href="../index.html">Changelog Chronicles</a>
+        <span class="tagline">what's new in Python packages, one sentence per release</span>
+    </header>
+    <main>
+<h1>Renamed Rules and Retired Pythons</h1>
+<p class="meta">Weekly poem of 2026-11-17 · <a href="../weekly/index.html">all weeks</a></p>
+<div class="poems">
+
+  <figure class="poem">
+    
+    <pre>This week in the repo, a few things will bite,
+so read before upgrading tonight.
+
+dbt two-dot-oh dev forty-four
+reads Unity tables, and then some more.
+Lake Compute takes a PAT or M2M key,
+but read-only, friend, so no writes, you&#39;ll see.
+Breaking: your local Unity attach
+under lakecompute needs a new patch.
+Move it to config.duckdb, then run.
+Core one-twelve-seven has a flag, just one:
+builtin macros prefer overrides now,
+off by default, so no vow to avow.
+
+ty marched from one-oh-one to one-oh-four,
+fixed panics, then fixed a few more.
+The pytest plugins&#39; fixtures now resolve
+in the server, a puzzle it solved.
+Breaking at one-oh-two, so look twice:
+invalid-return-type split in three slices.
+Not-callable and others got a new name,
+so check your suppressions, or they won&#39;t tame.
+
+FastAPI dropped Python three-ten,
+so bump your env before you install again.
+Then Depends takes max_concurrency, neat,
+to cap how many run at once. Sweet.
+Cancel cleanup got fixed, and so did
+nested computed fields that OpenAPI hid.</pre>
+    <figcaption>weekly-v1.sonnet-5-5.medium</figcaption>
+  </figure>
+
+</div>
+<h2>The releases</h2>
+
+<ol class="releases">
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-15T09:50:02+00:00">2026-11-15</time>
+      <a class="project" href="../projects/fastapi.html">fastapi</a>
+      <a class="version" href="../releases/2026-11-15/fastapi_09_50.html">0.163.1</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-14T16:53:02+00:00">2026-11-14</time>
+      <a class="project" href="../projects/fastapi.html">fastapi</a>
+      <a class="version" href="../releases/2026-11-14/fastapi_16_53.html">0.163.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Limit how many times a dependency runs concurrently by passing a max_concurrency option to Depends.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-13T20:53:59+00:00">2026-11-13</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-13/ty_20_53.html">0.0.104</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-13T17:46:19+00:00">2026-11-13</time>
+      <a class="project" href="../projects/fastapi.html">fastapi</a>
+      <a class="version" href="../releases/2026-11-13/fastapi_17_46.html">0.162.7</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-13T13:34:50+00:00">2026-11-13</time>
+      <a class="project" href="../projects/fastapi.html">fastapi</a>
+      <a class="version" href="../releases/2026-11-13/fastapi_13_34.html">0.162.6</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so upgrade your environment to a newer Python version before installing this release.</p>
+  
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-13T12:11:21+00:00">2026-11-13</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-13/ty_12_11.html">0.0.103</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Resolve pytest fixtures registered through pytest_plugins in the language server.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-12T22:10:19+00:00">2026-11-12</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-12/ty_22_10.html">0.0.102</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The invalid-return-type rule is split into three rules and several rules are renamed, so update any ty configuration or suppressions that name them.</p>
+  
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-12T09:53:01+00:00">2026-11-12</time>
+      <a class="project" href="../projects/dbt.html">dbt</a>
+      <a class="version" href="../releases/2026-11-12/dbt_09_53.html">v1.12.7</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Add a builtin_macros_prefer_overrides behavior flag so adapter overrides are preferred over base implementations for builtin macros.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-11T13:54:34+00:00">2026-11-11</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-11/ty_13_54.html">0.0.101</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-11T11:30:32+00:00">2026-11-11</time>
+      <a class="project" href="../projects/dbt.html">dbt</a>
+      <a class="version" href="../releases/2026-11-11/dbt_11_30.html">v2.0.0-dev.44-test-pypi</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Local Unity attach options under config.lakecompute no longer work; move them to config.duckdb.</p>
+  <p class="new">Read AWS Databricks Unity Catalog tables from Lake Compute using Databricks profile PAT or OAuth M2M credentials.</p>
+  
+
+  </li>
+
+</ol>
+
+</main>
+    <footer>
+        Briefs and poems are written by Claude from the release notes; the release
+        notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
+        Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
+    </footer>
+</body>
+</html>
