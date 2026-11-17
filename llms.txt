@@ -10,6 +10,15 @@ notes at `link` are the source of truth.
 
 ## JSON
 
+`api/index.json` lists every package:
+
+- `updated`: when any package file last changed (ISO 8601, UTC)
+- `packages`, by name, each with:
+  - `package`: the name on PyPI
+  - `url`: its package file, relative to the site root
+  - `latest_version`, `latest_date`: its newest release on PyPI
+  - `updated`: when its package file last changed (a new release or brief)
+
 `api/<package>.json`, where `<package>` is the name on PyPI:
 
 - `package`, `github`
