@@ -3,6 +3,26 @@
   "github": "https://github.com/fastapi/fastapi",
   "releases": [
     {
+      "version": "0.165.0",
+      "tag": "0.165.0",
+      "date": "2026-11-18T19:14:20+00:00",
+      "kind": "feature",
+      "new": "Configure limits on form parsing, so you can control how much form data your FastAPI app will accept.",
+      "breaking": "",
+      "link": "https://github.com/fastapi/fastapi/releases/tag/0.165.0",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.164.0",
+      "tag": "0.164.0",
+      "date": "2026-11-18T13:08:49+00:00",
+      "kind": "feature",
+      "new": "Set configurable limits on request body size to control how large incoming requests can be.",
+      "breaking": "",
+      "link": "https://github.com/fastapi/fastapi/releases/tag/0.164.0",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "0.163.2",
       "tag": "0.163.2",
       "date": "2026-11-17T18:28:44+00:00",

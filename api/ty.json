@@ -3,6 +3,26 @@
   "github": "https://github.com/astral-sh/ty",
   "releases": [
     {
+      "version": "0.0.107",
+      "tag": "0.0.107",
+      "date": "2026-11-18T21:09:02+00:00",
+      "kind": "feature",
+      "new": "Show progress and handle Ctrl-C during the initial file indexing in the language server preview.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ty/releases/tag/0.0.107",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.0.106",
+      "tag": "0.0.106",
+      "date": "2026-11-18T12:30:14+00:00",
+      "kind": "breaking",
+      "new": "Add a project-manager script setting that can be set to uv for script environments.",
+      "breaking": "Incompatible TypeIs narrowings now report under two new rules, so update any ignore comments or rule configuration for the old rule.",
+      "link": "https://github.com/astral-sh/ty/releases/tag/0.0.106",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "0.0.105",
       "tag": "0.0.105",
       "date": "2026-11-17T09:46:22+00:00",

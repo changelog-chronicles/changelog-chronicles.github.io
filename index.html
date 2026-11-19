@@ -59,6 +59,96 @@ nested computed fields that OpenAPI hid.</pre>
 
   <li>
     <div class="head">
+      <time datetime="2026-11-18T21:09:02+00:00">2026-11-18</time>
+      <a class="project" href="projects/ty.html">ty</a>
+      <a class="version" href="releases/2026-11-18/ty_21_09.html">0.0.107</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Show progress and handle Ctrl-C during the initial file indexing in the language server preview.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-18T19:14:20+00:00">2026-11-18</time>
+      <a class="project" href="projects/fastapi.html">fastapi</a>
+      <a class="version" href="releases/2026-11-18/fastapi_19_14.html">0.165.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Configure limits on form parsing, so you can control how much form data your FastAPI app will accept.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-18T13:08:49+00:00">2026-11-18</time>
+      <a class="project" href="projects/fastapi.html">fastapi</a>
+      <a class="version" href="releases/2026-11-18/fastapi_13_08.html">0.164.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Set configurable limits on request body size to control how large incoming requests can be.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-18T12:30:14+00:00">2026-11-18</time>
+      <a class="project" href="projects/ty.html">ty</a>
+      <a class="version" href="releases/2026-11-18/ty_12_30.html">0.0.106</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Incompatible TypeIs narrowings now report under two new rules, so update any ignore comments or rule configuration for the old rule.</p>
+  <p class="new">Add a project-manager script setting that can be set to uv for script environments.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-18T11:09:31+00:00">2026-11-18</time>
+      <a class="project" href="projects/typer.html">typer</a>
+      <a class="version" href="releases/2026-11-18/typer_11_09.html">0.29.2</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so projects on that version must move to a newer Python before upgrading Typer.</p>
+  
+  
+
+  </li>
+
+  <li>
+    <div class="head">
+      <time datetime="2026-11-18T09:21:09+00:00">2026-11-18</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-18/lancedb_09_21.html">v0.42.0-beta.20</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The SDK now returns typed job handles for SQL compaction and data prewarm, so code using the old return values must be updated.</p>
+  <p class="new">Run compaction and data prewarm through SQL with typed job handles that you can track.</p>
+  
+
+  </li>
+
+  <li>
+    <div class="head">
       <time datetime="2026-11-17T18:28:44+00:00">2026-11-17</time>
       <a class="project" href="projects/fastapi.html">fastapi</a>
       <a class="version" href="releases/2026-11-17/fastapi_18_28.html">0.163.2</a>
@@ -858,96 +948,6 @@ nested computed fields that OpenAPI hid.</pre>
       <a class="project" href="projects/narwhals.html">narwhals</a>
       <a class="version" href="releases/2026-10-10/narwhals_06_52.html">v2.27.1</a>
       <span class="kind kind-fix">fix</span>
-      
-    </div>
-    
-  
-  
-  <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
-  <li>
-    <div class="head">
-      <time datetime="2026-10-09T23:08:50+00:00">2026-10-09</time>
-      <a class="project" href="projects/dagster.html">dagster</a>
-      <a class="version" href="releases/2026-10-09/dagster_23_08.html">1.13.26</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> dagster-dbt no longer installs dbt-core; install the dagster-dbt[dbt-core] extra instead, and never alongside dbt Fusion&#39;s dbt package.</p>
-  <p class="new">Target a different deployment with the new deployment option in dg list envs, dg plus create env, and dg plus pull env.</p>
-  
-
-  </li>
-
-  <li>
-    <div class="head">
-      <time datetime="2026-10-09T07:37:33+00:00">2026-10-09</time>
-      <a class="project" href="projects/arrow.html">arrow</a>
-      <a class="version" href="releases/2026-10-09/arrow_07_37.html">apache-arrow-26.0.0</a>
-      <span class="kind kind-maintenance">maintenance</span>
-      
-    </div>
-    
-  
-  
-  <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
-  <li>
-    <div class="head">
-      <time datetime="2026-10-07T13:21:11+00:00">2026-10-07</time>
-      <a class="project" href="projects/dlt.html">dlt</a>
-      <a class="version" href="releases/2026-10-07/dlt_13_21.html">1.31.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Removed pendulum helpers like ensure_pendulum_datetime_utc from dlt.common.time and pendulum 3 is now required; switch to ensure_datetime_in_tz and upgrade pendulum.</p>
-  <p class="new">Load full snapshots with the new cdc merge strategy, which upserts rows and deletes destination rows missing from the snapshot.</p>
-  
-
-  </li>
-
-  <li>
-    <div class="head">
-      <time datetime="2026-10-06T17:23:58+00:00">2026-10-06</time>
-      <a class="project" href="projects/typer.html">typer</a>
-      <a class="version" href="releases/2026-10-06/typer_17_23.html">0.27.3</a>
-      <span class="kind kind-fix">fix</span>
-      
-    </div>
-    
-  
-  
-  <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
-  <li>
-    <div class="head">
-      <time datetime="2026-10-06T11:52:15+00:00">2026-10-06</time>
-      <a class="project" href="projects/polars.html">polars</a>
-      <a class="version" href="releases/2026-10-06/polars_11_52.html">py-2.0.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> SQL window/QUALIFY semantics, SQL numeric literals now Decimal, Parquet ENUM now reads as String, and cut/qcut deprecated; review affected queries.</p>
-  <p class="new">Run larger-than-memory queries out of core by default, with a new streaming sort and an 80% RAM threshold.</p>
-  
-
-  </li>
-
-  <li>
-    <div class="head">
-      <time datetime="2026-10-05T14:59:51+00:00">2026-10-05</time>
-      <a class="project" href="projects/arrow.html">arrow</a>
-      <a class="version" href="releases/2026-10-05/arrow_14_59.html">apache-arrow-26.0.0-rc0</a>
-      <span class="kind kind-maintenance">maintenance</span>
       
     </div>
     
