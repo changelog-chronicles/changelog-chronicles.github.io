@@ -3,6 +3,16 @@
   "github": "https://github.com/dagster-io/dagster",
   "releases": [
     {
+      "version": "1.13.31",
+      "tag": "1.13.31",
+      "date": "2026-11-19T22:35:08+00:00",
+      "kind": "breaking",
+      "new": "Speed up asset graphs, op graphs and selections with traversals on large deployments.",
+      "breaking": "The Claude Code plugin ignores DAGSTER_CLOUD_MCP_URL now, so EU organizations must add the EU Dagster+ MCP server directly or authentication fails.",
+      "link": "https://github.com/dagster-io/dagster/releases/tag/1.13.31",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "1.13.30",
       "tag": "1.13.30",
       "date": "2026-11-12T21:04:51+00:00",

@@ -11,7 +11,11 @@
     <header>
         <a class="site" href="../index.html">Changelog Chronicles</a>
         <span class="tagline">what's new in Python packages, one sentence per release</span>
-        <a class="about" href="../about.html">about</a>
+        <nav class="pages">
+            <a href="../index.html">releases</a>
+            <a href="../poems.html">poems</a>
+            <a href="../about.html">about</a>
+        </nav>
     </header>
     <main>
 <h1>ruff</h1>
@@ -22,9 +26,34 @@
   · <a href="https://github.com/changelog-chronicles/project-list/blob/main/projects/ruff.md">edit</a>
 </p>
 
+
+
+<div class="filters" hidden>
+
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">5</span></button>
+
+  <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">1</span></button>
+
+</div>
+
 <ol class="releases">
 
-  <li>
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-19T15:57:37+00:00">2026-11-19</time>
+      
+      <a class="version" href="../releases/2026-11-19/ruff_15_57.html">0.17.6</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Apply an automatic fix for the runtime-string-union rule (TC010) in preview mode.</p>
+  
+
+  </li>
+
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-12T17:55:55+00:00">2026-11-12</time>
       
@@ -39,7 +68,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-05T18:53:24+00:00">2026-11-05</time>
       
@@ -54,7 +83,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-10-27T00:35:07+00:00">2026-10-27</time>
       
@@ -69,7 +98,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-10-22T18:39:46+00:00">2026-10-22</time>
       
@@ -84,7 +113,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-10-15T15:24:28+00:00">2026-10-15</time>
       
@@ -107,5 +136,6 @@
         notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
         Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
     </footer>
+    <script src="../filter.js" defer></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ a:hover { text-decoration: underline; }
 header { display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline;
   border-bottom: 1px solid var(--line); padding-bottom: .8rem; }
 header .site { font-weight: 700; font-size: 1.15rem; color: var(--fg); }
-header .about { margin-left: auto; }
+header nav.pages { margin-left: auto; display: flex; gap: .9rem; }
 .tagline, .meta, .by, footer, figcaption, time, .quiet { color: var(--muted); }
 .by, figcaption, footer { font-size: .85rem; }
 footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: .8rem; }
@@ -41,22 +41,28 @@ ol.releases p { margin: .25rem 0 0; }
 .poems { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
 .poem { margin: 0; padding: 1rem; border: 1px solid var(--line); border-radius: 6px; }
 .poem pre { font: inherit; font-family: Georgia, serif; white-space: pre-wrap; margin: 0 0 .6rem; }
-.weekly { margin: 0 0 2rem; padding: 1rem; border: 1px solid var(--line); border-radius: 6px; }
-.weekly h2 { margin-top: 0; }
-.weekly pre { font: inherit; font-family: Georgia, serif; white-space: pre-wrap; margin: 0; }
-.weeks li { margin-bottom: .4rem; }
 .plate { margin: 1rem 0 1.5rem; max-width: 24rem; }
 .plate img, img.plate { display: block; width: 100%; height: auto; border-radius: 4px; }
 .plate figcaption { color: var(--muted); font-style: italic; font-size: .9rem; margin-top: .4rem; }
-.weekly img.plate { float: right; width: 13rem; margin: 0 0 1rem 1rem; }
-.weekly::after { content: ""; display: block; clear: both; }
-@media (max-width: 36rem) { .weekly img.plate { float: none; width: 100%; margin: 0 0 1rem; } }
 .weeks { list-style: none; padding: 0; }
-.weeks li { display: flex; align-items: center; gap: .3rem .8rem; flex-wrap: wrap; }
-.weeks img.thumb { border-radius: 3px; }
+.week { margin: 0 0 1.5rem; padding: 1rem; border: 1px solid var(--line); border-radius: 6px; }
+.week h2 { margin-top: 0; }
+.week pre { font: inherit; font-family: Georgia, serif; white-space: pre-wrap; margin: 0; }
+.week img.plate { float: right; width: 13rem; margin: 0 0 1rem 1rem; }
+.week::after { content: ""; display: block; clear: both; }
+@media (max-width: 36rem) { .week img.plate { float: none; width: 100%; margin: 0 0 1rem; } }
 .week-body.with-plate { display: grid; grid-template-columns: 1fr 18rem; gap: 1.5rem; align-items: start; }
 .week-body .plate { margin: 0; position: sticky; top: 1rem; }
 @media (max-width: 44rem) {
   .week-body.with-plate { grid-template-columns: 1fr; }
   .week-body .plate { order: -1; position: static; }
 }
+.filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 0; }
+.filters button { font: inherit; font-size: .8rem; background: none; cursor: pointer; padding: .1rem .5rem; }
+.filters .kind-breaking { --k: var(--breaking); }
+.filters .kind-feature { --k: var(--feature); }
+.filters .kind-fix { --k: var(--fix); }
+.filters .kind-maintenance { --k: var(--maintenance); }
+.filters button[aria-pressed="true"], .filters button[aria-pressed="true"] .count {
+  background: var(--k); color: var(--bg); }
+.filters .count { color: var(--muted); font-variant-numeric: tabular-nums; }

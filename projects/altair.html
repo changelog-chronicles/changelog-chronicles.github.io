@@ -11,7 +11,11 @@
     <header>
         <a class="site" href="../index.html">Changelog Chronicles</a>
         <span class="tagline">what's new in Python packages, one sentence per release</span>
-        <a class="about" href="../about.html">about</a>
+        <nav class="pages">
+            <a href="../index.html">releases</a>
+            <a href="../poems.html">poems</a>
+            <a href="../about.html">about</a>
+        </nav>
     </header>
     <main>
 <h1>altair</h1>
@@ -22,9 +26,21 @@
   · <a href="https://github.com/changelog-chronicles/project-list/blob/main/projects/altair.md">edit</a>
 </p>
 
+
+
+<div class="filters" hidden>
+
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">2</span></button>
+
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">1</span></button>
+
+  <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">2</span></button>
+
+</div>
+
 <ol class="releases">
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-09-15T06:37:25+00:00">2026-09-15</time>
       
@@ -39,7 +55,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-06-23T12:46:14+00:00">2026-06-23</time>
       
@@ -54,7 +70,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-06-05T16:22:46+00:00">2026-06-05</time>
       
@@ -69,7 +85,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-06-05T15:09:22+00:00">2026-06-05</time>
       
@@ -84,7 +100,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-04-21T14:51:23+00:00">2026-04-21</time>
       
@@ -107,5 +123,6 @@
         notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
         Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
     </footer>
+    <script src="../filter.js" defer></script>
 </body>
 </html>

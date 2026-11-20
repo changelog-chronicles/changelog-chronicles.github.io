@@ -3,6 +3,16 @@
   "github": "https://github.com/astral-sh/ruff",
   "releases": [
     {
+      "version": "0.17.6",
+      "tag": "0.17.6",
+      "date": "2026-11-19T15:57:37+00:00",
+      "kind": "feature",
+      "new": "Apply an automatic fix for the runtime-string-union rule (TC010) in preview mode.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ruff/releases/tag/0.17.6",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "0.17.5",
       "tag": "0.17.5",
       "date": "2026-11-12T17:55:55+00:00",

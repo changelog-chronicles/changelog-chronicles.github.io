@@ -11,7 +11,11 @@
     <header>
         <a class="site" href="../index.html">Changelog Chronicles</a>
         <span class="tagline">what's new in Python packages, one sentence per release</span>
-        <a class="about" href="../about.html">about</a>
+        <nav class="pages">
+            <a href="../index.html">releases</a>
+            <a href="../poems.html">poems</a>
+            <a href="../about.html">about</a>
+        </nav>
     </header>
     <main>
 <h1>streamlit</h1>
@@ -22,9 +26,21 @@
   · <a href="https://github.com/changelog-chronicles/project-list/blob/main/projects/streamlit.md">edit</a>
 </p>
 
+
+
+<div class="filters" hidden>
+
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">6</span></button>
+
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">2</span></button>
+
+  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">3</span></button>
+
+</div>
+
 <ol class="releases">
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-05T19:54:01+00:00">2026-11-05</time>
       
@@ -39,7 +55,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="maintenance">
     <div class="head">
       <time datetime="2026-10-21T17:03:06+00:00">2026-10-21</time>
       
@@ -54,7 +70,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-14T16:08:00+00:00">2026-10-14</time>
       
@@ -69,7 +85,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-10-02T21:40:41+00:00">2026-10-02</time>
       
@@ -84,7 +100,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-09-15T19:13:58+00:00">2026-09-15</time>
       
@@ -99,7 +115,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="maintenance">
     <div class="head">
       <time datetime="2024-10-13T06:39:00+00:00">2024-10-13</time>
       
@@ -114,7 +130,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2024-10-01T17:36:45+00:00">2024-10-01</time>
       
@@ -129,7 +145,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2024-08-27T18:46:56+00:00">2024-08-27</time>
       
@@ -144,7 +160,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="maintenance">
     <div class="head">
       <time datetime="2024-08-05T18:59:25+00:00">2024-08-05</time>
       
@@ -159,7 +175,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2024-07-25T18:21:46+00:00">2024-07-25</time>
       
@@ -174,7 +190,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2024-06-20T18:02:27+00:00">2024-06-20</time>
       
@@ -197,5 +213,6 @@
         notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
         Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
     </footer>
+    <script src="../filter.js" defer></script>
 </body>
 </html>

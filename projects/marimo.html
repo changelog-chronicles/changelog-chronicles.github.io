@@ -11,7 +11,11 @@
     <header>
         <a class="site" href="../index.html">Changelog Chronicles</a>
         <span class="tagline">what's new in Python packages, one sentence per release</span>
-        <a class="about" href="../about.html">about</a>
+        <nav class="pages">
+            <a href="../index.html">releases</a>
+            <a href="../poems.html">poems</a>
+            <a href="../about.html">about</a>
+        </nav>
     </header>
     <main>
 <h1>marimo</h1>
@@ -22,9 +26,19 @@
   · <a href="https://github.com/changelog-chronicles/project-list/blob/main/projects/marimo.md">edit</a>
 </p>
 
+
+
+<div class="filters" hidden>
+
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">2</span></button>
+
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">3</span></button>
+
+</div>
+
 <ol class="releases">
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-19T20:13:24+00:00">2026-10-19</time>
       
@@ -39,7 +53,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-10-01T21:17:52+00:00">2026-10-01</time>
       
@@ -54,7 +68,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-09-23T21:57:18+00:00">2026-09-23</time>
       
@@ -69,7 +83,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-09-11T16:55:21+00:00">2026-09-11</time>
       
@@ -84,7 +98,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-09-10T21:45:54+00:00">2026-09-10</time>
       
@@ -107,5 +121,6 @@
         notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
         Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
     </footer>
+    <script src="../filter.js" defer></script>
 </body>
 </html>

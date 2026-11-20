@@ -11,7 +11,11 @@
     <header>
         <a class="site" href="../index.html">Changelog Chronicles</a>
         <span class="tagline">what's new in Python packages, one sentence per release</span>
-        <a class="about" href="../about.html">about</a>
+        <nav class="pages">
+            <a href="../index.html">releases</a>
+            <a href="../poems.html">poems</a>
+            <a href="../about.html">about</a>
+        </nav>
     </header>
     <main>
 <h1>dagster</h1>
@@ -22,9 +26,34 @@
   · <a href="https://github.com/changelog-chronicles/project-list/blob/main/projects/dagster.md">edit</a>
 </p>
 
+
+
+<div class="filters" hidden>
+
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">8</span></button>
+
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">3</span></button>
+
+</div>
+
 <ol class="releases">
 
-  <li>
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-19T22:35:08+00:00">2026-11-19</time>
+      
+      <a class="version" href="../releases/2026-11-19/dagster_22_35.html">1.13.31</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The Claude Code plugin ignores DAGSTER_CLOUD_MCP_URL now, so EU organizations must add the EU Dagster+ MCP server directly or authentication fails.</p>
+  <p class="new">Speed up asset graphs, op graphs and selections with traversals on large deployments.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-12T21:04:51+00:00">2026-11-12</time>
       
@@ -39,7 +68,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-05T18:38:24+00:00">2026-11-05</time>
       
@@ -54,7 +83,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-30T15:31:35+00:00">2026-10-30</time>
       
@@ -69,7 +98,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-26T15:36:41+00:00">2026-10-26</time>
       
@@ -84,7 +113,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-09T23:08:50+00:00">2026-10-09</time>
       
@@ -99,7 +128,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2024-10-10T19:04:16+00:00">2024-10-10</time>
       
@@ -114,7 +143,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2024-10-03T21:21:52+00:00">2024-10-03</time>
       
@@ -129,7 +158,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2024-09-26T18:38:12+00:00">2024-09-26</time>
       
@@ -144,7 +173,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2024-09-20T17:38:10+00:00">2024-09-20</time>
       
@@ -159,7 +188,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2024-09-12T20:29:54+00:00">2024-09-12</time>
       
@@ -182,5 +211,6 @@
         notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
         Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
     </footer>
+    <script src="../filter.js" defer></script>
 </body>
 </html>

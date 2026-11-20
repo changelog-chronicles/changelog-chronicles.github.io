@@ -11,53 +11,65 @@
     <header>
         <a class="site" href="index.html">Changelog Chronicles</a>
         <span class="tagline">what's new in Python packages, one sentence per release</span>
-        <a class="about" href="about.html">about</a>
+        <nav class="pages">
+            <a href="index.html">releases</a>
+            <a href="poems.html">poems</a>
+            <a href="about.html">about</a>
+        </nav>
     </header>
     <main>
 <nav class="projects">
 <a href="projects/altair.html">altair</a><a href="projects/arrow.html">arrow</a><a href="projects/dagster.html">dagster</a><a href="projects/dbt.html">dbt</a><a href="projects/dlt.html">dlt</a><a href="projects/duckdb.html">duckdb</a><a href="projects/fastapi.html">fastapi</a><a href="projects/httpx.html">httpx</a><a href="projects/ibis.html">ibis</a><a href="projects/jinja.html">jinja</a><a href="projects/lancedb.html">lancedb</a><a href="projects/marimo.html">marimo</a><a href="projects/narwhals.html">narwhals</a><a href="projects/pandas.html">pandas</a><a href="projects/pillow.html">pillow</a><a href="projects/plotly.html">plotly</a><a href="projects/poethepoet.html">poethepoet</a><a href="projects/polars.html">polars</a><a href="projects/pytest.html">pytest</a><a href="projects/rich.html">rich</a><a href="projects/ruff.html">ruff</a><a href="projects/streamlit.html">streamlit</a><a href="projects/ty.html">ty</a><a href="projects/typer.html">typer</a><a href="projects/uv.html">uv</a>
 </nav>
-
-<section class="weekly">
-  <a href="weekly/2026-11-17.html"><img class="plate" src="weekly/2026-11-17.webp" alt="a hermit crab (Pagurus bernhardus) out of water, side view, walking, occupying a spiral whelk shell, jointed legs and claws emerging, stalked eyes, one larger claw" width="512" height="512"></a>
-  <h2><a href="weekly/2026-11-17.html">Renamed Rules and Retired Pythons</a></h2>
-  <p class="meta">Weekly poem of 2026-11-17, about dbt, ty, fastapi · <a href="weekly/index.html">all weeks</a></p>
-  <pre>This week in the repo, a few things will bite,
-so read before upgrading tonight.
-
-<strong>dbt</strong> two-dot-oh dev forty-four
-reads Unity tables, and then some more.
-Lake Compute takes a PAT or M2M key,
-but read-only, friend, so no writes, you&#39;ll see.
-Breaking: your local Unity attach
-under lakecompute needs a new patch.
-Move it to config.duckdb, then run.
-Core one-twelve-seven has a flag, just one:
-builtin macros prefer overrides now,
-off by default, so no vow to avow.
-
-<strong>ty</strong> marched from one-oh-one to one-oh-four,
-fixed panics, then fixed a few more.
-The pytest plugins&#39; fixtures now resolve
-in the server, a puzzle it solved.
-Breaking at one-oh-two, so look twice:
-invalid-return-type split in three slices.
-Not-callable and others got a new name,
-so check your suppressions, or they won&#39;t tame.
-
-<strong>FastAPI</strong> dropped Python three-ten,
-so bump your env before you install again.
-Then Depends takes max_concurrency, neat,
-to cap how many run at once. Sweet.
-Cancel cleanup got fixed, and so did
-nested computed fields that OpenAPI hid.</pre>
-</section>
-
 <h1>Latest releases</h1>
+
+
+
+<div class="filters" hidden>
+
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">28</span></button>
+
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">18</span></button>
+
+  <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">10</span></button>
+
+  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">4</span></button>
+
+</div>
 
 <ol class="releases">
 
-  <li>
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-19T22:35:08+00:00">2026-11-19</time>
+      <a class="project" href="projects/dagster.html">dagster</a>
+      <a class="version" href="releases/2026-11-19/dagster_22_35.html">1.13.31</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The Claude Code plugin ignores DAGSTER_CLOUD_MCP_URL now, so EU organizations must add the EU Dagster+ MCP server directly or authentication fails.</p>
+  <p class="new">Speed up asset graphs, op graphs and selections with traversals on large deployments.</p>
+  
+
+  </li>
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-19T15:57:37+00:00">2026-11-19</time>
+      <a class="project" href="projects/ruff.html">ruff</a>
+      <a class="version" href="releases/2026-11-19/ruff_15_57.html">0.17.6</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Apply an automatic fix for the runtime-string-union rule (TC010) in preview mode.</p>
+  
+
+  </li>
+
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-18T21:09:02+00:00">2026-11-18</time>
       <a class="project" href="projects/ty.html">ty</a>
@@ -72,7 +84,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-18T19:14:20+00:00">2026-11-18</time>
       <a class="project" href="projects/fastapi.html">fastapi</a>
@@ -87,7 +99,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-18T13:08:49+00:00">2026-11-18</time>
       <a class="project" href="projects/fastapi.html">fastapi</a>
@@ -102,7 +114,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-18T12:30:14+00:00">2026-11-18</time>
       <a class="project" href="projects/ty.html">ty</a>
@@ -117,7 +129,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-18T11:09:31+00:00">2026-11-18</time>
       <a class="project" href="projects/typer.html">typer</a>
@@ -132,7 +144,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-18T09:21:09+00:00">2026-11-18</time>
       <a class="project" href="projects/lancedb.html">lancedb</a>
@@ -147,7 +159,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="maintenance">
     <div class="head">
       <time datetime="2026-11-17T18:28:44+00:00">2026-11-17</time>
       <a class="project" href="projects/fastapi.html">fastapi</a>
@@ -162,7 +174,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-17T15:43:51+00:00">2026-11-17</time>
       <a class="project" href="projects/lancedb.html">lancedb</a>
@@ -177,7 +189,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-17T15:31:02+00:00">2026-11-17</time>
       <a class="project" href="projects/narwhals.html">narwhals</a>
@@ -192,7 +204,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-17T09:57:55+00:00">2026-11-17</time>
       <a class="project" href="projects/uv.html">uv</a>
@@ -207,7 +219,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-17T09:46:22+00:00">2026-11-17</time>
       <a class="project" href="projects/ty.html">ty</a>
@@ -222,7 +234,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-17T09:43:22+00:00">2026-11-17</time>
       <a class="project" href="projects/lancedb.html">lancedb</a>
@@ -237,7 +249,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-16T20:47:46+00:00">2026-11-16</time>
       <a class="project" href="projects/lancedb.html">lancedb</a>
@@ -252,7 +264,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-16T12:38:19+00:00">2026-11-16</time>
       <a class="project" href="projects/lancedb.html">lancedb</a>
@@ -267,7 +279,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-15T14:49:53+00:00">2026-11-15</time>
       <a class="project" href="projects/lancedb.html">lancedb</a>
@@ -282,7 +294,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-15T09:50:02+00:00">2026-11-15</time>
       <a class="project" href="projects/fastapi.html">fastapi</a>
@@ -297,7 +309,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-14T16:53:02+00:00">2026-11-14</time>
       <a class="project" href="projects/fastapi.html">fastapi</a>
@@ -312,7 +324,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-13T20:53:59+00:00">2026-11-13</time>
       <a class="project" href="projects/ty.html">ty</a>
@@ -327,7 +339,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-13T17:46:19+00:00">2026-11-13</time>
       <a class="project" href="projects/fastapi.html">fastapi</a>
@@ -342,7 +354,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-13T13:34:50+00:00">2026-11-13</time>
       <a class="project" href="projects/fastapi.html">fastapi</a>
@@ -357,7 +369,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-13T12:11:21+00:00">2026-11-13</time>
       <a class="project" href="projects/ty.html">ty</a>
@@ -372,7 +384,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-12T22:10:19+00:00">2026-11-12</time>
       <a class="project" href="projects/ty.html">ty</a>
@@ -387,7 +399,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-12T21:04:51+00:00">2026-11-12</time>
       <a class="project" href="projects/dagster.html">dagster</a>
@@ -402,7 +414,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-12T17:55:55+00:00">2026-11-12</time>
       <a class="project" href="projects/ruff.html">ruff</a>
@@ -417,7 +429,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-12T17:03:07+00:00">2026-11-12</time>
       <a class="project" href="projects/uv.html">uv</a>
@@ -432,7 +444,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-12T09:53:01+00:00">2026-11-12</time>
       <a class="project" href="projects/dbt.html">dbt</a>
@@ -447,7 +459,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-11T13:54:34+00:00">2026-11-11</time>
       <a class="project" href="projects/ty.html">ty</a>
@@ -462,7 +474,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-11T11:30:32+00:00">2026-11-11</time>
       <a class="project" href="projects/dbt.html">dbt</a>
@@ -477,7 +489,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-11T09:18:21+00:00">2026-11-11</time>
       <a class="project" href="projects/typer.html">typer</a>
@@ -492,7 +504,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-09T18:47:53+00:00">2026-11-09</time>
       <a class="project" href="projects/typer.html">typer</a>
@@ -507,7 +519,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-06T08:37:03+00:00">2026-11-06</time>
       <a class="project" href="projects/typer.html">typer</a>
@@ -522,7 +534,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-06T07:07:47+00:00">2026-11-06</time>
       <a class="project" href="projects/dbt.html">dbt</a>
@@ -537,7 +549,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-05T19:54:01+00:00">2026-11-05</time>
       <a class="project" href="projects/streamlit.html">streamlit</a>
@@ -552,7 +564,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-05T18:53:24+00:00">2026-11-05</time>
       <a class="project" href="projects/ruff.html">ruff</a>
@@ -567,7 +579,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-05T18:38:24+00:00">2026-11-05</time>
       <a class="project" href="projects/dagster.html">dagster</a>
@@ -582,7 +594,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-11-04T15:46:25+00:00">2026-11-04</time>
       <a class="project" href="projects/pandas.html">pandas</a>
@@ -597,7 +609,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-11-03T09:23:42+00:00">2026-11-03</time>
       <a class="project" href="projects/dbt.html">dbt</a>
@@ -612,7 +624,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="maintenance">
     <div class="head">
       <time datetime="2026-11-03T08:52:12+00:00">2026-11-03</time>
       <a class="project" href="projects/arrow.html">arrow</a>
@@ -627,7 +639,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-03T02:45:04+00:00">2026-11-03</time>
       <a class="project" href="projects/uv.html">uv</a>
@@ -642,7 +654,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="maintenance">
     <div class="head">
       <time datetime="2026-10-30T18:36:55+00:00">2026-10-30</time>
       <a class="project" href="projects/arrow.html">arrow</a>
@@ -657,7 +669,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-30T15:31:35+00:00">2026-10-30</time>
       <a class="project" href="projects/dagster.html">dagster</a>
@@ -672,7 +684,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-29T23:35:12+00:00">2026-10-29</time>
       <a class="project" href="projects/dlt.html">dlt</a>
@@ -687,7 +699,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-27T21:30:44+00:00">2026-10-27</time>
       <a class="project" href="projects/pytest.html">pytest</a>
@@ -702,7 +714,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-27T12:20:08+00:00">2026-10-27</time>
       <a class="project" href="projects/narwhals.html">narwhals</a>
@@ -717,7 +729,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-27T00:47:49+00:00">2026-10-27</time>
       <a class="project" href="projects/uv.html">uv</a>
@@ -732,7 +744,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-10-27T00:35:07+00:00">2026-10-27</time>
       <a class="project" href="projects/ruff.html">ruff</a>
@@ -747,7 +759,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-26T15:36:41+00:00">2026-10-26</time>
       <a class="project" href="projects/dagster.html">dagster</a>
@@ -762,7 +774,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-25T18:24:39+00:00">2026-10-25</time>
       <a class="project" href="projects/polars.html">polars</a>
@@ -777,7 +789,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-10-22T18:39:46+00:00">2026-10-22</time>
       <a class="project" href="projects/ruff.html">ruff</a>
@@ -792,7 +804,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="feature">
     <div class="head">
       <time datetime="2026-10-22T13:20:42+00:00">2026-10-22</time>
       <a class="project" href="projects/pandas.html">pandas</a>
@@ -807,7 +819,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-22T01:35:54+00:00">2026-10-22</time>
       <a class="project" href="projects/uv.html">uv</a>
@@ -822,7 +834,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="maintenance">
     <div class="head">
       <time datetime="2026-10-21T17:03:06+00:00">2026-10-21</time>
       <a class="project" href="projects/streamlit.html">streamlit</a>
@@ -837,7 +849,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-21T12:49:12+00:00">2026-10-21</time>
       <a class="project" href="projects/duckdb.html">duckdb</a>
@@ -852,7 +864,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-19T20:13:24+00:00">2026-10-19</time>
       <a class="project" href="projects/marimo.html">marimo</a>
@@ -867,7 +879,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-16T22:37:44+00:00">2026-10-16</time>
       <a class="project" href="projects/pillow.html">pillow</a>
@@ -882,7 +894,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2026-10-15T15:24:28+00:00">2026-10-15</time>
       <a class="project" href="projects/ruff.html">ruff</a>
@@ -897,7 +909,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-14T21:28:37+00:00">2026-10-14</time>
       <a class="project" href="projects/poethepoet.html">poethepoet</a>
@@ -912,7 +924,7 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
+  <li data-kind="breaking">
     <div class="head">
       <time datetime="2026-10-14T16:08:00+00:00">2026-10-14</time>
       <a class="project" href="projects/streamlit.html">streamlit</a>
@@ -927,36 +939,6 @@ nested computed fields that OpenAPI hid.</pre>
 
   </li>
 
-  <li>
-    <div class="head">
-      <time datetime="2026-10-14T07:49:06+00:00">2026-10-14</time>
-      <a class="project" href="projects/dbt.html">dbt</a>
-      <a class="version" href="releases/2026-10-14/dbt_07_49.html">v2.0.8</a>
-      <span class="kind kind-feature">feature</span>
-      
-    </div>
-    
-  
-  <p class="new">Install the dbt and dbt-oss PyPI wheels on Python 3.10, since the minimum supported version was lowered.</p>
-  
-
-  </li>
-
-  <li>
-    <div class="head">
-      <time datetime="2026-10-10T06:52:42+00:00">2026-10-10</time>
-      <a class="project" href="projects/narwhals.html">narwhals</a>
-      <a class="version" href="releases/2026-10-10/narwhals_06_52.html">v2.27.1</a>
-      <span class="kind kind-fix">fix</span>
-      
-    </div>
-    
-  
-  
-  <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
 </ol>
 
 </main>
@@ -965,5 +947,6 @@ nested computed fields that OpenAPI hid.</pre>
         notes are the source of truth. Data for agents: <a href="llms.txt">llms.txt</a>.
         Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
     </footer>
+    <script src="filter.js" defer></script>
 </body>
 </html>

@@ -11,7 +11,11 @@
     <header>
         <a class="site" href="../index.html">Changelog Chronicles</a>
         <span class="tagline">what's new in Python packages, one sentence per release</span>
-        <a class="about" href="../about.html">about</a>
+        <nav class="pages">
+            <a href="../index.html">releases</a>
+            <a href="../poems.html">poems</a>
+            <a href="../about.html">about</a>
+        </nav>
     </header>
     <main>
 <h1>jinja</h1>
@@ -22,9 +26,17 @@
   · <a href="https://github.com/changelog-chronicles/project-list/blob/main/projects/jinja.md">edit</a>
 </p>
 
+
+
+<div class="filters" hidden>
+
+  <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">5</span></button>
+
+</div>
+
 <ol class="releases">
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2025-03-05T20:05:10+00:00">2025-03-05</time>
       
@@ -39,7 +51,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2024-12-21T18:31:29+00:00">2024-12-21</time>
       
@@ -54,7 +66,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2024-05-05T23:42:16+00:00">2024-05-05</time>
       
@@ -69,7 +81,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2024-01-10T23:12:42+00:00">2024-01-10</time>
       
@@ -84,7 +96,7 @@
 
   </li>
 
-  <li>
+  <li data-kind="fix">
     <div class="head">
       <time datetime="2022-04-28T17:24:04+00:00">2022-04-28</time>
       
@@ -107,5 +119,6 @@
         notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
         Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
     </footer>
+    <script src="../filter.js" defer></script>
 </body>
 </html>
