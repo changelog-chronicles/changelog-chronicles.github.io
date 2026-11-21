@@ -27,9 +27,9 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">28</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">27</span></button>
 
-  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">18</span></button>
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">19</span></button>
 
   <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">10</span></button>
 
@@ -38,6 +38,21 @@
 </div>
 
 <ol class="releases">
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-20T13:34:16+00:00">2026-11-20</time>
+      <a class="project" href="projects/duckdb.html">duckdb</a>
+      <a class="version" href="releases/2026-11-20/duckdb_13_34.html">v2.0.1</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Set a default for the Parquet can_have_nan option using the new parquet_can_have_nan setting.</p>
+  
+
+  </li>
 
   <li data-kind="breaking">
     <div class="head">
@@ -920,21 +935,6 @@
     
   <p class="breaking"><strong>Breaking:</strong> Python script and expr tasks now get a different sys.argv (parsed declared args with defaults, then args after --); update code that reads sys.argv.</p>
   <p class="new">Customize the string values boolean args are exposed as using the true_string and false_string options.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-14T16:08:00+00:00">2026-10-14</time>
-      <a class="project" href="projects/streamlit.html">streamlit</a>
-      <a class="version" href="releases/2026-10-14/streamlit_16_08.html">1.66.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 support is dropped; upgrade to Python 3.11 or newer before installing this release.</p>
-  <p class="new">Skip reruns on widget changes by passing on_change=&#34;ignore&#34; to widgets such as st.color_picker, st.pills, and st.data_editor.</p>
   
 
   </li>
