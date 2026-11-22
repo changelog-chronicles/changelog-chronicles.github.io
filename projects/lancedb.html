@@ -30,7 +30,7 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">3</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">4</span></button>
 
   <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">1</span></button>
 
@@ -39,6 +39,21 @@
 </div>
 
 <ol class="releases">
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-21T09:42:13+00:00">2026-11-21</time>
+      
+      <a class="version" href="../releases/2026-11-21/lancedb_09_42.html">v0.42.0-beta.21</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Job objects in the Python SDK now expose data only through methods, so replace direct attribute access with the matching method calls.</p>
+  <p class="new">Compare table versions with the new table delta API to see which rows changed between them.</p>
+  
+
+  </li>
 
   <li data-kind="breaking">
     <div class="head">

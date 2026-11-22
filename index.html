@@ -39,6 +39,21 @@
 
 <ol class="releases">
 
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-21T09:42:13+00:00">2026-11-21</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-21/lancedb_09_42.html">v0.42.0-beta.21</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Job objects in the Python SDK now expose data only through methods, so replace direct attribute access with the matching method calls.</p>
+  <p class="new">Compare table versions with the new table delta API to see which rows changed between them.</p>
+  
+
+  </li>
+
   <li data-kind="feature">
     <div class="head">
       <time datetime="2026-11-20T13:34:16+00:00">2026-11-20</time>
@@ -921,21 +936,6 @@
   
   
   <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-14T21:28:37+00:00">2026-10-14</time>
-      <a class="project" href="projects/poethepoet.html">poethepoet</a>
-      <a class="version" href="releases/2026-10-14/poethepoet_21_28.html">v0.49.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Python script and expr tasks now get a different sys.argv (parsed declared args with defaults, then args after --); update code that reads sys.argv.</p>
-  <p class="new">Customize the string values boolean args are exposed as using the true_string and false_string options.</p>
-  
 
   </li>
 
