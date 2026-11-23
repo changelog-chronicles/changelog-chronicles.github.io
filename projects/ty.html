@@ -30,7 +30,7 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">3</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">4</span></button>
 
   <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">2</span></button>
 
@@ -39,6 +39,21 @@
 </div>
 
 <ol class="releases">
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-22T20:40:30+00:00">2026-11-22</time>
+      
+      <a class="version" href="../releases/2026-11-22/ty_20_40.html">0.0.108</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The mismatched-type-name rule is replaced by eight rules; update configuration, CLI flags and suppression comments to use the rule for each constructor.</p>
+  <p class="new">Recognize TypeVar, ParamSpec, NewType and similar definitions whose names are only known at runtime, warning that the name cannot be verified.</p>
+  
+
+  </li>
 
   <li data-kind="feature">
     <div class="head">

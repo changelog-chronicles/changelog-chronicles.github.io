@@ -27,17 +27,77 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">27</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">26</span></button>
 
   <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">19</span></button>
 
   <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">10</span></button>
 
-  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">4</span></button>
+  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">5</span></button>
 
 </div>
 
 <ol class="releases">
+
+  <li data-kind="fix">
+    <div class="head">
+      <time datetime="2026-11-22T22:07:09+00:00">2026-11-22</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-22/lancedb_22_07.html">v0.42.0-beta.24</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-22T20:40:30+00:00">2026-11-22</time>
+      <a class="project" href="projects/ty.html">ty</a>
+      <a class="version" href="releases/2026-11-22/ty_20_40.html">0.0.108</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The mismatched-type-name rule is replaced by eight rules; update configuration, CLI flags and suppression comments to use the rule for each constructor.</p>
+  <p class="new">Recognize TypeVar, ParamSpec, NewType and similar definitions whose names are only known at runtime, warning that the name cannot be verified.</p>
+  
+
+  </li>
+
+  <li data-kind="maintenance">
+    <div class="head">
+      <time datetime="2026-11-22T19:44:21+00:00">2026-11-22</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-22/lancedb_19_44.html">v0.42.0-beta.23</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-22T15:14:50+00:00">2026-11-22</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-22/lancedb_15_14.html">v0.42.0-beta.22</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> GPU settings and total execution limits are now layered, and SQL queries gain timeout controls, so review existing GPU and query-limit configuration.</p>
+  <p class="new">Resume a failed Function refresh from its table instead of starting the refresh over.</p>
+  
+
+  </li>
 
   <li data-kind="breaking">
     <div class="head">
@@ -870,66 +930,6 @@
       <a class="project" href="projects/streamlit.html">streamlit</a>
       <a class="version" href="releases/2026-10-21/streamlit_17_03.html">1.66.1</a>
       <span class="kind kind-maintenance">maintenance</span>
-      
-    </div>
-    
-  
-  
-  <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-21T12:49:12+00:00">2026-10-21</time>
-      <a class="project" href="projects/duckdb.html">duckdb</a>
-      <a class="version" href="releases/2026-10-21/duckdb_12_49.html">v2.0.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Integer division by zero now raises an error instead of returning NULL; guard divisors or handle the error in queries that relied on NULL.</p>
-  <p class="new">Run SQL against nested schemas, including creating, dropping, inserting into and querying tables within them.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-19T20:13:24+00:00">2026-10-19</time>
-      <a class="project" href="projects/marimo.html">marimo</a>
-      <a class="version" href="releases/2026-10-19/marimo_20_13.html">0.25.2</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Plots no longer auto-switch to a dark theme in dark notebooks; set the dark theme explicitly in matplotlib, Plotly, Bokeh, or HoloViews.</p>
-  <p class="new">Download geographic tables and dataframes as GeoJSON or GeoParquet, alongside the existing CSV, JSON, and Parquet options.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-16T22:37:44+00:00">2026-10-16</time>
-      <a class="project" href="projects/pillow.html">pillow</a>
-      <a class="version" href="releases/2026-10-16/pillow_22_37.html">13.0.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, so upgrade to Python 3.11 or newer; code using removed ExifTags.IFD.Makernote or _save_netpbm will fail.</p>
-  <p class="new">Resize images with the new Magic Kernel Sharp resampling modes.</p>
-  
-
-  </li>
-
-  <li data-kind="fix">
-    <div class="head">
-      <time datetime="2026-10-15T15:24:28+00:00">2026-10-15</time>
-      <a class="project" href="projects/ruff.html">ruff</a>
-      <a class="version" href="releases/2026-10-15/ruff_15_24.html">0.17.1</a>
-      <span class="kind kind-fix">fix</span>
       
     </div>
     

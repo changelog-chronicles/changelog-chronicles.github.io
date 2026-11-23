@@ -3,6 +3,16 @@
   "github": "https://github.com/astral-sh/ty",
   "releases": [
     {
+      "version": "0.0.108",
+      "tag": "0.0.108",
+      "date": "2026-11-22T20:40:30+00:00",
+      "kind": "breaking",
+      "new": "Recognize TypeVar, ParamSpec, NewType and similar definitions whose names are only known at runtime, warning that the name cannot be verified.",
+      "breaking": "The mismatched-type-name rule is replaced by eight rules; update configuration, CLI flags and suppression comments to use the rule for each constructor.",
+      "link": "https://github.com/astral-sh/ty/releases/tag/0.0.108",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "0.0.107",
       "tag": "0.0.107",
       "date": "2026-11-18T21:09:02+00:00",
