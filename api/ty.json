@@ -3,6 +3,16 @@
   "github": "https://github.com/astral-sh/ty",
   "releases": [
     {
+      "version": "0.0.109",
+      "tag": "0.0.109",
+      "date": "2026-11-23T21:58:34+00:00",
+      "kind": "breaking",
+      "new": "Infer enum.auto() values from preceding members in both class-based and functional enums.",
+      "breaking": "The unknown-rule ignore diagnostic is renamed unknown-rule-in-ignore-comment; the old name remains an alias, so update configuration and ignore comments to the new name.",
+      "link": "https://github.com/astral-sh/ty/releases/tag/0.0.109",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "0.0.108",
       "tag": "0.0.108",
       "date": "2026-11-22T20:40:30+00:00",
