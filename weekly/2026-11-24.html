@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Limits, Renames, and Job Handles · Changelog Chronicles</title>
+    <link rel="stylesheet" href="../style.css">
+    
+    <meta property="og:title" content="Limits, Renames, and Job Handles">
+    <meta property="og:image" content="https://changelog-chronicles.github.io/weekly/2026-11-24.webp">
+
+</head>
+<body>
+    <header>
+        <a class="site" href="../index.html">Changelog Chronicles</a>
+        <span class="tagline">what's new in Python packages, one sentence per release</span>
+        <nav class="pages">
+            <a href="../index.html">releases</a>
+            <a href="../poems.html">poems</a>
+            <a href="../about.html">about</a>
+        </nav>
+    </header>
+    <main>
+<h1>Limits, Renames, and Job Handles</h1>
+<p class="meta">Weekly poem of 2026-11-24 · <a href="../poems.html">all weeks</a></p>
+<div class="week-body with-plate">
+<div class="poems">
+
+  <figure class="poem">
+    
+    <pre>This week three libraries shipped some change,
+So let us give the notes a range.
+<strong>LanceDB</strong> ran from beta eighteen,
+To twenty-six, a busy scene.
+
+Its Function globals changed their ways,
+With Arrow captured, check your days.
+Job handles now come typed for SQL,
+So old return values may fail.
+
+In Python, jobs use methods only,
+So attribute reads leave you lonely.
+Scan order, take offsets are strict,
+And GPU limits are now layered, picked.
+
+SQL queries get timeout controls too.
+The new table delta shows rows that are new.
+A failed refresh can resume its run,
+And blob fixes finished the sun.
+
+<strong>ty</strong> went from one-oh-five to nine,
+And split its rules along a line.
+The import-not-found and TypeIs rules split,
+So fix your ignores, bit by bit.
+
+The mismatched-type-name rule is gone,
+Eight new ones carry it along.
+Unknown-rule got renamed too,
+Run <strong>ty</strong> check --fix to see it through.
+
+<strong>FastAPI</strong> chose to guard the door:
+Body size and form limits, set some more.
+Nothing breaks there, so rest your head,
+And cap those uploads instead.</pre>
+    <figcaption>weekly-v1.sonnet-5-5.medium</figcaption>
+  </figure>
+
+</div>
+
+<figure class="plate">
+  <img src="2026-11-24.webp" alt="a lancelet (Branchiostoma lanceolatum), side view, lying horizontal, slender translucent blade-shaped body, pointed at both ends, faint V-shaped muscle segments, a notochord line running along its length" width="512" height="512">
+  <figcaption>Lancelet echoes LanceDB, and its blade shape and segmented body suit a week of limits, splits and strict rules.</figcaption>
+</figure>
+
+</div>
+<h2>The releases</h2>
+
+
+
+<div class="filters" hidden>
+
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">9</span></button>
+
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">3</span></button>
+
+  <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">3</span></button>
+
+  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">2</span></button>
+
+</div>
+
+<ol class="releases">
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-23T21:58:34+00:00">2026-11-23</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-23/ty_21_58.html">0.0.109</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The unknown-rule ignore diagnostic is renamed unknown-rule-in-ignore-comment; the old name remains an alias, so update configuration and ignore comments to the new name.</p>
+  <p class="new">Infer enum.auto() values from preceding members in both class-based and functional enums.</p>
+  
+
+  </li>
+
+  <li data-kind="fix">
+    <div class="head">
+      <time datetime="2026-11-23T07:01:51+00:00">2026-11-23</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-23/lancedb_07_01.html">v0.42.0-beta.26</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="fix">
+    <div class="head">
+      <time datetime="2026-11-23T03:35:20+00:00">2026-11-23</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-23/lancedb_03_35.html">v0.42.0-beta.25</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="fix">
+    <div class="head">
+      <time datetime="2026-11-22T22:07:09+00:00">2026-11-22</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-22/lancedb_22_07.html">v0.42.0-beta.24</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-22T20:40:30+00:00">2026-11-22</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-22/ty_20_40.html">0.0.108</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The mismatched-type-name rule is replaced by eight rules; update configuration, CLI flags and suppression comments to use the rule for each constructor.</p>
+  <p class="new">Recognize TypeVar, ParamSpec, NewType and similar definitions whose names are only known at runtime, warning that the name cannot be verified.</p>
+  
+
+  </li>
+
+  <li data-kind="maintenance">
+    <div class="head">
+      <time datetime="2026-11-22T19:44:21+00:00">2026-11-22</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-22/lancedb_19_44.html">v0.42.0-beta.23</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-22T15:14:50+00:00">2026-11-22</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-22/lancedb_15_14.html">v0.42.0-beta.22</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> GPU settings and total execution limits are now layered, and SQL queries gain timeout controls, so review existing GPU and query-limit configuration.</p>
+  <p class="new">Resume a failed Function refresh from its table instead of starting the refresh over.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-21T09:42:13+00:00">2026-11-21</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-21/lancedb_09_42.html">v0.42.0-beta.21</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Job objects in the Python SDK now expose data only through methods, so replace direct attribute access with the matching method calls.</p>
+  <p class="new">Compare table versions with the new table delta API to see which rows changed between them.</p>
+  
+
+  </li>
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-18T21:09:02+00:00">2026-11-18</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-18/ty_21_09.html">0.0.107</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Show progress and handle Ctrl-C during the initial file indexing in the language server preview.</p>
+  
+
+  </li>
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-18T19:14:20+00:00">2026-11-18</time>
+      <a class="project" href="../projects/fastapi.html">fastapi</a>
+      <a class="version" href="../releases/2026-11-18/fastapi_19_14.html">0.165.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Configure limits on form parsing, so you can control how much form data your FastAPI app will accept.</p>
+  
+
+  </li>
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-18T13:08:49+00:00">2026-11-18</time>
+      <a class="project" href="../projects/fastapi.html">fastapi</a>
+      <a class="version" href="../releases/2026-11-18/fastapi_13_08.html">0.164.0</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Set configurable limits on request body size to control how large incoming requests can be.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-18T12:30:14+00:00">2026-11-18</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-18/ty_12_30.html">0.0.106</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Incompatible TypeIs narrowings now report under two new rules, so update any ignore comments or rule configuration for the old rule.</p>
+  <p class="new">Add a project-manager script setting that can be set to uv for script environments.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-18T09:21:09+00:00">2026-11-18</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-18/lancedb_09_21.html">v0.42.0-beta.20</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> The SDK now returns typed job handles for SQL compaction and data prewarm, so code using the old return values must be updated.</p>
+  <p class="new">Run compaction and data prewarm through SQL with typed job handles that you can track.</p>
+  
+
+  </li>
+
+  <li data-kind="maintenance">
+    <div class="head">
+      <time datetime="2026-11-17T18:28:44+00:00">2026-11-17</time>
+      <a class="project" href="../projects/fastapi.html">fastapi</a>
+      <a class="version" href="../releases/2026-11-17/fastapi_18_28.html">0.163.2</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-17T15:43:51+00:00">2026-11-17</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-17/lancedb_15_43.html">v0.42.0-beta.19</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Row failure recovery APIs for functions were added as a breaking change; the notes give no details, so check your function code.</p>
+  <p class="new">Expose inspection of the Function worker stack so you can see what function workers are doing.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-17T09:46:22+00:00">2026-11-17</time>
+      <a class="project" href="../projects/ty.html">ty</a>
+      <a class="version" href="../releases/2026-11-17/ty_09_46.html">0.0.105</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Some diagnostics moved to new rules, so update any ignore or severity settings for import-not-found, dataclass post-init, or TypeVar constraints.</p>
+  <p class="new">Update imports automatically when renaming Python package folders in the language server.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-17T09:43:22+00:00">2026-11-17</time>
+      <a class="project" href="../projects/lancedb.html">lancedb</a>
+      <a class="version" href="../releases/2026-11-17/lancedb_09_43.html">v0.42.0-beta.18</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Function terminal results now expose a descriptor refresh plan and Python Function globals are captured differently; check code relying on the old behavior.</p>
+  <p class="new">Capture Arrow and structured Function globals in Python functions so they can be used inside those functions.</p>
+  
+
+  </li>
+
+</ol>
+
+</main>
+    <footer>
+        Briefs and poems are written by Claude from the release notes; the release
+        notes are the source of truth. Data for agents: <a href="../llms.txt">llms.txt</a>.
+        Missing a library? <a href="https://github.com/changelog-chronicles/project-list">Suggest it by pull request</a>.
+    </footer>
+    <script src="../filter.js" defer></script>
+</body>
+</html>
