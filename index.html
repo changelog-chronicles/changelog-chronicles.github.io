@@ -27,17 +27,137 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">26</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">25</span></button>
 
-  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">18</span></button>
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">17</span></button>
 
   <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">12</span></button>
 
-  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">4</span></button>
+  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">6</span></button>
 
 </div>
 
 <ol class="releases">
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-24T23:56:28+00:00">2026-11-24</time>
+      <a class="project" href="projects/marimo.html">marimo</a>
+      <a class="version" href="releases/2026-11-24/marimo_23_56.html">0.26.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> marimo 0.26 requires Python 3.11 or newer; upgrade Python from 3.10 before upgrading marimo.</p>
+  <p class="new">Send a failed cell&#39;s code and traceback to your connected coding agent from the editor footer.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-24T21:33:16+00:00">2026-11-24</time>
+      <a class="project" href="projects/plotly.html">plotly</a>
+      <a class="version" href="releases/2026-11-24/plotly_21_33.html">v7.2.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python 3.8 and 3.9 are no longer supported; plotly now requires Python 3.10 or later, so upgrade your Python environment.</p>
+  <p class="new">Convert matplotlib reference lines such as axhline and axvline into Plotly layout shapes with mpl_to_plotly, including date axes.</p>
+  
+
+  </li>
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-24T21:15:44+00:00">2026-11-24</time>
+      <a class="project" href="projects/uv.html">uv</a>
+      <a class="version" href="releases/2026-11-24/uv_21_15.html">0.13.10</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Use proxy package indexes in preview while keeping lockfiles portable to their upstream indexes through reversible artifact URLs.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-24T18:43:05+00:00">2026-11-24</time>
+      <a class="project" href="projects/plotly.html">plotly</a>
+      <a class="version" href="releases/2026-11-24/plotly_18_43.html">v7.2.0rc0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python 3.8 and 3.9 are no longer supported; upgrade to Python 3.10 or later before installing this version.</p>
+  <p class="new">Convert matplotlib reference lines like axhline and axvline into Plotly layout shapes when using mpl_to_plotly.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-24T18:19:22+00:00">2026-11-24</time>
+      <a class="project" href="projects/polars.html">polars</a>
+      <a class="version" href="releases/2026-11-24/polars_18_19.html">py-2.2.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Expr.str.find and find_many now return character offsets instead of byte offsets; update any code that uses those positions as byte indexes.</p>
+  <p class="new">Run joins that exceed memory out-of-core, so large joins no longer need all data held in RAM.</p>
+  
+
+  </li>
+
+  <li data-kind="maintenance">
+    <div class="head">
+      <time datetime="2026-11-24T12:38:10+00:00">2026-11-24</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-24/lancedb_12_38.html">v0.42.0-beta.29</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="maintenance">
+    <div class="head">
+      <time datetime="2026-11-24T10:07:19+00:00">2026-11-24</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-24/lancedb_10_07.html">v0.42.0-beta.28</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-24T07:59:50+00:00">2026-11-24</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-24/lancedb_07_59.html">v0.42.0-beta.27</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Python Function streaming Blob output declaration changed in a breaking way; the notes give no details, so review your Function definitions.</p>
+  <p class="new">Authenticate to Azure storage using a storage account access key in the SDKs.</p>
+  
+
+  </li>
 
   <li data-kind="breaking">
     <div class="head">
@@ -815,126 +935,6 @@
     
   <p class="breaking"><strong>Breaking:</strong> dagster-snowflake now requires snowflake-snowpark-python 1.37.0 or newer and snowflake-connector-python 3.14.0 or newer; upgrade those packages.</p>
   <p class="new">Run an existing Databricks job by ID through Dagster Pipes using the new preview run_job method on the Databricks clients.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-29T23:35:12+00:00">2026-10-29</time>
-      <a class="project" href="projects/dlt.html">dlt</a>
-      <a class="version" href="releases/2026-10-29/dlt_23_35.html">1.32.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Naive scd2 timestamps are no longer treated as UTC, so a naive active_record_timestamp may stop matching active records; pass timezone-aware values.</p>
-  <p class="new">Load any Salesforce sObject, standard or custom, with the new salesforce_table source.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-27T21:30:44+00:00">2026-10-27</time>
-      <a class="project" href="projects/pytest.html">pytest</a>
-      <a class="version" href="releases/2026-10-27/pytest_21_30.html">9.2.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Positional indirect, ids or scope in parametrize now raises TypeError, and pluggy 1.6 or newer is now required; pass them as keywords.</p>
-  <p class="new">Set the parametrize_long_str_id_strategy option to control how long string parameter values appear in auto-generated test IDs.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-27T12:20:08+00:00">2026-10-27</time>
-      <a class="project" href="projects/narwhals.html">narwhals</a>
-      <a class="version" href="releases/2026-10-27/narwhals_12_20.html">v2.28.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Results changed: rename now consistently raises DuplicateError, and var/std, mode, arg_min and arg_max return different values in some cases; update any code catching old errors.</p>
-  <p class="new">Use plugins for more IO and from_* functions, so third-party backends can read and build data frames.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-27T00:47:49+00:00">2026-10-27</time>
-      <a class="project" href="projects/uv.html">uv</a>
-      <a class="version" href="releases/2026-10-27/uv_00_47.html">0.13.6</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> In preview, uv workspace metadata output now nests each module&#39;s owners in an object; update scripts that parse that output.</p>
-  <p class="new">Reuse cached or active environments when running PEP 723 scripts that have no dependencies, making them start faster.</p>
-  
-
-  </li>
-
-  <li data-kind="feature">
-    <div class="head">
-      <time datetime="2026-10-27T00:35:07+00:00">2026-10-27</time>
-      <a class="project" href="projects/ruff.html">ruff</a>
-      <a class="version" href="releases/2026-10-27/ruff_00_35.html">0.17.3</a>
-      <span class="kind kind-feature">feature</span>
-      
-    </div>
-    
-  
-  <p class="new">Try the new preview rule shared-clock-mock in the suspicious category, available only with preview enabled.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-26T15:36:41+00:00">2026-10-26</time>
-      <a class="project" href="projects/dagster.html">dagster</a>
-      <a class="version" href="releases/2026-10-26/dagster_15_36.html">1.13.27</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> New Dagster+ organizations no longer get the Credit Limit Exceeded alert policy by default; create it manually if you rely on it.</p>
-  <p class="new">Use a mobile layout on the run details page showing the run&#39;s tags, logs, and steps.</p>
-  
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-25T18:24:39+00:00">2026-10-25</time>
-      <a class="project" href="projects/polars.html">polars</a>
-      <a class="version" href="releases/2026-10-25/polars_18_24.html">py-2.1.0</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Python 3.10 is no longer supported, and eager arithmetic mixing strings and numbers now raises an error; upgrade Python and cast columns explicitly.</p>
-  <p class="new">Read and write encrypted Parquet files.</p>
-  
-
-  </li>
-
-  <li data-kind="feature">
-    <div class="head">
-      <time datetime="2026-10-22T18:39:46+00:00">2026-10-22</time>
-      <a class="project" href="projects/ruff.html">ruff</a>
-      <a class="version" href="releases/2026-10-22/ruff_18_39.html">0.17.2</a>
-      <span class="kind kind-feature">feature</span>
-      
-    </div>
-    
-  
-  <p class="new">Configure an allowlist of values that the magic-value-comparison rule (PLR2004) will not flag.</p>
   
 
   </li>

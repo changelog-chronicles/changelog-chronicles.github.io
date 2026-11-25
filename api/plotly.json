@@ -3,6 +3,26 @@
   "github": "https://github.com/plotly/plotly.py",
   "releases": [
     {
+      "version": "7.2.0",
+      "tag": "v7.2.0",
+      "date": "2026-11-24T21:33:16+00:00",
+      "kind": "breaking",
+      "new": "Convert matplotlib reference lines such as axhline and axvline into Plotly layout shapes with mpl_to_plotly, including date axes.",
+      "breaking": "Python 3.8 and 3.9 are no longer supported; plotly now requires Python 3.10 or later, so upgrade your Python environment.",
+      "link": "https://github.com/plotly/plotly.py/releases/tag/v7.2.0",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
+      "version": "7.2.0rc0",
+      "tag": "v7.2.0rc0",
+      "date": "2026-11-24T18:43:05+00:00",
+      "kind": "breaking",
+      "new": "Convert matplotlib reference lines like axhline and axvline into Plotly layout shapes when using mpl_to_plotly.",
+      "breaking": "Python 3.8 and 3.9 are no longer supported; upgrade to Python 3.10 or later before installing this version.",
+      "link": "https://github.com/plotly/plotly.py/releases/tag/v7.2.0rc0",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "7.1.0",
       "tag": "v7.1.0",
       "date": "2026-09-15T19:15:12+00:00",

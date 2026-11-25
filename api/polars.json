@@ -3,6 +3,16 @@
   "github": "https://github.com/pola-rs/polars",
   "releases": [
     {
+      "version": "2.2.0",
+      "tag": "py-2.2.0",
+      "date": "2026-11-24T18:19:22+00:00",
+      "kind": "breaking",
+      "new": "Run joins that exceed memory out-of-core, so large joins no longer need all data held in RAM.",
+      "breaking": "Expr.str.find and find_many now return character offsets instead of byte offsets; update any code that uses those positions as byte indexes.",
+      "link": "https://github.com/pola-rs/polars/releases/tag/py-2.2.0",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "2.1.0",
       "tag": "py-2.1.0",
       "date": "2026-10-25T18:24:39+00:00",

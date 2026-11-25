@@ -30,7 +30,7 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">6</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">7</span></button>
 
   <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">3</span></button>
 
@@ -39,6 +39,21 @@
 </div>
 
 <ol class="releases">
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-24T18:19:22+00:00">2026-11-24</time>
+      
+      <a class="version" href="../releases/2026-11-24/polars_18_19.html">py-2.2.0</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Expr.str.find and find_many now return character offsets instead of byte offsets; update any code that uses those positions as byte indexes.</p>
+  <p class="new">Run joins that exceed memory out-of-core, so large joins no longer need all data held in RAM.</p>
+  
+
+  </li>
 
   <li data-kind="breaking">
     <div class="head">
