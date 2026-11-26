@@ -30,17 +30,62 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">6</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">7</span></button>
 
-  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">1</span></button>
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">2</span></button>
 
   <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">5</span></button>
 
-  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">3</span></button>
+  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">4</span></button>
 
 </div>
 
 <ol class="releases">
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-26T00:28:30+00:00">2026-11-26</time>
+      
+      <a class="version" href="../releases/2026-11-26/lancedb_00_28.html">v0.42.0-beta.33</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Open a native table at a retained version in the Rust library.</p>
+  
+
+  </li>
+
+  <li data-kind="maintenance">
+    <div class="head">
+      <time datetime="2026-11-25T22:20:44+00:00">2026-11-25</time>
+      
+      <a class="version" href="../releases/2026-11-25/lancedb_22_20.html">v0.42.0-beta.32</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-25T03:54:08+00:00">2026-11-25</time>
+      
+      <a class="version" href="../releases/2026-11-25/lancedb_03_54.html">v0.42.0-beta.30</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Scalar index creation changed to use registered Lance plugins by name; check any code that creates scalar indexes and update it.</p>
+  <p class="new">Create any registered Lance scalar index plugin by name when building an index.</p>
+  
+
+  </li>
 
   <li data-kind="maintenance">
     <div class="head">

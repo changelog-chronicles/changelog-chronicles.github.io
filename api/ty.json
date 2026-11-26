@@ -3,6 +3,26 @@
   "github": "https://github.com/astral-sh/ty",
   "releases": [
     {
+      "version": "0.0.111",
+      "tag": "0.0.111",
+      "date": "2026-11-25T22:24:17+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ty/releases/tag/0.0.111",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
+      "version": "0.0.110",
+      "tag": "0.0.110",
+      "date": "2026-11-25T06:12:16+00:00",
+      "kind": "feature",
+      "new": "Opt in to uv discovery of your workspace, Python environment, and dependencies through a new preview project-manager setting.",
+      "breaking": "",
+      "link": "https://github.com/astral-sh/ty/releases/tag/0.0.110",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "0.0.109",
       "tag": "0.0.109",
       "date": "2026-11-23T21:58:34+00:00",

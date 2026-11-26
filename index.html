@@ -27,17 +27,92 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">25</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">24</span></button>
 
-  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">17</span></button>
+  <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">18</span></button>
 
-  <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">12</span></button>
+  <button type="button" class="kind kind-fix" data-kind="fix" aria-pressed="false">fix <span class="count">13</span></button>
 
-  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">6</span></button>
+  <button type="button" class="kind kind-maintenance" data-kind="maintenance" aria-pressed="false">maintenance <span class="count">5</span></button>
 
 </div>
 
 <ol class="releases">
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-26T00:28:30+00:00">2026-11-26</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-26/lancedb_00_28.html">v0.42.0-beta.33</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Open a native table at a retained version in the Rust library.</p>
+  
+
+  </li>
+
+  <li data-kind="fix">
+    <div class="head">
+      <time datetime="2026-11-25T22:24:17+00:00">2026-11-25</time>
+      <a class="project" href="projects/ty.html">ty</a>
+      <a class="version" href="releases/2026-11-25/ty_22_24.html">0.0.111</a>
+      <span class="kind kind-fix">fix</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="maintenance">
+    <div class="head">
+      <time datetime="2026-11-25T22:20:44+00:00">2026-11-25</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-25/lancedb_22_20.html">v0.42.0-beta.32</a>
+      <span class="kind kind-maintenance">maintenance</span>
+      
+    </div>
+    
+  
+  
+  <p class="quiet">Nothing new for users.</p>
+
+  </li>
+
+  <li data-kind="feature">
+    <div class="head">
+      <time datetime="2026-11-25T06:12:16+00:00">2026-11-25</time>
+      <a class="project" href="projects/ty.html">ty</a>
+      <a class="version" href="releases/2026-11-25/ty_06_12.html">0.0.110</a>
+      <span class="kind kind-feature">feature</span>
+      
+    </div>
+    
+  
+  <p class="new">Opt in to uv discovery of your workspace, Python environment, and dependencies through a new preview project-manager setting.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-25T03:54:08+00:00">2026-11-25</time>
+      <a class="project" href="projects/lancedb.html">lancedb</a>
+      <a class="version" href="releases/2026-11-25/lancedb_03_54.html">v0.42.0-beta.30</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Scalar index creation changed to use registered Lance plugins by name; check any code that creates scalar indexes and update it.</p>
+  <p class="new">Create any registered Lance scalar index plugin by name when building an index.</p>
+  
+
+  </li>
 
   <li data-kind="breaking">
     <div class="head">
@@ -861,81 +936,6 @@
   
   
   <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-11-03T09:23:42+00:00">2026-11-03</time>
-      <a class="project" href="projects/dbt.html">dbt</a>
-      <a class="version" href="releases/2026-11-03/dbt_09_23.html">v2.0.11</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> Environment variables DBT_GENERATE_INFO_SCHEMA and DBT_INFO_SCHEMA_DIR are renamed with a DBT_ENGINE_ prefix, and DBT_AI_PROVIDER is now DBT_ENGINE_AI_PROVIDER; update your environment.</p>
-  <p class="new">Configure BigQuery query reservations at the model and connection levels.</p>
-  
-
-  </li>
-
-  <li data-kind="maintenance">
-    <div class="head">
-      <time datetime="2026-11-03T08:52:12+00:00">2026-11-03</time>
-      <a class="project" href="projects/arrow.html">arrow</a>
-      <a class="version" href="releases/2026-11-03/arrow_08_52.html">apache-arrow-26.0.1</a>
-      <span class="kind kind-maintenance">maintenance</span>
-      
-    </div>
-    
-  
-  
-  <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
-  <li data-kind="feature">
-    <div class="head">
-      <time datetime="2026-11-03T02:45:04+00:00">2026-11-03</time>
-      <a class="project" href="projects/uv.html">uv</a>
-      <a class="version" href="releases/2026-11-03/uv_02_45.html">0.13.7</a>
-      <span class="kind kind-feature">feature</span>
-      
-    </div>
-    
-  
-  <p class="new">Request a specific schema version from the workspace metadata command using the new output-version option (preview feature).</p>
-  
-
-  </li>
-
-  <li data-kind="maintenance">
-    <div class="head">
-      <time datetime="2026-10-30T18:36:55+00:00">2026-10-30</time>
-      <a class="project" href="projects/arrow.html">arrow</a>
-      <a class="version" href="releases/2026-10-30/arrow_18_36.html">apache-arrow-26.0.1-rc1</a>
-      <span class="kind kind-maintenance">maintenance</span>
-      
-    </div>
-    
-  
-  
-  <p class="quiet">Nothing new for users.</p>
-
-  </li>
-
-  <li data-kind="breaking">
-    <div class="head">
-      <time datetime="2026-10-30T15:31:35+00:00">2026-10-30</time>
-      <a class="project" href="projects/dagster.html">dagster</a>
-      <a class="version" href="releases/2026-10-30/dagster_15_31.html">1.13.28</a>
-      <span class="kind kind-breaking">breaking</span>
-      
-    </div>
-    
-  <p class="breaking"><strong>Breaking:</strong> dagster-snowflake now requires snowflake-snowpark-python 1.37.0 or newer and snowflake-connector-python 3.14.0 or newer; upgrade those packages.</p>
-  <p class="new">Run an existing Databricks job by ID through Dagster Pipes using the new preview run_job method on the Databricks clients.</p>
-  
 
   </li>
 
