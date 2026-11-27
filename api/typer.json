@@ -3,6 +3,16 @@
   "github": "https://github.com/fastapi/typer",
   "releases": [
     {
+      "version": "0.29.3",
+      "tag": "0.29.3",
+      "date": "2026-11-26T08:20:36+00:00",
+      "kind": "fix",
+      "new": "",
+      "breaking": "",
+      "link": "https://github.com/fastapi/typer/releases/tag/0.29.3",
+      "brief_by": "brief-v2.sonnet-5-5.medium"
+    },
+    {
       "version": "0.29.2",
       "tag": "0.29.2",
       "date": "2026-11-18T11:09:31+00:00",
