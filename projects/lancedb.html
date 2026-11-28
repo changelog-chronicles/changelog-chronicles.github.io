@@ -30,7 +30,7 @@
 
 <div class="filters" hidden>
 
-  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">7</span></button>
+  <button type="button" class="kind kind-breaking" data-kind="breaking" aria-pressed="false">breaking <span class="count">9</span></button>
 
   <button type="button" class="kind kind-feature" data-kind="feature" aria-pressed="false">feature <span class="count">2</span></button>
 
@@ -41,6 +41,36 @@
 </div>
 
 <ol class="releases">
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-27T10:20:16+00:00">2026-11-27</time>
+      
+      <a class="version" href="../releases/2026-11-27/lancedb_10_20.html">v0.42.0-beta.38</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Merge inserts on version-pinned tables are now rejected, so check out the latest version before running merge inserts.</p>
+  <p class="new">Pass Expr values to select() in the Node SDK to build column selections.</p>
+  
+
+  </li>
+
+  <li data-kind="breaking">
+    <div class="head">
+      <time datetime="2026-11-27T04:16:04+00:00">2026-11-27</time>
+      
+      <a class="version" href="../releases/2026-11-27/lancedb_04_16.html">v0.42.0-beta.37</a>
+      <span class="kind kind-breaking">breaking</span>
+      
+    </div>
+    
+  <p class="breaking"><strong>Breaking:</strong> Descriptions of views, materialized views, functions, secrets and storage integrations are now requested as JSON, so code parsing the old output format must be updated.</p>
+  <p class="new">Open blob descriptors that carry their source in the Node.js client.</p>
+  
+
+  </li>
 
   <li data-kind="maintenance">
     <div class="head">
